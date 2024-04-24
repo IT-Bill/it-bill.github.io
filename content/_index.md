@@ -55,34 +55,35 @@ sections:
       title: Experience
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
+      date_format: Apr 2024
       # Experiences.
       #   Add/remove as many `experience` items below as you like.
       #   Required fields are `title`, `company`, and `date_start`.
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+        - title: BSc in Computer Science and Technology
+          company: SUSTech
+          company_url: 'https://www.sustech.edu'
+          company_logo: sustech
+          location: Shenzhen, China
+          date_start: '2021-09-01'
           date_end: ''
           description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+            Major in Computer Science and Technology at SUSTech, guided by 
+            <a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>.
+        - title: Visiting Researcher
+          company: University of Waterloo
+          company_url: 'https://uwaterloo.ca/'
+          company_logo: uw
+          location: Waterloo, Canada
+          date_start: '2024-03-01'
+          date_end: '2024-08-31'
+          description: 
+            Participate in a research project on software logging at the University of Waterloo.
+            The project focused on the analysis of logging data across various programming languages and applying such insights to improve software quality assurance processes.
+            This research was conducted under the guidance of 
+            <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang<strong><a>.
     design:
       columns: '2'
   - block: accomplishments
@@ -126,7 +127,7 @@ sections:
           title: 'Object-Oriented Programming in R'
           url: ''
     design:
-      columns: '2'
+      columns: '1'
   - block: collection
     id: posts
     content:
@@ -171,8 +172,8 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
+        - name: CS
+          tag: CS
         - name: Other
           tag: Demo
     design:
