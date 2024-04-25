@@ -43,42 +43,61 @@ education:
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
-  - name: Technical
+  - name: Tools
     items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-line
-        icon_pack: fas
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: database
-        icon_pack: fas
-  - name: Hobbies
+      - name: Intellij IDEA
+        icon: intellij-idea
+        icon_pack: custom
+      - name: Pycharm
+        icon: pycharm
+        icon_pack: custom
+      - name: VSCode
+        icon: vscode
+        icon_pack: custom
+      - name: Anaconda
+        icon: anaconda
+        icon_pack: custom
+      - name: Linux
+        icon: linux
+        icon_pack: custom
+      - name: Git
+        icon: git
+        icon_pack: custom
+      - name: GitHub
+        icon: github
+        icon_pack: custom
+      - name: Adobe Premiere
+        icon: adobe-premiere
+        icon_pack: custom
+
+  - name: Languages & Frameworks
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera-retro
-        icon_pack: fas
+      - name: C
+        icon: c
+        icon_pack: custom
+      - name: C++
+        icon: cpp
+        icon_pack: custom
+      - name: Java
+        icon: java
+        icon_pack: custom
+      - name: Spring Boot
+        icon: spring-boot
+        icon_pack: custom
+      - name: Python
+        icon: python
+        icon_pack: custom
+      - name: MySQL
+        icon: mysql
+        icon_pack: custom
+      - name: PostgreSQL
+        icon: postgresql
+        icon_pack: custom
+      - name: Vue
+        icon: vue
+        icon_pack: custom
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
