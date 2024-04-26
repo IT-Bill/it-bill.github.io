@@ -41,7 +41,7 @@
       {{ $post_action = printf "action=\"https://formspree.io/f/%s\"" $block.content.form.formspree.id }}
     {{ end }}
 
-    <div class="mb-3">
+    <!-- <div class="mb-3">
       <form name="contact" method="POST" {{ $post_action | safeHTMLAttr }} {{ if $use_netlify_form }}netlify-honeypot="_gotcha"{{ end }} {{ if $use_netlify_captcha }}data-netlify-recaptcha="true"{{ end }} {{ with $block.content.form.netlify.success_url }}action="{{ . | relLangURL }}"{{ end }}>
         <div class="form-group form-inline">
           <label class="sr-only" for="inputName">{{ i18n "contact_name" }}</label>
@@ -72,7 +72,7 @@
         {{ end }}
         <button type="submit" class="btn btn-primary px-3 py-2 w-100">{{ i18n "contact_send" | default "Send" }}</button>
       </form>
-    </div>
+    </div> -->
   {{ end }}
 
   <ul class="fa-ul">
