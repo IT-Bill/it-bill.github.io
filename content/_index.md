@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2022-10-24
+date: 2024-04-26
 type: landing
 
 sections:
@@ -52,7 +52,7 @@ sections:
             Participate in a research project on software logging at the University of Waterloo.
             The project focused on the analysis of logging data across various programming languages and applying such insights to improve software quality assurance processes.
             This research was conducted under the guidance of 
-            <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang<strong><a>.
+            <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang</strong></a>.
     design:
       columns: '1'
 

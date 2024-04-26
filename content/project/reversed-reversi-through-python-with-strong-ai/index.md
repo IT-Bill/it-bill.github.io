@@ -4,7 +4,7 @@ summary:
   Implemented Monte Carlo & Alpha Beta Pruning algorithm by leveraging bitwise operations.
 tags:
   - CS
-date: '2023-10-01'
+date: '2022-10-01'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

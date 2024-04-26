@@ -15,24 +15,10 @@ image:
   focal_point: Smart
 
 links:
-  - icon: github
-    icon_pack: fab
-    name: Code
-    url: https://github.com/SUSTech-CRA/sustech-online-ng
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
+  - icon: link
+    icon_pack: fas
+    name: Link
+    url: https://sustech.online/canteen/
+url_code: 'https://github.com/SUSTech-CRA/sustech-online-ng'
 
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: example
 ---
-
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
