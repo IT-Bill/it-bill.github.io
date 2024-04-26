@@ -4,7 +4,7 @@ summary:
   Calculate the length of the queue by monitoring data, and display a chart showing the changes in queue length.
   <br/>About 30,000 visits within three months.
 tags:
-  - CS
+  - Canteen
 date: '2023-12-31'
 
 # Optional external URL for project (replaces project detail page).
