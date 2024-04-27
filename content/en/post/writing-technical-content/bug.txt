@@ -1,0 +1,7 @@
+```go
+{{</* table path="results.csv" header="true" caption="Table 1: My results" */>}}
+```
+
+renders as
+
+{{< table path="results.csv" header="true" caption="Table 1: My results" >}}
