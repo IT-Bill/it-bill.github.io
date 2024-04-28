@@ -1,17 +1,16 @@
 ---
-title: Capacitated Arc Routing Problem Project
+title: 容量约束弧路径问题(CARP)
 summary: 
-  Implemented an effective heuristics algorithm by memetic algorithm and hybrid metaheuristic approach.
+  利用模因算法和混合元启发式方法实现了一种有效的启发式算法。
 tags:
-  - Course
+  - 课程
 date: '2023-05-01'
 
 # Optional external URL for project (replaces project detail page).
 external_link: 'https://github.com/IT-Bill/CS311-AI/tree/main/Proj-CARP'
 
 image:
-  caption: Reversi
-  focal_point: Smart
+  caption: CARP
 
 links:
 url_code: 'https://github.com/IT-Bill/CS311-AI/tree/main/Proj-CARP'

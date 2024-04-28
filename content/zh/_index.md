@@ -13,7 +13,7 @@ sections:
       username: admin
   - block: skills
     content:
-      title: Skills
+      title: 技能
       text: ''
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: admin
@@ -21,31 +21,31 @@ sections:
       columns: '1'
   - block: experience
     content:
-      title: Experience
+      title: 经历
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Apr 2024
+      date_format: 2024 Apr
       # Experiences.
       #   Add/remove as many `experience` items below as you like.
       #   Required fields are `title`, `company`, and `date_start`.
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: BSc in Computer Science and Technology
-          company: SUSTech
+        - title: 计算机科学与技术学士
+          company: 南方科技大学
           company_url: 'https://www.sustech.edu'
           company_logo: sustech
-          location: Shenzhen, China
+          location: 中国，深圳
           date_start: '2021-09-01'
           date_end: ''
           description: |2-
             Major in Computer Science and Technology at SUSTech, guided by 
             <a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>.
-        - title: Visiting Researcher
-          company: University of Waterloo
+        - title: 访问学者
+          company: 滑铁卢大学
           company_url: 'https://uwaterloo.ca/'
           company_logo: uw
-          location: Waterloo, Canada
+          location: 加拿大，滑铁卢
           date_start: '2024-03-01'
           date_end: '2024-08-31'
           description: 
@@ -59,7 +59,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: 项目
       filters:
         folders:
           - project
@@ -71,14 +71,14 @@ sections:
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
       buttons:
-        - name: All
+        - name: 所有
           tag: '*'
-        - name: Course
-          tag: Course
-        - name: Research
-          tag: Research
-        - name: Canteen
-          tag: Canteen
+        - name: 课程
+          tag: 课程
+        - name: 研究
+          tag: 研究
+        - name: 饭堂
+          tag: 饭堂
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'

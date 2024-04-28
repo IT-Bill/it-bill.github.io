@@ -17,11 +17,11 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: BSc in Computer Science and Technology
+role: 计算机科学与技术学士
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Southern University of Science and Technology (SUSTech)
+  - name: 南方科技大学
     url: https://www.sustech.edu/
 
 # Short bio (displayed in user profile at end of posts)
@@ -29,21 +29,21 @@ bio: My research interests include Software Engineering, Artificial Intelligence
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Software Engineering
+  - 人工智能
+  - 软件工程
 
 
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Artificial Intelligence
+    - course: BSc in Computer Science and Technology
       institution: SUSTech
       year: 2025
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
-  - name: Tools
+  - name: 开发工具
     items:
       - name: Intellij IDEA
         icon: intellij-idea
@@ -70,7 +70,7 @@ skills:
         icon: adobe-premiere
         icon_pack: custom
 
-  - name: Languages & Frameworks
+  - name: 语言 & 框架
     color: '#eeac02'
     color_border: '#f0bf23'
     items:

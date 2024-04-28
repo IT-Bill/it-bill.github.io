@@ -1,9 +1,9 @@
 ---
-title: TBG Battle System in MiniSTM32
+title: 基于MiniSTM32的TBG对战系统
 summary: 
-  The system lets players choose actions for their customizable characters, track HP, and engage in real-time multiplayer matches using miniSTM32 boards with accurate data transmission.
+  该系统允许玩家为其自定义角色选择动作，查看血量等角色信息，并使用具有精确数据传输的miniSTM32板进行实时多人游戏。
 tags:
-  - Course
+  - 课程
 date: '2023-01-15'
 
 # Optional external URL for project (replaces project detail page).

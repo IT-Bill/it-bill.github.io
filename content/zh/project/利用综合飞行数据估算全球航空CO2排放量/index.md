@@ -1,18 +1,17 @@
 ---
-title: Estimating Global Aviation CO2 Emissions with Comprehensive Flight Data
+title: 利用综合飞行数据估算全球航空CO2排放量
 summary: 
-  Analyze 10 TB data (1 billion records) using statistical and machine learning methods. 
-  <br/>The manuscript has been submitted to Environmental Science & Technology on April 16, 2024.
-
+  使用统计和机器学习方法分析10TB数据（10亿条记录）。
+  <br/>手稿已于2024年4月16日提交Environmental Science & Technology。
 tags:
-  - Research
+  - 研究
 date: '2022-05-01'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
 image:
-  caption: CO2 Emissions
+  caption: CO2排放
 
 ---
 
