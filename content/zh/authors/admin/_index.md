@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Zhanwei Zhang
+title: 张展玮
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Zhanwei
-last_name: Zhang
+first_name: 展玮
+last_name: 张
 
 # Status emoji
 status:
@@ -36,8 +36,8 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Computer Science and Technology
-      institution: SUSTech
+    - course: 计算机科学与技术学士
+      institution: 南方科技大学
       year: 2025
 
 # Skills
@@ -128,9 +128,7 @@ social:
 highlight_name: true
 ---
 
-I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), 
-diving deep into Computer Science and Technology.
-I've got a passion for mixing up <strong>Software Engineering with Artificial Intelligence</strong>.
-<br>Dreaming big here, but I'm all about crafting a piece of software that the whole world will want to use someday. 
-No solid plans on what it'll be just yet, but I'm stoked about the endless possibilities.
+我正在南方科技大学深入研究计算机科学与技术。我热衷于将软件工程与人工智能相结合。
+
+我的梦想是打造一款全球都会渴望使用的软件。虽然目前还没有具体的计划，但我对无限的可能性充满期待。
 {style="text-align: justify; "}

@@ -12,11 +12,23 @@ en:
 zh:
   languageCode: zh
   contentDir: content/zh
-  title: Chinese website title...
+  title: 张展玮
   params:
-    description: Site description in Chinese...
+    description: 张展玮
   menu:
     main:
-      - name: 传
+      - name: 家
         url: '#about'
-        weight: 1
+        weight: 10
+      - name: 项目
+        url: '#projects'
+        weight: 20
+      - name: 帖子
+        url: '#posts'
+        weight: 30
+      - name: 出版物
+        url: '#featured'
+        weight: 50
+      - name: 联系
+        url: '#contact'
+        weight: 60

@@ -8,7 +8,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: 自述
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: skills
@@ -39,8 +39,8 @@ sections:
           date_start: '2021-09-01'
           date_end: ''
           description: |2-
-            Major in Computer Science and Technology at SUSTech, guided by 
-            <a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>.
+            在<a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与技术。
+            
         - title: 访问学者
           company: 滑铁卢大学
           company_url: 'https://uwaterloo.ca/'
@@ -49,10 +49,9 @@ sections:
           date_start: '2024-03-01'
           date_end: '2024-08-31'
           description: 
-            Participate in a research project on software logging at the University of Waterloo.
-            The project focused on the analysis of logging data across various programming languages and applying such insights to improve software quality assurance processes.
-            This research was conducted under the guidance of 
-            <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang</strong></a>.
+            参与滑铁卢大学的软件日志研究项目。
+            该项目侧重于分析各种编程语言的日志数据，并将这些见解应用于改进软件质量保证过程。
+            在<a href=“https://ece.uwaterloo.ca/~wshang/“><strong>Professor Weiyi Shang</strong></a>的指导下进行研究。
     design:
       columns: '1'
 
@@ -89,7 +88,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: Recent Posts
+      title: 近期帖子
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -124,7 +123,7 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Publications
+      title: 出版物
       subtitle: Under construction...
       filters:
         folders:
@@ -135,21 +134,21 @@ sections:
       view: card
   - block: tag_cloud
     content:
-      title: Popular Topics
+      title: 热门话题
     design:
       columns: '2'
   - block: contact
     id: contact
     content:
-      title: Contact
+      title: 联系
       subtitle:
       # Contact (add or remove contact options as necessary)
       email: 12110817@mail.sustech.edu.cn
-      address:
-        street: No. 1088 Xueyuan Avenue
-        region: Shenzhen
+      address: 
+        street: 学苑大道1088号
+        region: 深圳市南山区
         postcode: '518055'
-        country: P.R. China
+        country: 中国
         country_code: CN
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
