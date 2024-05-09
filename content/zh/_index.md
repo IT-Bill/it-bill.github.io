@@ -42,16 +42,17 @@ sections:
             在<a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与技术。
             
         - title: 访问学者
-          company: 滑铁卢大学
-          company_url: 'https://uwaterloo.ca/'
-          company_logo: uw
-          location: 加拿大，滑铁卢
-          date_start: '2024-03-01'
+          company: 武汉大学
+          company_url: 'https://www.whu.edu.cn/'
+          company_logo: whu
+          location: 中国，武汉
+          date_start: '2024-05-01'
           date_end: '2024-08-31'
           description: 
-            参与滑铁卢大学的软件日志研究项目。
-            该项目侧重于分析各种编程语言的日志数据，并将这些见解应用于改进软件质量保证过程。
-            在<a href=“https://ece.uwaterloo.ca/~wshang/“><strong>Professor Weiyi Shang</strong></a>的指导下进行研究。
+            参与软件日志研究项目。
+            该项目侧重于分析各种编程语言的日志数据，并应用于改进软件质量保证过程。
+            在<a href=“https://ece.uwaterloo.ca/~wshang/“><strong>Professor Weiyi Shang</strong></a>和
+            <a href="https://cs.whu.edu.cn/info/1019/3521.htm"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
     design:
       columns: '1'
 
