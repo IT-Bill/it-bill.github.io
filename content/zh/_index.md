@@ -144,7 +144,7 @@ sections:
       title: 联系
       subtitle:
       # Contact (add or remove contact options as necessary)
-      email: 12110817@mail.sustech.edu.cn
+      email: zhangzw@mail.sustech.edu.cn
       address: 
         street: 学苑大道1088号
         region: 深圳市南山区

@@ -145,7 +145,7 @@ sections:
       title: Contact
       subtitle:
       # Contact (add or remove contact options as necessary)
-      email: 12110817@mail.sustech.edu.cn
+      email: zhangzw@mail.sustech.edu.cn
       address:
         street: No. 1088 Xueyuan Avenue
         region: Shenzhen

@@ -109,7 +109,7 @@ social:
     link: https://github.com/IT-Bill
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:12110817@mail.sustech.edu.cn'
+    link: 'mailto:zhangzw@mail.sustech.edu.cn'
   - icon: blog
     icon_pack: fas
     link: https://it-bill.github.io/blog
