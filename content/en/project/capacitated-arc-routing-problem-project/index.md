@@ -1,7 +1,7 @@
 ---
 title: Capacitated Arc Routing Problem Project
 summary: 
-  Implemented an effective heuristics algorithm by memetic algorithm and hybrid metaheuristic approach.
+  The solver uses a memetic algorithm and hybrid metaheuristic approach to produce high-quality solutions efficiently. The solver achieved optimal solutions in small and medium-sized instances within 180 seconds and produced comparable results for larger instances with up to 255 vertices and 347 routes.
 tags:
   - Course
 date: '2023-05-01'

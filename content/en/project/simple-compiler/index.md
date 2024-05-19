@@ -1,7 +1,7 @@
 ---
 title: Simple Compiler
 summary: 
-  Developed a simple compiler that translates C language files into Intermediate Representation (IR) and MIPS32 assembly. The compiler supports essential features such as I/O operations, control flow and function calls. It includes comprehensive lexical, syntax, and semantic analysis, along with robust error handling and informative error messages.
+  Developed a simple compiler that translates C language files into Intermediate Representation (IR) and MIPS32 assembly. The compiler supports essential features such as I/O operations, control flow and function calls. It includes comprehensive lexical, syntax, and semantic analysis, along with informative error messages.
 tags:
   - Course
 date: '2024-01-20'
