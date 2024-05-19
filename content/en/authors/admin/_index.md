@@ -128,9 +128,8 @@ social:
 highlight_name: true
 ---
 
-I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), 
-diving deep into Computer Science and Technology.
+I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Technology.
 I've got a passion for mixing up <strong>Software Engineering with Artificial Intelligence</strong>.
-<br>Dreaming big here, but I'm all about crafting a piece of software that the whole world will want to use someday. 
-No solid plans on what it'll be just yet, but I'm stoked about the endless possibilities.
+<br>
+Presently, I am serving as a Visiting Researcher at <a href="https://whu.edu.cn">Wuhan University</a>.
 {style="text-align: justify; "}

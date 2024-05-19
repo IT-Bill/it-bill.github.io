@@ -128,7 +128,7 @@ social:
 highlight_name: true
 ---
 
-我正在南方科技大学深入研究计算机科学与技术。我热衷于将软件工程与人工智能相结合。
-
-我的梦想是打造一款全球使用的软件。虽然目前还没有具体的计划，但我对无限的可能性充满期待。
-{style="text-align: justify; "}
+我正在<a href="https://sustech.edu.cn"><strong>南方科技大学</strong></a>深入学习计算机科学与技术。我对将<strong>软件工程与人工智能</strong>结合充满热情。
+<br>
+目前，我在<a href="https://whu.edu.cn">武汉大学</a>担任访问研究员。
+{style="text-align: justify;"}
