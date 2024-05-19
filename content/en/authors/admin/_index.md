@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Artificial Intelligence
+    - course: BSc in Computer Science and Technology
       institution: SUSTech
       year: 2025
 
