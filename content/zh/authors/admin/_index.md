@@ -29,8 +29,8 @@ bio: My research interests include Software Engineering, Artificial Intelligence
 
 # Interests to show in About widget
 interests:
-  - 人工智能
   - 软件工程
+  - 人工智能
 
 
 # Education to show in About widget
