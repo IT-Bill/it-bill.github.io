@@ -33,34 +33,33 @@
         {{ .name | markdownify | emojify }}
         {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
       </div>
-      {{ range .items }}
-        {{ $pack := or .icon_pack "fas" }}
-        {{ $pack_prefix := $pack }}
-        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-          {{ $pack_prefix = "fa" }}
+
+      <div class="row"> <!-- Add this div to wrap skills-content -->
+        {{ range .items }}
+          {{ $pack := or .icon_pack "fas" }}
+          {{ $pack_prefix := $pack }}
+          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+            {{ $pack_prefix = "fa" }}
+          {{ end }}
+
+      <div class="skills-content">
+
+        {{ with .icon }}
+          <span class="skills-icon">
+            {{- if eq $pack "emoji" -}}
+              {{- . | emojify -}}
+            {{- else if eq $pack "custom" -}}
+              {{- $svg_icon := resources.Get (printf "media/icons/skills/%s.svg" .) -}}
+              {{- if $svg_icon -}}<img src="{{ $svg_icon.RelPermalink }}" alt="{{.}}" class="svg-icon svg-baseline" loading="lazy">{{- end -}}
+            {{- else -}}
+              <i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}"></i>
+            {{- end -}}
+          </span>
         {{ end }}
 
-    <div class="skills-content">
-
-      {{ with .icon }}
-        <span class="skills-icon">
-          {{- if eq $pack "emoji" -}}
-            {{- . | emojify -}}
-          {{- else if eq $pack "custom" -}}
-            {{- $svg_icon := resources.Get (printf "media/icons/skills/%s.svg" .) -}}
-            {{- if $svg_icon -}}<img src="{{ $svg_icon.RelPermalink }}" alt="{{.}}" class="svg-icon svg-baseline" loading="lazy">{{- end -}}
-          {{- else -}}
-            <i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}"></i>
-          {{- end -}}
-        </span>
-      {{ end }}
-
-      <span class="skills-name">
-        {{ .name | markdownify | emojify }}
-        {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
-      </span>
-    </div>
-  {{ end }}
+      </div>
+    {{ end }}
+  </div> <!-- End of wrapper div -->
 </div>
 {{ end }}
 </div>
