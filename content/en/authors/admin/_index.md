@@ -21,7 +21,7 @@ role: B.Eng. in Computer Science and Engineering
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Southern University of Science and Engineering (SUSTech)
+  - name: Southern University of Science and Technology (SUSTech)
     url: https://www.sustech.edu/
 
 # Short bio (displayed in user profile at end of posts)
@@ -128,7 +128,7 @@ social:
 highlight_name: true
 ---
 
-I'm on an exciting journey at Southern University of Science and Engineering (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Engineering.
+I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Engineering.
 I've got a passion for mixing up <strong>Software Engineering with Artificial Intelligence</strong>.
 <br>
 Presently, I am serving as a Visiting Researcher at <a href="https://whu.edu.cn">Wuhan University</a>.
