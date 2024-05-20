@@ -91,7 +91,7 @@ sections:
     id: posts
     content:
       title: Recent Posts
-      subtitle: ''
+      subtitle: 'Under construction...'
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
