@@ -13,10 +13,7 @@ external_link: ''
 image:
   caption: 测试框架
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
+url_pdf: /uploads/llm-json-parser-fuzzing-final-report.pdf
 
 ---
 
