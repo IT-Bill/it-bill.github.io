@@ -31,7 +31,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: 计算机科学与技术学士
+        - title: 计算机科学与工程学士
           company: 南方科技大学
           company_url: 'https://www.sustech.edu'
           company_logo: sustech
@@ -39,7 +39,7 @@ sections:
           date_start: '2021-09-01'
           date_end: ''
           description: |2-
-            在<a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与技术。
+            在<a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与工程。
             
         - title: 访问学者
           company: 武汉大学

@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: 计算机科学与技术学士
+role: 计算机科学与工程学士
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -30,15 +30,17 @@ bio: My research interests include Software Engineering, Artificial Intelligence
 # Interests to show in About widget
 interests:
   - 软件工程
+  - 软件测试
   - 人工智能
+  - 机器学习
 
 
 # Education to show in About widget
 education:
   courses:
-    - course: 计算机科学与技术学士
+    - course: 计算机科学与工程学士
       institution: 南方科技大学
-      year: 2025
+      year: 2021至今
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -128,7 +130,7 @@ social:
 highlight_name: true
 ---
 
-我正在<a href="https://sustech.edu.cn"><strong>南方科技大学</strong></a>深入学习计算机科学与技术。我对将<strong>软件工程与人工智能</strong>结合充满热情。
+我正在<a href="https://sustech.edu.cn"><strong>南方科技大学</strong></a>深入学习计算机科学与工程。我对将<strong>软件工程与人工智能</strong>结合充满热情。
 <br>
 目前，我在<a href="https://whu.edu.cn">武汉大学</a>担任访问研究员。
 {style="text-align: justify;"}

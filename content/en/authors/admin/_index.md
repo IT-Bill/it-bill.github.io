@@ -17,11 +17,11 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: BSc in Computer Science and Technology
+role: B.Eng. in Computer Science and Engineering
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Southern University of Science and Technology (SUSTech)
+  - name: Southern University of Science and Engineering (SUSTech)
     url: https://www.sustech.edu/
 
 # Short bio (displayed in user profile at end of posts)
@@ -30,15 +30,17 @@ bio: My research interests include Software Engineering, Artificial Intelligence
 # Interests to show in About widget
 interests:
   - Software Engineering
+  - Software Testing
   - Artificial Intelligence
+  - Machine Learning
 
 
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Computer Science and Technology
+    - course: B.Eng. in Computer Science and Engineering
       institution: SUSTech
-      year: 2025
+      year: 2021 till now
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -71,8 +73,6 @@ skills:
         icon_pack: custom
 
   - name: Languages & Frameworks
-    color: '#eeac02'
-    color_border: '#f0bf23'
     items:
       - name: C
         icon: c
@@ -128,7 +128,7 @@ social:
 highlight_name: true
 ---
 
-I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Technology.
+I'm on an exciting journey at Southern University of Science and Engineering (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Engineering.
 I've got a passion for mixing up <strong>Software Engineering with Artificial Intelligence</strong>.
 <br>
 Presently, I am serving as a Visiting Researcher at <a href="https://whu.edu.cn">Wuhan University</a>.

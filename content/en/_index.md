@@ -31,7 +31,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: BSc in Computer Science and Technology
+        - title: B.Eng. in Computer Science and Engineering
           company: SUSTech
           company_url: 'https://www.sustech.edu'
           company_logo: sustech
@@ -39,7 +39,7 @@ sections:
           date_start: '2021-09-01'
           date_end: ''
           description: |2-
-            Major in Computer Science and Technology at SUSTech, guided by 
+            Major in Computer Science and Engineering at SUSTech, guided by 
             <a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>.
         - title: Visiting Researcher
           company: Wuhan University
