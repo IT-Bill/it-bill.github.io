@@ -50,9 +50,8 @@ sections:
           date_end: '2024-08-31'
           description: 
             参与软件日志研究项目。
-            该项目侧重于分析各种编程语言的日志数据，并应用于改进软件质量保证过程。
             在<a href=“https://ece.uwaterloo.ca/~wshang/“><strong>Professor Weiyi Shang</strong></a>和
-            <a href="https://cs.whu.edu.cn/info/1019/3521.htm"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
+            <a href="https://jinfuchen.github.io/jinfu/"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
     design:
       columns: '1'
 

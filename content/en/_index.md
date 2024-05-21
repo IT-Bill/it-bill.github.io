@@ -50,10 +50,9 @@ sections:
           date_end: '2024-08-31'
           description: 
             Participate in a research project on software logging.
-            The project focused on the analysis of logging data across various programming languages and applying such insights to improve software quality assurance processes.
             This research was conducted under the guidance of 
             <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang</strong></a> and
-            <a href="https://cs.whu.edu.cn/info/1019/3521.htm"><strong>Professor Jinfu Chen</strong></a>.
+            <a href="https://jinfuchen.github.io/jinfu/"><strong>Professor Jinfu Chen</strong></a>.
     design:
       columns: '1'
 
