@@ -39,7 +39,7 @@ sections:
           date_start: '2021-09-01'
           date_end: ''
           description: |2-
-            在<a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与工程。
+            在<a href="https://yepangliu.github.io/" target="_blank"><strong>Professor Yepang Liu</strong></a>的指导下攻读计算机科学与工程。
             
         - title: 访问学者
           company: 武汉大学
@@ -50,8 +50,8 @@ sections:
           date_end: '2024-08-31'
           description: 
             参与软件日志研究项目。
-            在<a href=“https://ece.uwaterloo.ca/~wshang/“><strong>Professor Weiyi Shang</strong></a>和
-            <a href="https://jinfuchen.github.io/jinfu/"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
+            在<a href="https://ece.uwaterloo.ca/~wshang/" target="_blank"><strong>Professor Weiyi Shang</strong></a>和
+            <a href="https://jinfuchen.github.io/jinfu/" target="_blank"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
     design:
       columns: '1'
 

@@ -40,7 +40,7 @@ sections:
           date_end: ''
           description: |2-
             Major in Computer Science and Engineering at SUSTech, guided by 
-            <a href="https://yepangliu.github.io/"><strong>Professor Yepang Liu</strong></a>.
+            <a href="https://yepangliu.github.io/" target="_blank"><strong>Professor Yepang Liu</strong></a>.
         - title: Visiting Researcher
           company: Wuhan University
           company_url: 'https://www.whu.edu.cn/'
@@ -51,8 +51,8 @@ sections:
           description: 
             Participate in a research project on software logging.
             This research was conducted under the guidance of 
-            <a href="https://ece.uwaterloo.ca/~wshang/"><strong>Professor Weiyi Shang</strong></a> and
-            <a href="https://jinfuchen.github.io/jinfu/"><strong>Professor Jinfu Chen</strong></a>.
+            <a href="https://ece.uwaterloo.ca/~wshang/" target="_blank"><strong>Professor Weiyi Shang</strong></a> and
+            <a href="https://jinfuchen.github.io/jinfu/" target="_blank"><strong>Professor Jinfu Chen</strong></a>.
     design:
       columns: '1'
 
