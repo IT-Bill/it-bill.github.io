@@ -22,7 +22,7 @@ role: 计算机科学与工程学士
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: 南方科技大学
-    url: https://www.sustech.edu/
+    url: https://www.sustech.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Software Engineering, Artificial Intelligence, and so on.

@@ -22,7 +22,7 @@ role: B.Eng. in Computer Science and Engineering
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Southern University of Science and Technology (SUSTech)
-    url: https://www.sustech.edu/
+    url: https://www.sustech.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Software Engineering, Artificial Intelligence, and so on.
