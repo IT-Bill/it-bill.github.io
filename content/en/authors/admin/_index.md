@@ -112,7 +112,10 @@ social:
     link: 'mailto:zhangzw@mail.sustech.edu.cn'
   - icon: blog
     icon_pack: fas
-    link: https://it-bill.github.io/blog
+    link: https://it-bill.github.io/#posts
+  - icon: bilibili
+    icon_pack: fab
+    link: https://space.bilibili.com/166841230
   - icon: circle-user
     icon_pack: fas
     link: https://itbill.cn
