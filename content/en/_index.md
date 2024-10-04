@@ -53,6 +53,15 @@ sections:
             This research was conducted under the guidance of 
             <a href="https://ece.uwaterloo.ca/~wshang/" target="_blank"><strong>Professor Weiyi Shang</strong></a> and
             <a href="https://jinfuchen.github.io/jinfu/" target="_blank"><strong>Professor Jinfu Chen</strong></a>.
+        - title: Large Language Model Intern
+          company: Lingxun
+          company_url: 'https://www.lingxun.com/'
+          company_logo: lingxun
+          location: Shenzhen, China
+          date_start: '2024-09-10'
+          date_end: ''
+          description: 
+            Enhance Large Language Models using Retrieval Augmented Generation (RAG).
     design:
       columns: '1'
 

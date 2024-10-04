@@ -71,6 +71,9 @@ skills:
       - name: Adobe Premiere
         icon: adobe-premiere
         icon_pack: custom
+      - name: CMake
+        icon: cmake
+        icon_pack: custom
 
   - name: Languages & Frameworks
     items:
@@ -134,5 +137,5 @@ highlight_name: true
 I'm on an exciting journey at Southern University of Science and Technology (<a href="https://sustech.edu.cn"><strong>SUSTech</strong></a>), diving deep into Computer Science and Engineering.
 I've got a passion for mixing up <strong>Software Engineering with Artificial Intelligence</strong>.
 <br>
-Presently, I am serving as a Visiting Researcher at <a href="https://whu.edu.cn">Wuhan University</a>.
-{style="text-align: justify; "}
+Now, I am actively seeking an MPhil or PhD position to further my studies and contribute to cutting-edge research in these areas.
+{style="text-align: justify;"}

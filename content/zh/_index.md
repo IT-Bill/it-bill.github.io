@@ -52,6 +52,17 @@ sections:
             参与软件日志研究项目。
             在<a href="https://ece.uwaterloo.ca/~wshang/" target="_blank"><strong>Professor Weiyi Shang</strong></a>和
             <a href="https://jinfuchen.github.io/jinfu/" target="_blank"><strong>Professor Jinfu Chen</strong></a>的指导下进行研究。
+
+        - title: 大语言模型实习生
+          company: 领寻
+          company_url: 'https://www.lingxun.com/'
+          company_logo: lingxun
+          location: 中国, 深圳
+          date_start: '2024-09-10'
+          date_end: ''
+          description: 
+            使用检索增强生成 (RAG) 提高大语言模型的生成能力。
+
     design:
       columns: '1'
 

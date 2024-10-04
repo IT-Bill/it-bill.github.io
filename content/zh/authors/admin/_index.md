@@ -71,7 +71,10 @@ skills:
       - name: Adobe Premiere
         icon: adobe-premiere
         icon_pack: custom
-
+      - name: CMake
+        icon: cmake
+        icon_pack: custom
+        
   - name: 语言 & 框架
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -135,5 +138,4 @@ highlight_name: true
 
 我正在<a href="https://sustech.edu.cn"><strong>南方科技大学</strong></a>深入学习计算机科学与工程。我对将<strong>软件工程与人工智能</strong>结合充满热情。
 <br>
-目前，我在<a href="https://whu.edu.cn">武汉大学</a>担任访问研究员。
 {style="text-align: justify;"}
