@@ -134,7 +134,7 @@ sections:
     id: featured
     content:
       title: Publications
-      subtitle: Under construction...
+      subtitle: 
       filters:
         folders:
           - publication
