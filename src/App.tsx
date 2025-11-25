@@ -1,16 +1,20 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </Button>
-    </>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          {/* <Route path="projects" element={<Projects />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="contact" element={<Contact />} /> */}
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 
