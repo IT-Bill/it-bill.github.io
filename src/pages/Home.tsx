@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PROJECTS, FRAMEWORKS } from '../constants';
+import { PROJECTS } from '../constants';
 import { ArrowRight, Code, Database, BrainCircuit, Terminal } from 'lucide-react';
 
 const Home: React.FC = () => {

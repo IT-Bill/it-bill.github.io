@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PROJECTS } from '../constants';
-import { Github, ExternalLink, FolderOpen, FileChartLine, Projector } from 'lucide-react';
+import { Github, FolderOpen, FileChartLine, Projector } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<string>('All');
