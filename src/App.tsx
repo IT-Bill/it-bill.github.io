@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
 
@@ -9,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="projects" element={<Projects />} />
-          <Route path="resume" element={<Resume />} />
+          <Route path="projects" element={<Projects />} />
+          {/* <Route path="resume" element={<Resume />} />
           <Route path="contact" element={<Contact />} /> */}
         </Route>
       </Routes>

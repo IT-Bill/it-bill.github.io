@@ -1,15 +1,14 @@
 import type { Project, Experience, Skill } from '@/lib/types';
 import { 
   Code2, 
-  Database, 
   BrainCircuit, 
-  Cpu, 
   Layout, 
   Server, 
-  GitBranch, 
   Terminal, 
   Cloud 
 } from 'lucide-react';
+import tbgBattleSystemImage from './assets/projects/tbg-battle-system-in-ministm32.png';
+import simpleCompilerImage from './assets/projects/simple-compiler.png';
 
 export const PROJECTS: Project[] = [
   {
@@ -41,12 +40,27 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '4',
-    title: 'IoT Weather Station',
+    title: 'TBG Battle System in MiniSTM32',
     category: 'Embedded Systems',
-    description: 'Designed and built a weather monitoring device that collects sensor data and sends it to a cloud platform for real-time visualization.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuANnGtlK1drkDkl5-FIf3Ui_pSTP82GmkHAh7UymbHduJTPXJxTTB94rh8SwQQoEyoeG6DVEYWx52LvgCuwJUopLEB63dh8-1fsqaUiX6XIWZK5k1zX58PCTHcpoAchCDAJOfic7fOzHbCS1j5luO3gcFsaCJA5BII3uhrom4QO9mCo9KC7bWZsPpwz3tjas1wW_vvDxVZloir1DmXZ8yPNzcHTHfyaHg9nz0zl9PRlbNKLJAEOb8q7jzCbKGULeTy5EvFr8ck1mcvL',
+    description: 'The system lets players choose actions for their customizable characters, track HP, and engage in real-time multiplayer matches using miniSTM32 boards with accurate data transmission.',
+    image: tbgBattleSystemImage,
     techStack: ['C++', 'Arduino', 'MQTT', 'PlatformIO'],
-    demoUrl: '#'
+    startDate: '2023-01-15',
+    endDate: '2023-02-15',
+    repoUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System',
+    reportUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System/blob/main/report.pdf',
+  },
+  {
+    id: '5',
+    title: 'Simple Compiler',
+    category: 'Embedded Systems',
+    description: 'Developed a simple compiler (still has 15,000 lines) that translates C language files into Intermediate Representation (IR) and MIPS32 assembly. The compiler supports essential features such as I/O operations, control flow and function calls. It includes comprehensive lexical, syntax, and semantic analysis, along with informative error messages.',
+    image: simpleCompilerImage,
+    techStack: ['C++', 'Arduino', 'MQTT', 'PlatformIO'],
+    startDate: '2023-01-15',
+    endDate: '2023-02-15',
+    repoUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System',
+    reportUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System/blob/main/report.pdf',
   }
 ];
 

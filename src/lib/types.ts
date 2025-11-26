@@ -7,7 +7,10 @@ export interface Project {
   description: string;
   image: string;
   techStack: string[];
+  startDate?: string;
+  endDate?: string;
   repoUrl?: string;
+  reportUrl?: string;
   demoUrl?: string;
 }
 
