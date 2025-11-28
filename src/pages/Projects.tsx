@@ -91,20 +91,20 @@ const Projects: React.FC = () => {
 
                 <div className="pt-4 border-t border-border/60 flex justify-end gap-3">
                    {project.repoUrl && (
-                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors bg-card border border-border px-4 py-2 rounded-lg hover:border-primary/50 hover:bg-muted/20">
                        <Github size={16} />
                        Code
                      </a>
                    )}
                    {project.demoUrl && (
-                     <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors bg-card border border-border px-4 py-2 rounded-lg hover:border-primary/50 hover:bg-muted/20">
                        <Projector size={16} />
                        Demo
                      </a>
                    )}
 
                    {project.reportUrl && (
-                     <a href={project.reportUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.reportUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors bg-card border border-border px-4 py-2 rounded-lg hover:border-primary/50 hover:bg-muted/20">
                        <FileChartLine size={16} />
                        Report
                      </a>

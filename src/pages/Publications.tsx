@@ -40,6 +40,8 @@ const Publications: React.FC = () => {
               {pub.paperUrl && (
                 <a
                   href={pub.paperUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors bg-card border border-border px-4 py-2 rounded-lg hover:border-primary/50 hover:bg-muted/20"
                 >
                   <FileText size={18} /> Read Paper
@@ -48,6 +50,8 @@ const Publications: React.FC = () => {
               {pub.repoUrl && (
                 <a
                   href={pub.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors bg-card border border-border px-4 py-2 rounded-lg hover:border-primary/50 hover:bg-muted/20"
                 >
                   <Code size={18} /> View Code
