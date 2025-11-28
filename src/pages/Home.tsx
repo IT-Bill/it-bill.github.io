@@ -1,7 +1,13 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { PROJECTS } from '../constants';
-import { ArrowRight, Code, Database, BrainCircuit, Terminal } from 'lucide-react';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { PROJECTS } from "../constants";
+import {
+  ArrowRight,
+  Code,
+  Database,
+  BrainCircuit,
+  Terminal,
+} from "lucide-react";
 
 const Home: React.FC = () => {
   return (
@@ -18,11 +24,34 @@ const Home: React.FC = () => {
               </div>
               <h1 className="text-5xl font-black tracking-tight text-foreground mb-6 leading-tight">
                 Zhanwei ZHANG
-                <span className="block text-2xl font-medium text-muted-foreground mt-2">M.Phil. in Data Science and Technology</span>
-                <span className="block text-2xl font-medium text-muted-foreground mt-2">Hong Kong University of Science and Technology (Guangzhou)</span>
+                <span className="block text-xl font-medium text-muted-foreground mt-2">
+                  <a
+                    href="https://www.hkust-gz.edu.cn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary hover:underline transition-colors "
+                  >
+                    The Hong Kong University of Science and Technology
+                    (Guangzhou)
+                  </a>
+                </span>
+                <span className="block text-xl font-medium text-muted-foreground mt-2">
+                  M.Phil. in{" "}
+                  <a
+                    href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary hover:underline transition-colors "
+                  >
+                    Thrust of Data Science and Analytics
+                  </a>
+                </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
-                A dedicated and innovative engineer with a strong background in software development and machine learning, seeking to apply academic knowledge and practical skills to solve complex challenges.
+                A dedicated and innovative engineer with a strong background in
+                software development and machine learning, seeking to apply
+                academic knowledge and practical skills to solve complex
+                challenges.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
@@ -33,7 +62,7 @@ const Home: React.FC = () => {
                 >
                   Download CV
                 </a>
-                <NavLink 
+                <NavLink
                   to="/projects"
                   className="h-12 px-8 rounded-lg bg-foreground/10 text-foreground font-bold hover:bg-foreground/20 transition-colors flex items-center gap-2"
                 >
@@ -45,8 +74,8 @@ const Home: React.FC = () => {
             {/* Avatar */}
             <div className="shrink-0 w-64 h-64 md:w-80 md:h-80 relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-              <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR" 
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR"
                 alt="Zhanwei ZHANG"
                 className="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
               />
@@ -58,21 +87,36 @@ const Home: React.FC = () => {
       {/* Quick Skills */}
       <section className="py-16 bg-muted/40 border-y border-border/60">
         <div className="container mx-auto px-4 md:px-8">
-          <h2 className="text-2xl font-bold text-foreground mb-8 text-center md:text-left">Core Competencies</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-8 text-center md:text-left">
+            Core Competencies
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-             {[
-               { name: 'Full Stack Dev', icon: <Code className="text-primary" /> },
-               { name: 'Machine Learning', icon: <BrainCircuit className="text-primary" /> },
-               { name: 'Database Systems', icon: <Database className="text-primary" /> },
-               { name: 'DevOps & Cloud', icon: <Terminal className="text-primary" /> }
-             ].map((skill, idx) => (
-               <div key={idx} className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/60 hover:border-primary/50 transition-colors">
-                 <div className="p-3 rounded-lg bg-primary/10">
-                   {skill.icon}
-                 </div>
-                 <span className="font-bold text-foreground">{skill.name}</span>
-               </div>
-             ))}
+            {[
+              {
+                name: "Full Stack Dev",
+                icon: <Code className="text-primary" />,
+              },
+              {
+                name: "Machine Learning",
+                icon: <BrainCircuit className="text-primary" />,
+              },
+              {
+                name: "Database Systems",
+                icon: <Database className="text-primary" />,
+              },
+              {
+                name: "DevOps & Cloud",
+                icon: <Terminal className="text-primary" />,
+              },
+            ].map((skill, idx) => (
+              <div
+                key={idx}
+                className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border/60 hover:border-primary/50 transition-colors"
+              >
+                <div className="p-3 rounded-lg bg-primary/10">{skill.icon}</div>
+                <span className="font-bold text-foreground">{skill.name}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -81,34 +125,51 @@ const Home: React.FC = () => {
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="flex items-center justify-between mb-12">
-            <h2 className="text-3xl font-bold text-foreground">Featured Projects</h2>
-            <NavLink to="/projects" className="text-primary hover:text-foreground transition-colors flex items-center gap-1">
+            <h2 className="text-3xl font-bold text-foreground">
+              Featured Projects
+            </h2>
+            <NavLink
+              to="/projects"
+              className="text-primary hover:text-foreground transition-colors flex items-center gap-1"
+            >
               View All <ArrowRight size={16} />
             </NavLink>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {PROJECTS.slice(0, 2).map((project) => (
-              <div key={project.id} className="group relative rounded-xl bg-card border border-border overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
-                 <div className="aspect-video w-full overflow-hidden">
-                   <img 
-                     src={project.image} 
-                     alt={project.title}
-                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                   />
-                 </div>
-                 <div className="p-6">
-                   <div className="text-primary text-xs font-bold uppercase tracking-wider mb-2">{project.category}</div>
-                   <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
-                   <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
-                   <div className="flex flex-wrap gap-2">
-                     {project.techStack.map((tech) => (
-                       <span key={tech} className="px-2 py-1 rounded-md bg-muted/40 text-muted-foreground text-xs font-medium border border-border/60">
-                         {tech}
-                       </span>
-                     ))}
-                   </div>
-                 </div>
+              <div
+                key={project.id}
+                className="group relative rounded-xl bg-card border border-border overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300"
+              >
+                <div className="aspect-video w-full overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="text-primary text-xs font-bold uppercase tracking-wider mb-2">
+                    {project.category}
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.techStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 rounded-md bg-muted/40 text-muted-foreground text-xs font-medium border border-border/60"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
