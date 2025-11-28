@@ -1,32 +1,15 @@
 import type { Project } from '@/lib/types';
 import tbgBattleSystemImage from '../assets/projects/tbg-battle-system-in-ministm32.png';
 import simpleCompilerImage from '../assets/projects/simple-compiler.png';
+import canteenTrafficMonitoringImage from '../assets/projects/canteen-traffic-monitoring.png';
+import capacitatedArcRoutingProblemProjectImage from '../assets/projects/capacitated-arc-routing-problem-project.png';
+import cpuInMinisysImage from '../assets/projects/cpu-in-minisys.png';
+import estimatingGlobalAviationCo2EmissionsImage from '../assets/projects/estimating-global-aviation-co2-emissions-with-comprehensive-flight-data.png';
+import llmBasedJsonParserFuzzingImage from '../assets/projects/llm-based-json-parser-fuzzing-for-bug-discovery-and-behavioral-analysis.png';
+import othelloGameThroughJavaImage from '../assets/projects/othello-game-through-java.png';
+import reversedReversiThroughPythonImage from '../assets/projects/reversed-reversi-through-python-with-strong-ai.png';
 
 export const PROJECTS_DATA: Omit<Project, 'id'>[] = [
-  {
-    title: 'Full-Stack E-commerce Platform',
-    category: 'Web Development',
-    description: 'A comprehensive e-commerce solution with features like product management, user authentication, and a payment gateway.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGANXxtxTC8gho-G7Tjy94Z_0YZ1wasxw6H0mQ1mxK7UFoaUA-tcvqKKAB4hHxh5TZ5XqqunH80Bid5iDAHz654XdjyFBHq3BtfWK71H4Zox7YEwC3Vs94XTALjvAHyupHKIBNAOIz3hf6PcSiGTGUBUCIHyVcY4uTlmkSc9NDVngC222HOharx6bd26FXb6oJaTI_Boyh6j0e-GzClwr27LSJAmSeyXKE6Sx0aZEe8JbnQpUOpYzkVE2Ac4W-wm2L9jgYpc_J6mAd',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    repoUrl: '#'
-  },
-  {
-    title: 'Real-time Object Detection System',
-    category: 'Machine Learning',
-    description: 'Developed a system to detect and classify objects in a live video stream using a custom-trained deep learning model.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAh38tCO4bWRoHsjEUtweupmgV_ha9khVGWadZJCteau9hs1wexsW8P0ugz8h52C-Jyx_JnZZ_KFZYy6hSk8M0ykLNzATksUoHWZRaAl421BpAeLABMGx7LZWcX2bZDVTu5BFXPtDXHZ8y667GGz8D_iU-4LHYz1_nUnYZb7LB_NM58XBtYNbNiz4f-OSFA1f3XtP3-BJx0ZJnwmRwgaif0nRUQi-AoPy4Y0Steotn-cjH_MgVNf_EGDQ4Q5fmvX2ISePchfgg_VMtl',
-    techStack: ['Python', 'TensorFlow', 'OpenCV', 'Docker'],
-    demoUrl: '#'
-  },
-  {
-    title: 'Customer Churn Prediction Model',
-    category: 'Data Science',
-    description: 'Analyzed a large dataset of customer behavior to build a predictive model that identifies customers at high risk of churning.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC00aEH80r1OVQBcbyu3_NVG4F4LUkxy03t4YyKnoBzCO5KTq95noUfzjmeC9TGY-J2FO5kFM7UkT56MtAZciW4wn7-FKUitm4BU-ZmzGkl67VkhQRyK__59C_NY8FJ4Tryf-Vy19We4Vo6abom_rEjX2s1Npj55RGpzm3Y7i6NvhifhRUzdynk1hnlGEk7ka9QROgSMHf8sqGIoxEIWQ4pQvC7hwYESbu4rT_mhRCtIgiKIJZF61EUi9abv-d3F4Zx9XiSBB5rCQtc',
-    techStack: ['Python', 'Pandas', 'Scikit-learn', 'Jupyter'],
-    repoUrl: '#'
-  },
   {
     title: 'TBG Battle System in MiniSTM32',
     category: 'Embedded Systems',
@@ -48,5 +31,70 @@ export const PROJECTS_DATA: Omit<Project, 'id'>[] = [
     endDate: '2023-02-15',
     repoUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System',
     reportUrl: 'https://github.com/IT-Bill/CS301-TBG-Battle-System/blob/main/report.pdf',
+  },
+  {
+    title: 'Canteen Traffic Monitoring',
+    category: 'Data Science',
+    description: 'Calculated the canteen queue length from live monitoring data and visualized how the queue changed over time, attracting 30,000 visits in three months.',
+    image: canteenTrafficMonitoringImage,
+    techStack: ['Data Monitoring', 'Time Series Analysis', 'Interactive Dashboards'],
+    startDate: '2023-12-31',
+    repoUrl: 'https://github.com/SUSTech-CRA/sustech-online-ng',
+    demoUrl: 'https://sustech.online/canteen/',
+  },
+  {
+    title: 'Capacitated Arc Routing Problem Project',
+    category: 'Machine Learning',
+    description: 'Built a memetic and hybrid metaheuristic solver that reaches optimal CARP solutions on small and medium graphs within 180 seconds and delivers competitive performance on 255-vertex networks.',
+    image: capacitatedArcRoutingProblemProjectImage,
+    techStack: ['Memetic Algorithm', 'Heuristics', 'Combinatorial Optimization'],
+    startDate: '2023-05-01',
+    repoUrl: 'https://github.com/IT-Bill/CS311-AI/tree/main/Proj-CARP',
+    reportUrl: 'https://github.com/IT-Bill/CS311-AI/blob/main/Proj-CARP/CARP_Report.pdf',
+  },
+  {
+    title: 'CPU in Minisys',
+    category: 'Embedded Systems',
+    description: 'Implemented a Minisys-compatible CPU that supports 32 core instructions, parses COE binaries, and interfaces with users through the Minisys development board.',
+    image: cpuInMinisysImage,
+    techStack: ['Verilog', 'Digital Design', 'FPGA'],
+    startDate: '2023-06-01',
+    repoUrl: 'https://github.com/IT-Bill/CS214-CPU',
+    demoUrl: 'https://github.com/IT-Bill/CS214-CPU/blob/main/image/video.mp4',
+  },
+  {
+    title: 'Estimating Global Aviation CO2 Emissions with Comprehensive Flight Data',
+    category: 'Data Science',
+    description: 'Processed 10 TB of Flightradar24 data covering 153 million flights to model aircraft-level CO2 emissions, explain 99.4% of emission variance, and highlight taxi optimization strategies that cut emissions by up to 20%.',
+    image: estimatingGlobalAviationCo2EmissionsImage,
+    techStack: ['Big Data Analytics', 'Statistical Modeling', 'Machine Learning'],
+    startDate: '2022-05-01',
+  },
+  {
+    title: 'LLM-Based JSON Parser Fuzzing for Bug Discovery and Behavioral Analysis',
+    category: 'Machine Learning',
+    description: 'Used open-source LLMs such as Llama2-7B/13B to synthesize diverse JSON inputs, exercising 13 parsers with 100+ case types and surfacing 26 behavioral divergences.',
+    image: llmBasedJsonParserFuzzingImage,
+    techStack: ['Python', 'LLM', 'Fuzzing'],
+    startDate: '2023-10-01',
+    reportUrl: '/uploads/llm-json-parser-fuzzing-final-report.pdf',
+  },
+  {
+    title: 'Othello Game through Java',
+    category: 'Web Development',
+    description: 'Developed a visually engaging Othello experience with an interactive Swing interface and smooth in-game animations.',
+    image: othelloGameThroughJavaImage,
+    techStack: ['Java', 'Swing'],
+    startDate: '2021-12-01',
+    repoUrl: 'https://github.com/IT-Bill/Reversi-Java',
+  },
+  {
+    title: 'Reversed Reversi through Python with Strong AI',
+    category: 'Machine Learning',
+    description: 'Implemented Monte Carlo search together with FAST alpha-beta pruning accelerated by bitwise operations to build a strong Reversed Reversi AI.',
+    image: reversedReversiThroughPythonImage,
+    techStack: ['Python', 'Monte Carlo Search', 'Alpha-Beta Pruning'],
+    startDate: '2022-10-01',
+    repoUrl: 'https://github.com/IT-Bill/CS311-AI/tree/main/Proj-Reversed-Reversi',
   }
 ];
