@@ -31,3 +31,14 @@ export interface Skill {
   useCase?: string;
   icon?: React.ReactNode;
 }
+
+export interface Publication {
+  id: string;
+  title: string;
+  conference: string;
+  year: string;
+  authors: string[];
+  description: string;
+  paperUrl?: string;
+  repoUrl?: string;
+}

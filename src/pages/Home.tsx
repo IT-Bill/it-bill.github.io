@@ -16,9 +16,10 @@ const Home: React.FC = () => {
                 <span className="flex h-2 w-2 rounded-full mr-2 animate-pulse bg-primary"></span>
                 Available for hire
               </div>
-              <h1 className="text-4xl md:text-6xl font-black tracking-tight text-foreground mb-6 leading-tight">
+              <h1 className="text-5xl font-black tracking-tight text-foreground mb-6 leading-tight">
                 Zhanwei ZHANG
-                <span className="block text-2xl md:text-3xl font-medium text-muted-foreground mt-2">MPhil in Computer Science and Technology</span>
+                <span className="block text-2xl font-medium text-muted-foreground mt-2">M.Phil. in Data Science and Technology</span>
+                <span className="block text-2xl font-medium text-muted-foreground mt-2">Hong Kong University of Science and Technology (Guangzhou)</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
                 A dedicated and innovative engineer with a strong background in software development and machine learning, seeking to apply academic knowledge and practical skills to solve complex challenges.
