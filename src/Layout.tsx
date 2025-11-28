@@ -7,6 +7,14 @@ import ModeToggle from "@/components/mode-toggle";
 const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const navLinks = [
+    { to: '/', label: 'Home' },
+    { to: '/experiences', label: 'Experiences' },
+    { to: '/publications', label: 'Publications' },
+    { to: '/projects', label: 'Projects' },
+    { to: '/resume', label: 'Resume & Skills' }
+  ];
+
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMenu = () => setIsMobileMenuOpen(false);
 
@@ -23,36 +31,15 @@ const Layout: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <NavLink 
-                to="/" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
-              >
-                Home
-              </NavLink>
-              <NavLink 
-                to="/experiences" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
-              >
-                Experiences
-              </NavLink>
-              <NavLink 
-                to="/publications" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
-              >
-                Publications
-              </NavLink>
-              <NavLink 
-                to="/projects" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
-              >
-                Projects
-              </NavLink>
-              <NavLink 
-                to="/resume" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
-              >
-                Resume & Skills
-              </NavLink>
+              {navLinks.map(({ to, label }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
+                >
+                  {label}
+                </NavLink>
+              ))}
             </nav>
 
 
@@ -80,41 +67,16 @@ const Layout: React.FC = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-border/60 bg-background px-4 py-4 space-y-4">
-            <NavLink 
-              to="/" 
-              onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
-            >
-              Home
-            </NavLink>
-            <NavLink 
-              to="/experiences" 
-              onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
-            >
-              Experiences
-            </NavLink>
-            <NavLink 
-              to="/publications" 
-              onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
-            >
-              Publications
-            </NavLink>
-            <NavLink 
-              to="/projects" 
-              onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
-            >
-              Projects
-            </NavLink>
-            <NavLink 
-              to="/resume" 
-              onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
-            >
-              Resume & Skills
-            </NavLink>
+            {navLinks.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                onClick={closeMenu}
+                className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
+              >
+                {label}
+              </NavLink>
+            ))}
             <NavLink 
               to="/contact" 
               onClick={closeMenu}

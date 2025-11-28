@@ -120,7 +120,8 @@
 }
 
 body {
-  font-family: 'Aptos', sans-serif;
+  font-family: "Inter", "Noto Sans SC", system-ui, sans-serif;
+  overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
