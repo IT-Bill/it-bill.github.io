@@ -30,6 +30,12 @@ const Layout: React.FC = () => {
                 Home
               </NavLink>
               <NavLink 
+                to="/experiences" 
+                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
+              >
+                Experiences
+              </NavLink>
+              <NavLink 
                 to="/publications" 
                 className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
               >
@@ -80,6 +86,13 @@ const Layout: React.FC = () => {
               className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
             >
               Home
+            </NavLink>
+            <NavLink 
+              to="/experiences" 
+              onClick={closeMenu}
+              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
+            >
+              Experiences
             </NavLink>
             <NavLink 
               to="/publications" 
