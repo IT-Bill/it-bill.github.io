@@ -19,8 +19,7 @@ const Projects: React.FC = () => {
   return (
     <div className="container mx-auto px-4 md:px-8 py-12">
       <div className="max-w-4xl mb-12">
-        <h1 className="text-4xl font-black text-white mb-4">My Projects & Portfolio</h1>
-        <p className="text-gray-400 text-lg">
+        <p className="text-muted-foreground text-lg">
           A collection of my work in web development, machine learning, and data science. 
           Each project represents a unique challenge and solution.
         </p>
@@ -34,8 +33,8 @@ const Projects: React.FC = () => {
             onClick={() => setFilter(category)}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
               filter === category
-                ? 'bg-primary text-white shadow-lg shadow-primary/25'
-                : 'bg-card-dark text-gray-400 hover:bg-white/10 hover:text-white'
+                ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25'
+                : 'bg-card text-muted-foreground hover:bg-muted/60 hover:text-foreground'
             }`}
           >
             {category}
@@ -46,14 +45,14 @@ const Projects: React.FC = () => {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {filteredProjects.map((project) => (
-          <div key={project.id} className="group flex flex-col rounded-xl bg-card-dark border border-border-dark overflow-hidden hover:border-primary/50 transition-all duration-300">
+          <div key={project.id} className="group flex flex-col rounded-xl bg-card border border-border/70 overflow-hidden hover:border-primary/50 transition-all duration-300">
             {/* Image Container */}
             <div className="relative w-full aspect-video overflow-hidden">
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent dark:from-black/70 z-10 opacity-60 group-hover:opacity-40 transition-opacity"></div>
               <img 
                 src={project.image} 
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500"
               />
               <div className="absolute bottom-4 left-4 z-20">
                  <span className="px-3 py-1 rounded-full bg-primary/90 text-primary-foreground text-xs font-bold shadow-sm backdrop-blur-sm">
@@ -67,20 +66,20 @@ const Projects: React.FC = () => {
               <h3 className="text-xl font-bold text-primary mb-2">{project.title}</h3>
               
               {(project.startDate || project.endDate) && (
-                <p className="text-xs text-primary/80 font-medium mb-3">
+                <p className="text-xs text-muted-foreground font-medium mb-3">
                   {formatDate(project.startDate)}
                   {project.startDate && project.endDate && ' - '}
                   {formatDate(project.endDate)}
                 </p>
               )}
 
-              <p className="text-gray-400 text-sm mb-6 flex-1 leading-relaxed">
+              <p className="text-muted-foreground text-sm mb-6 flex-1 leading-relaxed">
                 {project.description}
               </p>
 
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Tech Stack</p>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Tech Stack</p>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech) => (
                       <span key={tech} className="px-2.5 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
@@ -90,29 +89,29 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-white/5 flex justify-end gap-3">
+                <div className="pt-4 border-t border-border/60 flex justify-end gap-3">
                    {project.repoUrl && (
-                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
                        <Github size={16} />
                        Code
                      </a>
                    )}
                    {project.demoUrl && (
-                     <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.demoUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
                        <Projector size={16} />
                        Demo
                      </a>
                    )}
 
                    {project.reportUrl && (
-                     <a href={project.reportUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-primary-foreground text-sm font-medium transition-colors">
+                     <a href={project.reportUrl} target='_blank' rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium transition-colors">
                        <FileChartLine size={16} />
                        Report
                      </a>
                    )}
 
                    {!project.repoUrl && !project.demoUrl && (
-                     <span className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 text-gray-500 text-sm font-medium cursor-not-allowed">
+                     <span className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted text-muted-foreground text-sm font-medium cursor-not-allowed">
                        <FolderOpen size={16} />
                        Private
                      </span>

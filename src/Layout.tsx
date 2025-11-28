@@ -12,11 +12,11 @@ const Layout: React.FC = () => {
 
   return (
     <div>
-      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-2 text-white">
+            <div className="flex items-center gap-2 text-foreground">
               <Cpu className="text-primary size-6" />
               <h1 className="text-xl font-bold tracking-tight">Zhanwei Zhang</h1>
             </div>
@@ -25,19 +25,19 @@ const Layout: React.FC = () => {
             <nav className="hidden md:flex items-center gap-8">
               <NavLink 
                 to="/" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-white' : 'text-gray-400'}`}
+                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
               >
                 Home
               </NavLink>
               <NavLink 
                 to="/projects" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-white' : 'text-gray-400'}`}
+                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
               >
                 Projects
               </NavLink>
               <NavLink 
                 to="/resume" 
-                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-white' : 'text-gray-400'}`}
+                className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
               >
                 Resume & Skills
               </NavLink>
@@ -49,7 +49,7 @@ const Layout: React.FC = () => {
               <ModeToggle />
               <NavLink 
                 to="/contact"
-                className="flex items-center justify-center h-9 px-4 rounded-md bg-primary text-white text-sm font-bold hover:bg-primary-hover transition-colors"
+                className="flex items-center justify-center h-9 px-4 rounded-md bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors"
               >
                 Contact
               </NavLink>
@@ -57,7 +57,7 @@ const Layout: React.FC = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden p-2 text-gray-400 hover:text-white"
+              className="md:hidden p-2 text-muted-foreground hover:text-foreground"
               onClick={toggleMenu}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,25 +67,25 @@ const Layout: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-white/10 bg-background-dark px-4 py-4 space-y-4">
+          <div className="md:hidden border-t border-border/60 bg-background px-4 py-4 space-y-4">
             <NavLink 
               to="/" 
               onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium ${isActive ? 'text-primary' : 'text-gray-300'}`}
+              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
             >
               Home
             </NavLink>
             <NavLink 
               to="/projects" 
               onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium ${isActive ? 'text-primary' : 'text-gray-300'}`}
+              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
             >
               Projects
             </NavLink>
             <NavLink 
               to="/resume" 
               onClick={closeMenu}
-              className={({ isActive }) => `block text-base font-medium ${isActive ? 'text-primary' : 'text-gray-300'}`}
+              className={({ isActive }) => `block text-base font-medium transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
             >
               Resume & Skills
             </NavLink>
@@ -105,27 +105,27 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
 
-      <footer className="border-t border-white/10 bg-background-dark mt-auto">
+      <footer className="border-t border-border/60 bg-card mt-auto">
         <div className="container mx-auto px-4 md:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-white text-lg font-bold mb-1">Zhanwei Zhang</h3>
-              <p className="text-gray-400 text-sm">Aspiring Software Engineer & Machine Learning Researcher</p>
+              <h3 className="text-foreground text-lg font-bold mb-1">Zhanwei Zhang</h3>
+              <p className="text-muted-foreground text-sm">Aspiring Software Engineer & Machine Learning Researcher</p>
             </div>
             
             <div className="flex items-center gap-4">
-              <a href="#" className="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-full transition-all">
+              <a href="#" className="p-2 text-muted-foreground hover:text-foreground hover:bg-foreground/10 rounded-full transition-all">
                 <Github size={20} />
               </a>
-              <a href="#" className="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-full transition-all">
+              <a href="#" className="p-2 text-muted-foreground hover:text-foreground hover:bg-foreground/10 rounded-full transition-all">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:yuan.li@example.com" className="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-full transition-all">
+              <a href="mailto:yuan.li@example.com" className="p-2 text-muted-foreground hover:text-foreground hover:bg-foreground/10 rounded-full transition-all">
                 <Mail size={20} />
               </a>
             </div>
           </div>
-          <div className="mt-8 text-center text-gray-600 text-xs">
+          <div className="mt-8 text-center text-muted-foreground text-xs">
             © {new Date().getFullYear()} Zhanwei Zhang. All Rights Reserved.
           </div>
         </div>
