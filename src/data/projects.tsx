@@ -77,7 +77,7 @@ export const PROJECTS_DATA: Omit<Project, 'id'>[] = [
     image: llmBasedJsonParserFuzzingImage,
     techStack: ['Python', 'LLM', 'Fuzzing'],
     startDate: '2023-10-01',
-    reportUrl: '/uploads/llm-json-parser-fuzzing-final-report.pdf',
+    reportUrl: '/llm-json-parser-fuzzing-final-report.pdf',
   },
   {
     title: 'Othello Game through Java',

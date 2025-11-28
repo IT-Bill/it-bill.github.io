@@ -18,7 +18,7 @@ const Layout: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center gap-2 text-foreground">
               <Cpu className="text-primary size-6" />
-              <h1 className="text-xl font-bold tracking-tight">Zhanwei Zhang</h1>
+              <h1 className="text-xl font-bold tracking-tight">Zhanwei ZHANG</h1>
             </div>
 
             {/* Desktop Navigation */}
@@ -109,7 +109,7 @@ const Layout: React.FC = () => {
         <div className="container mx-auto px-4 md:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-foreground text-lg font-bold mb-1">Zhanwei Zhang</h3>
+              <h3 className="text-foreground text-lg font-bold mb-1">Zhanwei ZHANG</h3>
               <p className="text-muted-foreground text-sm">Aspiring Software Engineer & Machine Learning Researcher</p>
             </div>
             
@@ -126,7 +126,7 @@ const Layout: React.FC = () => {
             </div>
           </div>
           <div className="mt-8 text-center text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Zhanwei Zhang. All Rights Reserved.
+            © {new Date().getFullYear()} Zhanwei ZHANG. All Rights Reserved.
           </div>
         </div>
       </footer>

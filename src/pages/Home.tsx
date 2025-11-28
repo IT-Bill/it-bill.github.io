@@ -13,20 +13,25 @@ const Home: React.FC = () => {
             {/* Text Content */}
             <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
               <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
-                <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+                <span className="flex h-2 w-2 rounded-full mr-2 animate-pulse bg-primary"></span>
                 Available for hire
               </div>
               <h1 className="text-4xl md:text-6xl font-black tracking-tight text-foreground mb-6 leading-tight">
-                Zhanwei Zhang
-                <span className="block text-2xl md:text-3xl font-medium text-muted-foreground mt-2">M.S. in Computer Engineering</span>
+                Zhanwei ZHANG
+                <span className="block text-2xl md:text-3xl font-medium text-muted-foreground mt-2">MPhil in Computer Science and Technology</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
                 A dedicated and innovative engineer with a strong background in software development and machine learning, seeking to apply academic knowledge and practical skills to solve complex challenges.
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <button className="h-12 px-8 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
+                <a
+                  href="/cv-zhanwei.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center px-8 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+                >
                   Download CV
-                </button>
+                </a>
                 <NavLink 
                   to="/projects"
                   className="h-12 px-8 rounded-lg bg-foreground/10 text-foreground font-bold hover:bg-foreground/20 transition-colors flex items-center gap-2"
@@ -41,7 +46,7 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
               <img 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR" 
-                alt="Zhanwei Zhang"
+                alt="Zhanwei ZHANG"
                 className="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
               />
             </div>

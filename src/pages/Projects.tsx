@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
                      </a>
                    )}
 
-                   {!project.repoUrl && !project.demoUrl && (
+                   {!project.repoUrl && !project.demoUrl && !project.reportUrl && (
                      <span className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted text-muted-foreground text-sm font-medium cursor-not-allowed">
                        <FolderOpen size={16} />
                        Private
