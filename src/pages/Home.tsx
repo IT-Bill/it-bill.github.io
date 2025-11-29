@@ -7,6 +7,11 @@ import {
   Database,
   BrainCircuit,
   Terminal,
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  GraduationCap,
 } from "lucide-react";
 
 const Home: React.FC = () => {
@@ -15,44 +20,100 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-12 pb-20 md:pt-24 md:pb-32 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
-            {/* Text Content */}
+          <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
+            {/* Left Side - Avatar, Name, Position, Social */}
+            <div className="flex flex-col items-center text-center shrink-0">
+              {/* Avatar */}
+              <div className="w-48 h-48 md:w-56 md:h-56 relative mb-6">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR"
+                  alt="Zhanwei ZHANG"
+                  className="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
+                />
+              </div>
+
+              {/* Name */}
+              <h1 className="text-3xl md:text-4xl font-black tracking-tight text-foreground mb-2">
+                Zhanwei ZHANG
+              </h1>
+
+              {/* Position */}
+              <div className="text-sm md:text-base text-muted-foreground mb-1">
+                <a
+                  href="https://www.hkust-gz.edu.cn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:underline transition-colors"
+                >
+                  HKUST(GZ)
+                </a>
+              </div>
+              <div className="text-sm md:text-base text-muted-foreground mb-4">
+                M.Phil. in{" "}
+                <a
+                  href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:underline transition-colors"
+                >
+                  DSA
+                </a>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex gap-3">
+                <a
+                  href="https://github.com/IT-Bill"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github size={20} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/it-bill/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a
+                  href="https://x.com/IT_Billx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter size={20} />
+                </a>
+                <a
+                  href="mailto:zzhang364@connect.hkust-gz.edu.cn"
+                  className="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  aria-label="Email"
+                >
+                  <Mail size={20} />
+                </a>
+              </div>
+            </div>
+
+            {/* Right Side - Content */}
             <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
               <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6">
                 <span className="flex h-2 w-2 rounded-full mr-2 animate-pulse bg-primary"></span>
                 Available for hire
               </div>
-              <h1 className="text-5xl font-black tracking-tight text-foreground mb-6 leading-tight">
-                Zhanwei ZHANG
-                <span className="block text-xl font-medium text-muted-foreground mt-2">
-                  <a
-                    href="https://www.hkust-gz.edu.cn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary hover:underline transition-colors "
-                  >
-                    The Hong Kong University of Science and Technology
-                    (Guangzhou)
-                  </a>
-                </span>
-                <span className="block text-xl font-medium text-muted-foreground mt-2">
-                  M.Phil. in{" "}
-                  <a
-                    href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary hover:underline transition-colors "
-                  >
-                    Thrust of Data Science and Analytics
-                  </a>
-                </span>
-              </h1>
+
               <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
                 A dedicated and innovative engineer with a strong background in
                 software development and machine learning, seeking to apply
                 academic knowledge and practical skills to solve complex
                 challenges.
               </p>
+
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
                   href="/cv-zhanwei.pdf"
@@ -62,23 +123,47 @@ const Home: React.FC = () => {
                 >
                   Download CV
                 </a>
-                <NavLink
-                  to="/projects"
-                  className="h-12 px-8 rounded-lg bg-foreground/10 text-foreground font-bold hover:bg-foreground/20 transition-colors flex items-center gap-2"
-                >
-                  View Projects <ArrowRight size={18} />
-                </NavLink>
               </div>
-            </div>
 
-            {/* Avatar */}
-            <div className="shrink-0 w-64 h-64 md:w-80 md:h-80 relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR"
-                alt="Zhanwei ZHANG"
-                className="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
-              />
+              {/* Education */}
+              <div className="mt-10 w-full">
+                <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                  <GraduationCap className="text-primary" size={24} />
+                  Education
+                </h2>
+                <div className="space-y-4">
+                  <div className="p-4 rounded-xl bg-card border border-border/60">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="font-bold text-foreground">
+                          M.Phil. in Data Science and Analytics
+                        </h3>
+                        <p className="text-muted-foreground text-sm">
+                          The Hong Kong University of Science and Technology (Guangzhou)
+                        </p>
+                      </div>
+                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-4">
+                        2025 - Present
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-4 rounded-xl bg-card border border-border/60">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="font-bold text-foreground">
+                          B.Eng. in Computer Science and Technology
+                        </h3>
+                        <p className="text-muted-foreground text-sm">
+                          Southern University of Science and Technology
+                        </p>
+                      </div>
+                      <span className="text-xs text-muted-foreground whitespace-nowrap ml-4">
+                        2021 - 2025
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
