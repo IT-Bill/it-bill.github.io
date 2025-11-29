@@ -1,6 +1,6 @@
 import type React from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import { Menu, X, Cpu, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from "react";
 import ModeToggle from "@/components/mode-toggle";
 
@@ -12,7 +12,6 @@ const Layout: React.FC = () => {
     { to: '/experiences', label: 'Experiences' },
     { to: '/publications', label: 'Publications' },
     { to: '/projects', label: 'Projects' },
-    { to: '/resume', label: 'Resume & Skills' }
   ];
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -25,7 +24,6 @@ const Layout: React.FC = () => {
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-2 text-foreground">
-              <Cpu className="text-primary size-6" />
               <h1 className="text-xl font-bold tracking-tight">Zhanwei ZHANG</h1>
             </div>
 
