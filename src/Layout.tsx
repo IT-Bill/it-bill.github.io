@@ -33,7 +33,7 @@ const Layout: React.FC = () => {
                 <NavLink
                   key={to}
                   to={to}
-                  className={({ isActive }) => `text-sm font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
+                  className={({ isActive }) => `text-base font-medium transition-colors hover:text-primary ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}
                 >
                   {label}
                 </NavLink>
