@@ -221,7 +221,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Tools & Languages & Frameworks */}
-      <section className="py-16">
+      <section className="py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
           {/* Tools */}
           <div className="mb-10">
