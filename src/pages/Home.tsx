@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { PROJECTS } from "../constants";
+import { PROJECTS } from "@/lib/constants";
 import {
   ArrowRight,
   Github,

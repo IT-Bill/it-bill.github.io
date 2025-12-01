@@ -1,5 +1,5 @@
 import React from "react";
-import { PUBLICATIONS } from "../constants";
+import { PUBLICATIONS } from "@/lib/constants";
 import { FileText, Code, Users, Calendar } from "lucide-react";
 
 const Publications: React.FC = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PROJECTS } from '../constants';
+import { PROJECTS } from '@/lib/constants';
 import { Github, FolderOpen, FileChartLine, Projector } from 'lucide-react';
 
 const Projects: React.FC = () => {

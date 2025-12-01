@@ -1,6 +1,6 @@
 import type { Experience } from '@/lib/types';
 import React from 'react';
-import { EXPERIENCE } from '@/constants';
+import { EXPERIENCE } from '@/lib/constants';
 import { GraduationCap, Briefcase, FlaskConical, CalendarDays, MapPin, Sparkles } from 'lucide-react';
 
 const getIconByType = (type: Experience['type']) => {
@@ -40,7 +40,7 @@ const Experiences: React.FC = () => {
                       {exp.institution}
                     </span>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed max-w-3xl">
+                  <p className="text-muted-foreground text-sm leading-relaxed max-w-3xl whitespace-pre-line">
                     {exp.description}
                   </p>
 

@@ -2,35 +2,27 @@ import type { Experience } from '@/lib/types';
 
 export const EXPERIENCE_DATA: Omit<Experience, 'id'>[] = [
   {
-    period: 'Sep 2022 - May 2024',
-    title: 'Master of Science in Computer Engineering',
-    institution: 'University of Example, City, State',
-    description: 'Focused on machine learning algorithms and distributed systems. Thesis project involved developing a novel approach for real-time data processing, improving efficiency by 15%.',
-    type: 'education',
-    tags: ['Python', 'Machine Learning', 'Distributed Systems']
-  },
-  {
-    period: 'May 2023 - Aug 2023',
-    title: 'Software Engineer Intern',
-    institution: 'Tech Solutions Inc.',
-    description: 'Contributed to the backend services for a major e-commerce platform. Implemented new API endpoints and optimized database queries, reducing average response time by 200ms.',
+    period: 'Sep 2024 - Aug 2025',
+    title: 'Large Language Model Intern',
+    institution: 'Linksome, Shenzhen',
+    description: '• Integrated multi-type Retrieval Augmented Generation (RAG) and GraphRAG systems.\n• Optimized GraphRAG code to extract better entities & relationships and construct domain-specific knowledge graphs.\n• Built a QA Pipeline for generating high-quality QA pairs from documents with accurate ground truth annotations.',
     type: 'work',
-    tags: ['Node.js', 'PostgreSQL', 'REST APIs', 'Docker']
+    tags: ['LLM', 'RAG', 'GraphRAG', 'Knowledge Graph', 'NLP']
   },
   {
-    period: 'Sep 2018 - May 2022',
-    title: 'Bachelor of Science in Electrical Engineering',
-    institution: 'State University',
-    description: 'Graduated with honors. Senior project focused on embedded systems design for an autonomous drone, utilizing C++ and ROS.',
-    type: 'education',
-    tags: ['C++', 'Embedded Systems', 'ROS']
-  },
-  {
-    period: 'Jan 2022 - May 2022',
-    title: 'Research Assistant',
-    institution: 'University Robotics Lab',
-    description: 'Assisted in research on sensor fusion for robotics, processing and analyzing sensor data using MATLAB and Python.',
+    period: 'May 2024 - Aug 2024',
+    title: 'Visiting Researcher',
+    institution: 'Wuhan University, Wuhan',
+    description: 'Advisor: Prof. Jinfu Chen (WHU); Prof. Weiyi Shang (UWaterloo)\n• Focused on software logging and failure workarounds.\n• Developed an automated analysis pipeline to extract, filter, and sample code commits containing try-catch blocks.\n• Conducted research on floating-point error detection, proposing novel approaches for identifying error-inducing inputs in numerical programs.',
     type: 'research',
-    tags: ['MATLAB', 'Data Analysis', 'Python']
-  }
+    tags: ['Software Engineering', 'Software Logging', 'Code Analysis', 'Floating-Point Errors']
+  },
+  {
+    period: 'Sep 2021 - Jun 2025',
+    title: 'B.Eng. in Computer Science and Technology',
+    institution: 'Southern University of Science and Technology (SUSTech)',
+    description: 'Turing Master Class | Advisor: Prof. Yepang Liu\nGPA: 3.79/4.0 | Weighted Avg Score: 90.92 | Ranking: 36/195\nMain courses: Math Logic (A+), Computer Programming (A+), Calculus (A), Linear Algebra (A), Data Structures & Algorithms (A), Database Systems (A-), Machine Learning (A), Compilers (B+)',
+    type: 'education',
+    tags: ['Machine Learning', 'Data Structures', 'Algorithms', 'Database Systems', 'Compilers']
+  },
 ];
