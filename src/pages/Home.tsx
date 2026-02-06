@@ -23,7 +23,7 @@ const Home: React.FC = () => {
               <div className="w-48 h-48 md:w-56 md:h-56 relative mb-6">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T9v4lYI2X295ofmKaNHenOugh4gNcJrEpUaDB73v5sO0M1AhyH1-CF_Iw-J-Hh6O9yJhmm7mUEGEuPKKC9SFyZ6g_mwxtLe3pEspIZeYbo1Xyx_6iYdTJugmsdYQuHfncCoQBowRmNvKheZoWjppC6reNJoEIT1LUbV4G8WK1YJNO0EJuMcXLLGk-nxOooNFbVTrQvkqaDf33CAciMN3Bk_l114yMUVAd9wp2Gfib70A3Ko2oQN2mGRCrPSTYwYOS-DZQOCYqsTR"
+                  src="/avatar.jpg"
                   alt="Zhanwei ZHANG"
                   className="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
                 />
