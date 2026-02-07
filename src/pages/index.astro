@@ -1,6 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { PROJECTS } from '../lib/constants';
+import { getCollection } from 'astro:content';
+
+const projectEntries = await getCollection('projects');
+const PROJECTS = projectEntries
+  .sort((a, b) => {
+    const da = a.data.startDate ? new Date(a.data.startDate).getTime() : 0;
+    const db = b.data.startDate ? new Date(b.data.startDate).getTime() : 0;
+    return db - da;
+  })
+  .map(e => ({ id: e.id, ...e.data }));
 ---
 
 <Layout title="Zhanwei ZHANG - Home">

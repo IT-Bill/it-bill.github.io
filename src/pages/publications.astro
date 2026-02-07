@@ -1,6 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { PUBLICATIONS } from '../lib/constants';
+import { getCollection } from 'astro:content';
+
+const pubEntries = await getCollection('publications');
+const PUBLICATIONS = pubEntries
+  .sort((a, b) => Number(b.data.year) - Number(a.data.year))
+  .map(e => ({ id: e.id, ...e.data }));
 ---
 
 <Layout title="Publications - Zhanwei ZHANG">
