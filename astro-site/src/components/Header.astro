@@ -1,0 +1,166 @@
+---
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/experiences', label: 'Experiences' },
+  { href: '/publications', label: 'Publications' },
+  { href: '/projects', label: 'Projects' },
+];
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2 text-foreground">
+        <h1 class="text-xl font-bold tracking-tight">Zhanwei ZHANG</h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        {navLinks.map(({ href, label }) => (
+          <a
+            href={href}
+            class:list={[
+              'text-base font-medium transition-colors hover:text-primary',
+              currentPath === href || (href !== '/' && currentPath.startsWith(href))
+                ? 'text-foreground'
+                : 'text-muted-foreground'
+            ]}
+          >
+            {label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- CTA Button + Theme Toggle -->
+      <div class="hidden md:flex items-center gap-4">
+        <button
+          id="theme-toggle"
+          class="inline-flex items-center justify-center h-9 w-9 rounded-md border border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer"
+          aria-label="Toggle theme"
+        >
+          <!-- Sun icon (shown in light mode) -->
+          <svg class="h-[1.2rem] w-[1.2rem] block dark:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path><path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path><path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Moon icon (shown in dark mode) -->
+          <svg class="h-[1.2rem] w-[1.2rem] hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <a 
+          href="/contact"
+          class="flex items-center justify-center h-9 px-4 rounded-md bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors"
+        >
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-muted-foreground hover:text-foreground cursor-pointer"
+        aria-label="Toggle menu"
+      >
+        <!-- Hamburger icon -->
+        <svg id="menu-open-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <!-- X icon -->
+        <svg id="menu-close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div id="mobile-menu" class="md:hidden border-t border-border/60 bg-background px-4 py-4 space-y-4 hidden">
+    {navLinks.map(({ href, label }) => (
+      <a
+        href={href}
+        class:list={[
+          'block text-base font-medium transition-colors',
+          currentPath === href || (href !== '/' && currentPath.startsWith(href))
+            ? 'text-primary'
+            : 'text-muted-foreground'
+        ]}
+      >
+        {label}
+      </a>
+    ))}
+    <a 
+      href="/contact"
+      class="block text-base font-medium text-primary"
+    >
+      Contact Me
+    </a>
+    <button
+      id="theme-toggle-mobile"
+      class="inline-flex items-center justify-center h-9 w-9 rounded-md border border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer"
+      aria-label="Toggle theme"
+    >
+      <svg class="h-[1.2rem] w-[1.2rem] block dark:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path><path d="M12 20v2"></path>
+        <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
+        <path d="M2 12h2"></path><path d="M20 12h2"></path>
+        <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+      </svg>
+      <svg class="h-[1.2rem] w-[1.2rem] hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<script>
+  // Theme toggle
+  function setupThemeToggle() {
+    const toggles = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+    toggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  }
+
+  // Mobile menu toggle
+  function setupMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open-icon');
+    const closeIcon = document.getElementById('menu-close-icon');
+
+    btn?.addEventListener('click', () => {
+      const isOpen = !menu?.classList.contains('hidden');
+      menu?.classList.toggle('hidden');
+      openIcon?.classList.toggle('hidden');
+      closeIcon?.classList.toggle('hidden');
+    });
+  }
+
+  setupThemeToggle();
+  setupMobileMenu();
+
+  // Re-run on Astro page transitions (View Transitions)
+  document.addEventListener('astro:after-swap', () => {
+    setupThemeToggle();
+    setupMobileMenu();
+  });
+</script>
