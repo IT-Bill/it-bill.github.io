@@ -1,0 +1,330 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations, getLocalePath } from '../../i18n';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const projectEntries = await getCollection('projects');
+const PROJECTS = projectEntries
+  .sort((a, b) => {
+    const da = a.data.startDate ? new Date(a.data.startDate).getTime() : 0;
+    const db = b.data.startDate ? new Date(b.data.startDate).getTime() : 0;
+    return db - da;
+  })
+  .map(e => ({ id: e.id, ...e.data }));
+---
+
+<Layout title="Zhanwei ZHANG - Home" lang={lang}>
+  <div class="w-full">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-24 md:pb-32 px-4 md:px-8">
+      <div class="container mx-auto max-w-6xl">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-12 md:gap-16">
+          <!-- Left Side - Avatar, Name, Position, Social -->
+          <div class="flex flex-col items-center text-center shrink-0 w-full md:w-auto">
+            <!-- Avatar -->
+            <div class="w-48 h-48 md:w-56 md:h-56 relative mb-6">
+              <div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+              <img
+                src="/avatar.jpg"
+                alt="Zhanwei ZHANG"
+                class="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
+              />
+            </div>
+
+            <!-- Name -->
+            <h1 class="text-3xl md:text-4xl font-black tracking-tight text-foreground mb-2">
+              Zhanwei ZHANG
+            </h1>
+
+            <!-- Position -->
+            <div class="text-sm md:text-base text-muted-foreground mb-1">
+              <a
+                href="https://www.hkust-gz.edu.cn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-primary hover:underline transition-colors"
+              >
+                HKUST(GZ)
+              </a>
+            </div>
+            <div class="text-sm md:text-base text-muted-foreground mb-4">
+              M.Phil. in{" "}
+              <a
+                href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-primary hover:underline transition-colors"
+              >
+                DSA
+              </a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="flex gap-3">
+              <a href="https://github.com/IT-Bill" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/it-bill/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://x.com/IT_Billx" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors" aria-label="X (Twitter)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              </a>
+              <a href="mailto:zzhang364@connect.hkust-gz.edu.cn" class="p-2.5 rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side - Content -->
+          <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <p class="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
+              A dedicated and innovative engineer with a strong background in
+              software development and machine learning, seeking to apply
+              academic knowledge and practical skills to solve complex
+              challenges.
+            </p>
+
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+              <button
+                type="button"
+                id="cv-btn"
+                class="inline-flex h-12 items-center justify-center px-8 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 cursor-pointer"
+              >
+                Download CV
+              </button>
+            </div>
+
+            <!-- CV Modal -->
+            <div id="cv-modal" class="fixed inset-0 z-50 items-center justify-center hidden">
+              <button
+                type="button"
+                id="cv-modal-backdrop"
+                class="absolute inset-0 bg-black/60 cursor-pointer"
+                aria-label="Close CV language selector"
+              ></button>
+              <div class="relative w-[92%] max-w-sm rounded-2xl bg-card border border-border/60 p-6 shadow-2xl">
+                <h3 class="text-lg font-bold text-foreground mb-2">
+                  Select CV Language
+                </h3>
+                <p class="text-sm text-muted-foreground mb-6">
+                  Please choose English or Chinese.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    href="/cv-zhanwei-en.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors cv-close-btn"
+                  >
+                    English
+                  </a>
+                  <a
+                    href="/cv-zhanwei-zh.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-muted text-foreground font-semibold hover:bg-muted/80 transition-colors cv-close-btn"
+                  >
+                    中文
+                  </a>
+                </div>
+                <button
+                  type="button"
+                  id="cv-cancel-btn"
+                  class="mt-4 w-full text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="mt-10 w-full">
+              <h2 class="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                Education
+              </h2>
+              <div class="space-y-4">
+                <div class="p-4 rounded-xl bg-card border border-border/60">
+                  <div class="flex items-start justify-between">
+                    <div>
+                      <h3 class="font-bold text-foreground">
+                        M.Phil. in Data Science and Analytics
+                      </h3>
+                      <p class="text-muted-foreground text-sm">
+                        The Hong Kong University of Science and Technology (Guangzhou)
+                      </p>
+                    </div>
+                    <span class="text-xs text-muted-foreground whitespace-nowrap ml-4">
+                      2025 - Present
+                    </span>
+                  </div>
+                </div>
+                <div class="p-4 rounded-xl bg-card border border-border/60">
+                  <div class="flex items-start justify-between">
+                    <div>
+                      <h3 class="font-bold text-foreground">
+                        B.Eng. in Computer Science and Technology
+                      </h3>
+                      <p class="text-muted-foreground text-sm">
+                        Southern University of Science and Technology
+                      </p>
+                    </div>
+                    <span class="text-xs text-muted-foreground whitespace-nowrap ml-4">
+                      2021 - 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20 px-4 md:px-8 bg-muted/40 border-y border-border/60">
+      <div class="container mx-auto max-w-6xl">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-3xl font-bold text-foreground">
+            Featured Projects
+          </h2>
+          <a
+            href="/projects"
+            class="text-primary hover:text-foreground transition-colors flex items-center gap-1"
+          >
+            View All
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {PROJECTS.slice(0, 2).map((project) => (
+            <div
+              class="group relative rounded-xl bg-card border border-border overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300"
+            >
+              <div class="aspect-video w-full overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  class="w-full h-full object-cover transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <div class="text-primary text-xs font-bold uppercase tracking-wider mb-2">
+                  {project.category}
+                </div>
+                <h3 class="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  {project.title}
+                </h3>
+                <p class="text-muted-foreground text-sm mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {project.techStack.map((tech) => (
+                    <span
+                      class="px-2 py-1 rounded-md bg-muted/40 text-muted-foreground text-xs font-medium border border-border/60"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Languages & Frameworks -->
+    <section class="py-16 px-4 md:px-8">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Tools -->
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
+            Tools
+          </h2>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            {[
+              { name: "IntelliJ IDEA", icon: "intellij/intellij-original" },
+              { name: "PyCharm", icon: "pycharm/pycharm-original" },
+              { name: "VSCode", icon: "vscode/vscode-original" },
+              { name: "Anaconda", icon: "anaconda/anaconda-original" },
+              { name: "Linux", icon: "linux/linux-original" },
+              { name: "Git", icon: "git/git-original" },
+              { name: "GitHub", icon: "github/github-original" },
+              { name: "Premiere Pro", icon: "premierepro/premierepro-original" },
+              { name: "CMake", icon: "cmake/cmake-original" },
+            ].map((tool) => (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tool.icon}.svg`}
+                alt={tool.name}
+                title={tool.name}
+                class="w-10 h-10 transition-transform"
+              />
+            ))}
+          </div>
+        </div>
+
+        <!-- Languages & Frameworks -->
+        <div>
+          <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
+            Languages & Frameworks
+          </h2>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            {[
+              { name: "C", icon: "c/c-original" },
+              { name: "C++", icon: "cplusplus/cplusplus-original" },
+              { name: "Java", icon: "java/java-original" },
+              { name: "Spring Boot", icon: "spring/spring-original" },
+              { name: "Python", icon: "python/python-original" },
+              { name: "MySQL", icon: "mysql/mysql-original" },
+              { name: "PostgreSQL", icon: "postgresql/postgresql-original" },
+              { name: "Vue", icon: "vuejs/vuejs-original" },
+              { name: "React", icon: "react/react-original" },
+              { name: "Next.js", icon: "nextjs/nextjs-original" },
+            ].map((lang) => (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lang.icon}.svg`}
+                alt={lang.name}
+                title={lang.name}
+                class="w-10 h-10 transition-transform"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  function setupCvModal() {
+    const cvBtn = document.getElementById('cv-btn');
+    const cvModal = document.getElementById('cv-modal');
+    const cvBackdrop = document.getElementById('cv-modal-backdrop');
+    const cvCancelBtn = document.getElementById('cv-cancel-btn');
+    const closeButtons = document.querySelectorAll('.cv-close-btn');
+
+    const openModal = () => {
+      cvModal?.classList.remove('hidden');
+      cvModal?.classList.add('flex');
+    };
+
+    const closeModal = () => {
+      cvModal?.classList.add('hidden');
+      cvModal?.classList.remove('flex');
+    };
+
+    cvBtn?.addEventListener('click', openModal);
+    cvBackdrop?.addEventListener('click', closeModal);
+    cvCancelBtn?.addEventListener('click', closeModal);
+    closeButtons.forEach(btn => btn.addEventListener('click', closeModal));
+  }
+
+  setupCvModal();
+  document.addEventListener('astro:after-swap', setupCvModal);
+</script>

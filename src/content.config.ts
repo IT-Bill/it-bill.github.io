@@ -36,17 +36,17 @@ const experienceSchema = z.object({
 
 // English collections
 const projects = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/en/projects' }),
   schema: projectSchema,
 });
 
 const publications = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/publications' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/en/publications' }),
   schema: publicationSchema,
 });
 
 const experiences = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/experiences' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/en/experiences' }),
   schema: experienceSchema,
 });
 
