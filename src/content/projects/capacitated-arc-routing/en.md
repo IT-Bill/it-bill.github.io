@@ -2,7 +2,7 @@
 title: "Capacitated Arc Routing Problem Project"
 category: "Machine Learning"
 description: "Built a memetic and hybrid metaheuristic solver that reaches optimal CARP solutions on small and medium graphs within 180 seconds and delivers competitive performance on 255-vertex networks."
-image: "/projects/capacitated-arc-routing-problem-project.png"
+image: ./cover.png
 techStack:
   - Memetic Algorithm
   - Heuristics

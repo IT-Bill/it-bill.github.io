@@ -2,7 +2,7 @@
 title: "TBG Battle System in MiniSTM32"
 category: "Embedded Systems"
 description: "The system lets players choose actions for their customizable characters, track HP, and engage in real-time multiplayer matches using miniSTM32 boards with accurate data transmission."
-image: "/projects/tbg-battle-system-in-ministm32.png"
+image: ./cover.png
 techStack:
   - C++
   - Arduino

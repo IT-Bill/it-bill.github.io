@@ -2,7 +2,7 @@
 title: "MiniSTM32 回合制对战系统"
 category: "Embedded Systems"
 description: "该系统允许玩家为自定义角色选择动作、追踪生命值，并通过 miniSTM32 开发板进行精确数据传输的实时多人对战。"
-image: "/projects/tbg-battle-system-in-ministm32.png"
+image: ./cover.png
 techStack:
   - C++
   - Arduino

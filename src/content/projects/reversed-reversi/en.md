@@ -2,7 +2,7 @@
 title: "Reversed Reversi through Python with Strong AI"
 category: "Machine Learning"
 description: "Implemented Monte Carlo search together with FAST alpha-beta pruning accelerated by bitwise operations to build a strong Reversed Reversi AI."
-image: "/projects/reversed-reversi-through-python-with-strong-ai.png"
+image: ./cover.png
 techStack:
   - Python
   - Monte Carlo Search

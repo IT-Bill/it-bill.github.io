@@ -1,11 +1,11 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const projectSchema = z.object({
+const projectSchema = ({ image }: { image: Function }) => z.object({
   title: z.string(),
   category: z.enum(['Web Development', 'Machine Learning', 'Data Science', 'Embedded Systems']),
   description: z.string(),
-  image: z.string(),
+  image: image(),
   techStack: z.array(z.string()),
   startDate: z.string().optional(),
   endDate: z.string().optional(),

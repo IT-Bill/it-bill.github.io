@@ -2,7 +2,7 @@
 title: "Canteen Traffic Monitoring"
 category: "Data Science"
 description: "Calculated the canteen queue length from live monitoring data and visualized how the queue changed over time, attracting 30,000 visits in three months."
-image: "/projects/canteen-traffic-monitoring.png"
+image: ./cover.png
 techStack:
   - Data Monitoring
   - Time Series Analysis

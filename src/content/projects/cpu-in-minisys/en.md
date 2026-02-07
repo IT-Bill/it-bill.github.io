@@ -2,7 +2,7 @@
 title: "CPU in Minisys"
 category: "Embedded Systems"
 description: "Implemented a Minisys-compatible CPU that supports 32 core instructions, parses COE binaries, and interfaces with users through the Minisys development board."
-image: "/projects/cpu-in-minisys.png"
+image: ./cover.png
 techStack:
   - Verilog
   - Digital Design

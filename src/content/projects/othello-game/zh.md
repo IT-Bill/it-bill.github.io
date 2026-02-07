@@ -2,7 +2,7 @@
 title: "Java 黑白棋游戏"
 category: "Web Development"
 description: "开发了一款具有互动式 Swing 界面和流畅游戏动画的黑白棋游戏体验。"
-image: "/projects/othello-game-through-java.png"
+image: ./cover.png
 techStack:
   - Java
   - Swing

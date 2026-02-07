@@ -2,7 +2,7 @@
 title: "Simple Compiler"
 category: "Embedded Systems"
 description: "Developed a simple compiler (still has 15,000 lines) that translates C language files into Intermediate Representation (IR) and MIPS32 assembly. The compiler supports essential features such as I/O operations, control flow and function calls. It includes comprehensive lexical, syntax, and semantic analysis, along with informative error messages."
-image: "/projects/simple-compiler.png"
+image: ./cover.png
 techStack:
   - C++
   - Arduino
