@@ -2,17 +2,22 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import type { Lang } from '../i18n';
+import { useTranslations } from '../i18n';
 
 interface Props {
   title?: string;
   description?: string;
+  lang?: Lang;
 }
 
-const { title = 'Zhanwei ZHANG', description = 'Aspiring Software Engineer & Machine Learning Researcher' } = Astro.props;
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+const { title = t('site.title'), description = t('site.description') } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,11 +45,11 @@ const { title = 'Zhanwei ZHANG', description = 'Aspiring Software Engineer & Mac
 	</head>
 	<body>
 		<div class="min-h-screen flex flex-col">
-			<Header />
+			<Header lang={lang} />
 			<main class="flex-1">
 				<slot />
 			</main>
-			<Footer />
+			<Footer lang={lang} />
 		</div>
 	</body>
 </html>

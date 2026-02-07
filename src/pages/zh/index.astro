@@ -1,12 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { useTranslations, getLocalePath } from '../i18n';
+import { useTranslations, getLocalePath } from '../../i18n';
 
-const lang = 'en';
+const lang = 'zh';
 const t = useTranslations(lang);
 
-const projectEntries = await getCollection('projects');
+const projectEntries = await getCollection('projects_zh');
 const PROJECTS = projectEntries
   .sort((a, b) => {
     const da = a.data.startDate ? new Date(a.data.startDate).getTime() : 0;
@@ -16,7 +16,7 @@ const PROJECTS = projectEntries
   .map(e => ({ id: e.id, ...e.data }));
 ---
 
-<Layout title="Zhanwei ZHANG - Home" lang={lang}>
+<Layout title={`${t('site.title')} - ${t('nav.home')}`} lang={lang}>
   <div class="w-full">
     <!-- Hero Section -->
     <section class="relative overflow-hidden pt-12 pb-20 md:pt-24 md:pb-32 px-4 md:px-8">
@@ -29,14 +29,14 @@ const PROJECTS = projectEntries
               <div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
               <img
                 src="/avatar.jpg"
-                alt="Zhanwei ZHANG"
+                alt={t('site.title')}
                 class="w-full h-full object-cover rounded-full border-4 border-border/40 shadow-2xl relative z-10"
               />
             </div>
 
             <!-- Name -->
             <h1 class="text-3xl md:text-4xl font-black tracking-tight text-foreground mb-2">
-              Zhanwei ZHANG
+              {t('site.title')}
             </h1>
 
             <!-- Position -->
@@ -47,18 +47,18 @@ const PROJECTS = projectEntries
                 rel="noopener noreferrer"
                 class="hover:text-primary hover:underline transition-colors"
               >
-                HKUST(GZ)
+                {t('home.education.institution.hkustgz')}
               </a>
             </div>
             <div class="text-sm md:text-base text-muted-foreground mb-4">
-              M.Phil. in{" "}
+              {t('home.position.mphilIn')}{" "}
               <a
                 href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="hover:text-primary hover:underline transition-colors"
               >
-                DSA
+                {t('home.education.institution.dsa')}
               </a>
             </div>
 
@@ -82,10 +82,7 @@ const PROJECTS = projectEntries
           <!-- Right Side - Content -->
           <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
             <p class="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
-              A dedicated and innovative engineer with a strong background in
-              software development and machine learning, seeking to apply
-              academic knowledge and practical skills to solve complex
-              challenges.
+              {t('home.hero.description')}
             </p>
 
             <div class="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -94,7 +91,7 @@ const PROJECTS = projectEntries
                 id="cv-btn"
                 class="inline-flex h-12 items-center justify-center px-8 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 cursor-pointer"
               >
-                Download CV
+                {t('home.hero.downloadCv')}
               </button>
             </div>
 
@@ -108,10 +105,10 @@ const PROJECTS = projectEntries
               ></button>
               <div class="relative w-[92%] max-w-sm rounded-2xl bg-card border border-border/60 p-6 shadow-2xl">
                 <h3 class="text-lg font-bold text-foreground mb-2">
-                  Select CV Language
+                  {t('home.cv.selectLanguage')}
                 </h3>
                 <p class="text-sm text-muted-foreground mb-6">
-                  Please choose English or Chinese.
+                  {t('home.cv.pleaseChoose')}
                 </p>
                 <div class="flex gap-3">
                   <a
@@ -120,7 +117,7 @@ const PROJECTS = projectEntries
                     rel="noopener noreferrer"
                     class="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors cv-close-btn"
                   >
-                    English
+                    {t('home.cv.english')}
                   </a>
                   <a
                     href="/cv-zhanwei-zh.pdf"
@@ -128,7 +125,7 @@ const PROJECTS = projectEntries
                     rel="noopener noreferrer"
                     class="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-muted text-foreground font-semibold hover:bg-muted/80 transition-colors cv-close-btn"
                   >
-                    中文
+                    {t('home.cv.chinese')}
                   </a>
                 </div>
                 <button
@@ -136,7 +133,7 @@ const PROJECTS = projectEntries
                   id="cv-cancel-btn"
                   class="mt-4 w-full text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                 >
-                  Cancel
+                  {t('home.cv.cancel')}
                 </button>
               </div>
             </div>
@@ -145,21 +142,21 @@ const PROJECTS = projectEntries
             <div class="mt-10 w-full">
               <h2 class="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                 <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
-                Education
+                {t('home.education')}
               </h2>
               <div class="space-y-4">
                 <div class="p-4 rounded-xl bg-card border border-border/60">
                   <div class="flex items-start justify-between">
                     <div>
                       <h3 class="font-bold text-foreground">
-                        M.Phil. in Data Science and Analytics
+                        {t('home.education.mphil')}
                       </h3>
                       <p class="text-muted-foreground text-sm">
-                        The Hong Kong University of Science and Technology (Guangzhou)
+                        {t('home.education.mphil.school')}
                       </p>
                     </div>
                     <span class="text-xs text-muted-foreground whitespace-nowrap ml-4">
-                      2025 - Present
+                      {t('home.education.mphil.period')}
                     </span>
                   </div>
                 </div>
@@ -167,14 +164,14 @@ const PROJECTS = projectEntries
                   <div class="flex items-start justify-between">
                     <div>
                       <h3 class="font-bold text-foreground">
-                        B.Eng. in Computer Science and Technology
+                        {t('home.education.beng')}
                       </h3>
                       <p class="text-muted-foreground text-sm">
-                        Southern University of Science and Technology
+                        {t('home.education.beng.school')}
                       </p>
                     </div>
                     <span class="text-xs text-muted-foreground whitespace-nowrap ml-4">
-                      2021 - 2025
+                      {t('home.education.beng.period')}
                     </span>
                   </div>
                 </div>
@@ -190,13 +187,13 @@ const PROJECTS = projectEntries
       <div class="container mx-auto max-w-6xl">
         <div class="flex items-center justify-between mb-12">
           <h2 class="text-3xl font-bold text-foreground">
-            Featured Projects
+            {t('home.featuredProjects')}
           </h2>
           <a
-            href="/projects"
+            href={getLocalePath('/projects', lang)}
             class="text-primary hover:text-foreground transition-colors flex items-center gap-1"
           >
-            View All
+            {t('home.viewAll')}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
           </a>
         </div>
@@ -245,7 +242,7 @@ const PROJECTS = projectEntries
         <!-- Tools -->
         <div class="mb-10">
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
-            Tools
+            {t('home.tools')}
           </h2>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             {[
@@ -272,7 +269,7 @@ const PROJECTS = projectEntries
         <!-- Languages & Frameworks -->
         <div>
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
-            Languages & Frameworks
+            {t('home.languagesFrameworks')}
           </h2>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             {[

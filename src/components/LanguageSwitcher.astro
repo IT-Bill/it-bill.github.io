@@ -1,0 +1,27 @@
+---
+import type { Lang } from '../i18n';
+import { languages, getAlternateLang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  switchUrl: string;
+}
+
+const { lang, switchUrl } = Astro.props;
+const altLang = getAlternateLang(lang);
+const altLabel = languages[altLang];
+---
+
+<a
+  href={switchUrl}
+  class="inline-flex items-center justify-center h-9 px-3 rounded-md border border-input bg-background text-foreground text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors gap-1.5"
+  aria-label={`Switch to ${altLabel}`}
+  title={`Switch to ${altLabel}`}
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+    <path d="M2 12h20"></path>
+  </svg>
+  <span>{altLabel}</span>
+</a>
