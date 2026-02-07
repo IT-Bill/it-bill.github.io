@@ -34,35 +34,18 @@ const experienceSchema = z.object({
   tags: z.array(z.string()),
 });
 
-// English collections
 const projects = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/en/projects' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
   schema: projectSchema,
 });
 
 const publications = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/en/publications' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/publications' }),
   schema: publicationSchema,
 });
 
 const experiences = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/en/experiences' }),
-  schema: experienceSchema,
-});
-
-// Chinese collections
-const projects_zh = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/zh/projects' }),
-  schema: projectSchema,
-});
-
-const publications_zh = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/zh/publications' }),
-  schema: publicationSchema,
-});
-
-const experiences_zh = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/zh/experiences' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/experiences' }),
   schema: experienceSchema,
 });
 
@@ -70,7 +53,4 @@ export const collections = {
   projects,
   publications,
   experiences,
-  projects_zh,
-  publications_zh,
-  experiences_zh,
 };

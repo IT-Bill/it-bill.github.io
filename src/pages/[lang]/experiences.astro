@@ -14,8 +14,7 @@ export function getStaticPaths() {
 const { lang } = Astro.params as { lang: Lang };
 const t = useTranslations(lang);
 
-const collectionName = lang === 'zh' ? 'experiences_zh' : 'experiences';
-const expEntries = await getCollection(collectionName);
+const expEntries = (await getCollection('experiences')).filter(e => e.id.endsWith(`/${lang}`));
 const EXPERIENCE = expEntries
   .sort((a, b) => a.data.order - b.data.order)
   .map(e => ({ id: e.id, ...e.data }));

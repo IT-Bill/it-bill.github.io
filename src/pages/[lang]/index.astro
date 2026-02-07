@@ -14,8 +14,7 @@ export function getStaticPaths() {
 const { lang } = Astro.params as { lang: Lang };
 const t = useTranslations(lang);
 
-const collectionName = lang === 'zh' ? 'projects_zh' : 'projects';
-const projectEntries = await getCollection(collectionName);
+const projectEntries = (await getCollection('projects')).filter(e => e.id.endsWith(`/${lang}`));
 const PROJECTS = projectEntries
   .sort((a, b) => {
     const da = a.data.startDate ? new Date(a.data.startDate).getTime() : 0;
