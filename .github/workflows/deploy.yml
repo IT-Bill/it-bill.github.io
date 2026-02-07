@@ -40,16 +40,16 @@ jobs:
           node-version: '24'
           cache: 'pnpm'
       - name: Install dependencies
-        run: cd astro-site && pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Build
-        run: cd astro-site && pnpm build
+        run: pnpm build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload dist folder
-          path: './astro-site/dist'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

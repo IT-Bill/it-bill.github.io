@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface Project {
   id: string;
   title: string;
@@ -29,7 +27,6 @@ export interface Skill {
   proficiency: 'Proficient' | 'Familiar';
   category: string;
   useCase?: string;
-  icon?: React.ReactNode;
 }
 
 export interface Publication {

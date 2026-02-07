@@ -1,8 +1,8 @@
-import type { Project, Experience, Skill, Publication } from '@/lib/types';
-import { PUBLICATIONS_DATA } from '@/data/publication';
-import { PROJECTS_DATA } from '@/data/projects';
-import { EXPERIENCE_DATA } from '@/data/experience';
-import { PROGRAMMING_LANGUAGES_DATA, FRAMEWORKS_DATA } from '@/data/skills';
+import type { Project, Experience, Skill, Publication } from '../lib/types';
+import { PUBLICATIONS_DATA } from '../data/publication';
+import { PROJECTS_DATA } from '../data/projects';
+import { EXPERIENCE_DATA } from '../data/experience';
+import { PROGRAMMING_LANGUAGES_DATA, FRAMEWORKS_DATA } from '../data/skills';
 
 // Helper function to add IDs to data items
 function addId<T>(data: Omit<T, 'id'>[], prefix: string): T[] {
