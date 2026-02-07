@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# github setting folder
+.github/todo.md
+.github/finished.md
+!.github/copilot-instructions.md
