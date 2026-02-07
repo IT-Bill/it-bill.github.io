@@ -7,6 +7,14 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://it-bill.github.io',
   integrations: [sitemap()],
+  i18n: {
+    locales: ['en', 'zh'],
+    defaultLocale: 'en',
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },

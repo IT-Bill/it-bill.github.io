@@ -1,18 +1,4 @@
 ---
+// This page is required by Astro's i18n routing with prefixDefaultLocale: true.
+// Astro will automatically redirect "/" to "/en/" via redirectToDefaultLocale: true.
 ---
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/en/" />
-    <link rel="canonical" href="/en/" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <script is:inline>
-      window.location.replace('/en/');
-    </script>
-    <p>Redirecting to <a href="/en/">English version</a>...</p>
-  </body>
-</html>

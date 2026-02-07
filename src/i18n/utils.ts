@@ -1,4 +1,5 @@
 import { ui, defaultLang, type Lang } from './ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export function getLangFromUrl(url: URL): Lang {
   const [, lang] = url.pathname.split('/');
@@ -13,12 +14,10 @@ export function useTranslations(lang: Lang) {
 }
 
 /**
- * Get the localized path for a given route.
- * All languages use /{lang}/... prefix: /en/projects, /zh/projects
+ * Get the localized path for a given route using Astro's built-in i18n.
  */
 export function getLocalePath(path: string, lang: Lang): string {
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
-  return `/${lang}${normalizedPath}`;
+  return getRelativeLocaleUrl(lang, path);
 }
 
 /**
@@ -29,13 +28,13 @@ export function getAlternateLang(lang: Lang): Lang {
 }
 
 /**
- * Get the switch URL for the alternate language
+ * Get the switch URL for the alternate language using Astro's i18n
  */
 export function getSwitchLangUrl(url: URL): string {
   const lang = getLangFromUrl(url);
   const alternateLang = getAlternateLang(lang);
-  // Replace /{currentLang}/ with /{alternateLang}/
-  const pathWithoutLang = url.pathname.replace(`/${lang}`, '') || '/';
-  const normalizedPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`;
-  return `/${alternateLang}${normalizedPath}`;
+  // Extract path after /{lang}/
+  const match = url.pathname.match(/^\/[^/]+\/(.*)/);
+  const subPath = match ? match[1] : '';
+  return getRelativeLocaleUrl(alternateLang, subPath);
 }
