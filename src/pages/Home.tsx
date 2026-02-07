@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { PROJECTS } from "@/lib/constants";
 import {
@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 
 const Home: React.FC = () => {
+  const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -111,15 +113,60 @@ const Home: React.FC = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-                  href="/cv-zhanwei.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => setIsCvModalOpen(true)}
                   className="inline-flex h-12 items-center justify-center px-8 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
                 >
                   Download CV
-                </a>
+                </button>
               </div>
+
+              {isCvModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setIsCvModalOpen(false)}
+                    className="absolute inset-0 bg-black/60"
+                    aria-label="Close CV language selector"
+                  />
+                  <div className="relative w-[92%] max-w-sm rounded-2xl bg-card border border-border/60 p-6 shadow-2xl">
+                    <h3 className="text-lg font-bold text-foreground mb-2">
+                      Select CV Language
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      Please choose English or Chinese.
+                    </p>
+                    <div className="flex gap-3">
+                      <a
+                        href="/cv-zhanwei-en.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                        onClick={() => setIsCvModalOpen(false)}
+                      >
+                        English
+                      </a>
+                      <a
+                        href="/cv-zhanwei-zh.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-muted text-foreground font-semibold hover:bg-muted/80 transition-colors"
+                        onClick={() => setIsCvModalOpen(false)}
+                      >
+                        中文
+                      </a>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setIsCvModalOpen(false)}
+                      className="mt-4 w-full text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              )}
 
               {/* Education */}
               <div className="mt-10 w-full">
