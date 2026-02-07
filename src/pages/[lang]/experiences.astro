@@ -2,11 +2,20 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations } from '../../i18n';
+import type { Lang } from '../../i18n';
 
-const lang = 'zh';
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'zh' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: Lang };
 const t = useTranslations(lang);
 
-const expEntries = await getCollection('experiences_zh');
+const collectionName = lang === 'zh' ? 'experiences_zh' : 'experiences';
+const expEntries = await getCollection(collectionName);
 const EXPERIENCE = expEntries
   .sort((a, b) => a.data.order - b.data.order)
   .map(e => ({ id: e.id, ...e.data }));
