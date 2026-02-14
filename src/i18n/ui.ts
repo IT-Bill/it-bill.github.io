@@ -41,6 +41,10 @@ export const ui = {
     'home.featuredProjects': 'Featured Projects',
     'home.viewAll': 'View All',
     'home.tools': 'Tools',
+    'home.creativeExpression': 'Creative Expression',
+    'home.creativeExpression.tooltip': 'Like front-end technologies, these tools are also a direct way for me to express my thoughts and ideas to others.',
+    'home.languages': 'Languages',
+    'home.frameworks': 'Frameworks',
     'home.languagesFrameworks': 'Languages & Frameworks',
 
     // Projects page
@@ -122,6 +126,10 @@ export const ui = {
     'home.featuredProjects': '精选项目',
     'home.viewAll': '查看全部',
     'home.tools': '工具',
+    'home.creativeExpression': '创意表达',
+    'home.creativeExpression.tooltip': '和前端技术一样，这些工具也是我向他人直接表达思考与想法的方式。',
+    'home.languages': '编程语言',
+    'home.frameworks': '框架',
     'home.languagesFrameworks': '编程语言 & 框架',
 
     // Projects page

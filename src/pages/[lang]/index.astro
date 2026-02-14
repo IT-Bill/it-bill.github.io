@@ -254,14 +254,13 @@ const PROJECTS = projectEntries
           </h2>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             {[
+              { name: "VSCode", icon: "vscode/vscode-original" },
               { name: "IntelliJ IDEA", icon: "intellij/intellij-original" },
               { name: "PyCharm", icon: "pycharm/pycharm-original" },
-              { name: "VSCode", icon: "vscode/vscode-original" },
               { name: "Anaconda", icon: "anaconda/anaconda-original" },
               { name: "Linux", icon: "linux/linux-original" },
               { name: "Git", icon: "git/git-original" },
               { name: "GitHub", icon: "github/github-original" },
-              { name: "Premiere Pro", icon: "premierepro/premierepro-original" },
               { name: "CMake", icon: "cmake/cmake-original" },
             ].map((tool) => (
               <img
@@ -274,20 +273,38 @@ const PROJECTS = projectEntries
           </div>
         </div>
 
-        <!-- Languages & Frameworks -->
-        <div>
+        <!-- Languages -->
+        <div class="mb-10">
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
-            {t('home.languagesFrameworks')}
+            {t('home.languages')}
           </h2>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             {[
               { name: "C", icon: "c/c-original" },
               { name: "C++", icon: "cplusplus/cplusplus-original" },
               { name: "Java", icon: "java/java-original" },
-              { name: "Spring Boot", icon: "spring/spring-original" },
               { name: "Python", icon: "python/python-original" },
               { name: "MySQL", icon: "mysql/mysql-original" },
               { name: "PostgreSQL", icon: "postgresql/postgresql-original" },
+            ].map((item) => (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item.icon}.svg`}
+                alt={item.name}
+                title={item.name}
+                class="w-10 h-10 transition-transform"
+              />
+            ))}
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
+            {t('home.frameworks')}
+          </h2>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            {[
+              { name: "Spring Boot", icon: "spring/spring-original" },
               { name: "Vue", icon: "vuejs/vuejs-original" },
               { name: "React", icon: "react/react-original" },
               { name: "Next.js", icon: "nextjs/nextjs-original" },
@@ -301,6 +318,34 @@ const PROJECTS = projectEntries
             ))}
           </div>
         </div>
+
+        <!-- Creative Expression -->
+        <div>
+          <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
+            {t('home.creativeExpression')}
+            <span class="relative inline-flex items-center justify-center w-5 h-5 rounded-full border border-border text-xs text-muted-foreground cursor-help group" tabindex="0" aria-label={t('home.creativeExpression.tooltip')}>
+              ?
+              <span class="pointer-events-none absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-lg border border-border/60 bg-card px-3 py-2 text-xs font-normal text-muted-foreground text-left opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100">
+                {t('home.creativeExpression.tooltip')}
+              </span>
+            </span>
+          </h2>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            {[
+              { name: "Photoshop", icon: "photoshop/photoshop-original" },
+              { name: "Premiere Pro", icon: "premierepro/premierepro-original" },
+              { name: "After Effects", icon: "aftereffects/aftereffects-original" },
+            ].map((item) => (
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item.icon}.svg`}
+                alt={item.name}
+                title={item.name}
+                class="w-10 h-10 transition-transform"
+              />
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
