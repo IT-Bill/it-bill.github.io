@@ -244,11 +244,12 @@ const PROJECTS = projectEntries
       </div>
     </section>
 
-    <!-- Tools & Languages & Frameworks -->
+    <!-- Tools & Languages & Frameworks & Creative Expression -->
     <section class="py-16 px-4 md:px-8">
       <div class="container mx-auto max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Tools -->
-        <div class="mb-10">
+        <div>
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
             {t('home.tools')}
           </h2>
@@ -274,7 +275,7 @@ const PROJECTS = projectEntries
         </div>
 
         <!-- Languages -->
-        <div class="mb-10">
+        <div>
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
             {t('home.languages')}
           </h2>
@@ -298,16 +299,17 @@ const PROJECTS = projectEntries
         </div>
 
         <!-- Frameworks -->
-        <div class="mb-10">
+        <div>
           <h2 class="text-2xl font-bold text-foreground mb-6 text-center md:text-left">
             {t('home.frameworks')}
           </h2>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
             {[
-              { name: "Spring Boot", icon: "spring/spring-original" },
               { name: "Vue", icon: "vuejs/vuejs-original" },
               { name: "React", icon: "react/react-original" },
               { name: "Next.js", icon: "nextjs/nextjs-original" },
+              { name: "Astro", icon: "astro/astro-original" },
+              { name: "Spring Boot", icon: "spring/spring-original" },
             ].map((item) => (
               <img
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item.icon}.svg`}
@@ -344,6 +346,7 @@ const PROJECTS = projectEntries
               />
             ))}
           </div>
+        </div>
         </div>
 
       </div>
