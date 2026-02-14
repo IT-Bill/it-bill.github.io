@@ -115,7 +115,7 @@ export const ui = {
     'home.cv.chinese': '中文',
     'home.cv.cancel': '取消',
     'home.education': '教育经历',
-    'home.education.mphil': '数据科学与分析 哲学硕士',
+    'home.education.mphil': '数据科学与分析 硕士研究生',
     'home.education.mphil.school': '香港科技大学（广州）',
     'home.education.mphil.period': '2025 - 至今',
     'home.education.beng': '计算机科学与技术 工学学士',
@@ -176,6 +176,6 @@ export const ui = {
     'category.Embedded Systems': '嵌入式系统',
 
     // Position info
-    'home.position.mphilIn': '哲学硕士，',
+    'home.position.mphilIn': '硕士研究生，',
   },
 } as const;
