@@ -3,15 +3,15 @@ order: 0
 period: "Sep 2025 - Present"
 title: "M.Phil. in Data Science and Analytics"
 institution: "The Hong Kong University of Science and Technology (Guangzhou)"
-description: "Information Hub | Advisor: Prof. Zishuo Ding\nResearch focus: data mining, machine learning, and trustworthy AI systems."
+description: "Information Hub | Advisor: Prof. Zishuo Ding\nResearch focus: safety and robustness testing for Large Audio Language Models (LALMs)."
 type: "education"
 tags:
-  - Data Science
-  - Machine Learning
-  - Data Mining
-  - Trustworthy AI
+  - LALM
+  - Audio AI
+  - AI Safety
+  - Robustness Testing
 ---
 
 Information Hub | Advisor: Prof. Zishuo Ding
 
-Research focus: data mining, machine learning, and trustworthy AI systems.
+Research focus: safety and robustness testing for Large Audio Language Models (LALMs).
