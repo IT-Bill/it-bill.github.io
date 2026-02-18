@@ -7,7 +7,7 @@ description: "信息枢纽 | 导师：丁子硕 教授\n研究方向：音频大
 type: "education"
 tags:
   - LALM
-  - 音频大模型
+  - 音频大语言模型
   - AI安全
   - 鲁棒性测试
 ---
