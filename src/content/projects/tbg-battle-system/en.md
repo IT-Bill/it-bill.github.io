@@ -5,9 +5,10 @@ description: "The system lets players choose actions for their customizable char
 image: ./cover.png
 techStack:
   - C++
-  - Arduino
-  - MQTT
-  - PlatformIO
+  - miniSTM32
+  - Embedded Systems
+  - Multiplayer
+  - Real-time Communication
 startDate: "2023-01-15"
 endDate: "2023-02-15"
 repoUrl: "https://github.com/IT-Bill/CS301-TBG-Battle-System"

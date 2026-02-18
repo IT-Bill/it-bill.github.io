@@ -5,9 +5,10 @@ description: "该系统允许玩家为自定义角色选择动作、追踪生命
 image: ./cover.png
 techStack:
   - C++
-  - Arduino
-  - MQTT
-  - PlatformIO
+  - miniSTM32
+  - 嵌入式系统
+  - 多人对战
+  - 实时通信
 startDate: "2023-01-15"
 endDate: "2023-02-15"
 repoUrl: "https://github.com/IT-Bill/CS301-TBG-Battle-System"
