@@ -85,6 +85,7 @@ export const ui = {
     'footer.rights': 'All Rights Reserved.',
 
     // Categories
+    'category.Software Engineering': 'Software Engineering',
     'category.Web Development': 'Web Development',
     'category.Machine Learning': 'Machine Learning',
     'category.Data Science': 'Data Science',
@@ -170,6 +171,7 @@ export const ui = {
     'footer.rights': '保留所有权利。',
 
     // Categories
+    'category.Software Engineering': '软件工程',
     'category.Web Development': 'Web 开发',
     'category.Machine Learning': '机器学习',
     'category.Data Science': '数据科学',

@@ -23,7 +23,7 @@ const PROJECTS = projectEntries
   })
   .map(e => ({ id: e.id, ...e.data }));
 
-const categories = ['All', 'Web Development', 'Machine Learning', 'Data Science', 'Embedded Systems'] as const;
+const categories = ['All', 'Software Engineering', 'Web Development', 'Machine Learning', 'Data Science', 'Embedded Systems'] as const;
 
 function formatDate(dateString?: string) {
   if (!dateString) return '';
