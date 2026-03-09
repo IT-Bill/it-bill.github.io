@@ -22,6 +22,11 @@ const PROJECTS = projectEntries
     return db - da;
   })
   .map(e => ({ id: e.id, ...e.data }));
+
+function localizeCategory(category: string): string {
+  const key = `category.${category}` as any;
+  return t(key) || category;
+}
 ---
 
 <Layout title={`${t('site.title')} - ${t('nav.home')}`} lang={lang}>
@@ -220,7 +225,7 @@ const PROJECTS = projectEntries
               </div>
               <div class="p-6">
                 <div class="text-primary text-xs font-bold uppercase tracking-wider mb-2">
-                  {project.category}
+                  {localizeCategory(project.category)}
                 </div>
                 <h3 class="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {project.title}

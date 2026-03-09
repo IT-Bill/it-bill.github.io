@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 
 const projectSchema = ({ image }: { image: Function }) => z.object({
   title: z.string(),
-  category: z.enum(['Web Development', 'Machine Learning', 'Data Science', 'Embedded Systems']),
+  category: z.enum(['Software Engineering', 'Web Development', 'Machine Learning', 'Data Science', 'Embedded Systems']),
   description: z.string(),
   image: image(),
   techStack: z.array(z.string()),
