@@ -18,6 +18,7 @@ export const ui = {
     'nav.experiences': 'Experiences',
     'nav.publications': 'Publications',
     'nav.projects': 'Projects',
+    'nav.blog': 'Blog',
     'nav.contact': 'Contact',
 
     // Home page
@@ -104,6 +105,7 @@ export const ui = {
     'nav.experiences': '经历',
     'nav.publications': '论文',
     'nav.projects': '项目',
+    'nav.blog': '博客',
     'nav.contact': '联系',
 
     // Home page
