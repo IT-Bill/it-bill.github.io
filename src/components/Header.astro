@@ -10,12 +10,14 @@ interface Props {
 const { lang = 'en' } = Astro.props;
 const t = useTranslations(lang);
 const altLang = getAlternateLang(lang);
+const blogUrl = 'https://it-bill.github.io/blog/';
 
 const navLinks = [
   { href: getLocalePath('/', lang), label: t('nav.home') },
   { href: getLocalePath('/experiences', lang), label: t('nav.experiences') },
   { href: getLocalePath('/publications', lang), label: t('nav.publications') },
   { href: getLocalePath('/projects', lang), label: t('nav.projects') },
+  { href: blogUrl, label: t('nav.blog') },
 ];
 const currentPath = Astro.url.pathname;
 const switchUrl = getSwitchLangUrl(Astro.url);
