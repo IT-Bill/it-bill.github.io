@@ -17,7 +17,7 @@ const navLinks = [
   { href: getLocalePath('/experiences', lang), label: t('nav.experiences') },
   { href: getLocalePath('/publications', lang), label: t('nav.publications') },
   { href: getLocalePath('/projects', lang), label: t('nav.projects') },
-  { href: blogUrl, label: t('nav.blog') },
+  { href: blogUrl, label: t('nav.blog'), external: true },
 ];
 const currentPath = Astro.url.pathname;
 const switchUrl = getSwitchLangUrl(Astro.url);
@@ -41,9 +41,11 @@ function isActive(href: string): boolean {
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8">
-        {navLinks.map(({ href, label }) => (
+        {navLinks.map(({ href, label, external }) => (
           <a
             href={href}
+            target={external ? '_blank' : undefined}
+            rel={external ? 'noopener noreferrer' : undefined}
             class:list={[
               'text-base font-medium transition-colors hover:text-primary',
               isActive(href)
@@ -108,9 +110,11 @@ function isActive(href: string): boolean {
 
   <!-- Mobile Navigation -->
   <div id="mobile-menu" class="md:hidden border-t border-border/60 bg-background px-4 py-4 space-y-4 hidden">
-    {navLinks.map(({ href, label }) => (
+    {navLinks.map(({ href, label, external }) => (
       <a
         href={href}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
         class:list={[
           'block text-base font-medium transition-colors',
           isActive(href)
