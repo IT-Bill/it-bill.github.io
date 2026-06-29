@@ -141,10 +141,10 @@
       const drops = Array.from({ length: Math.floor(canvas.width / fontSize) }, () => 1);
 
       const interval = window.setInterval(() => {
-        context.fillStyle = "rgba(10, 10, 10, 0.05)";
+        context.fillStyle = "rgba(15, 17, 21, 0.08)";
         context.fillRect(0, 0, canvas.width, canvas.height);
-        context.fillStyle = "#00ff41";
-        context.font = `${fontSize}px SF Mono`;
+        context.fillStyle = "#b9ca4a";
+        context.font = `${fontSize}px "FiraCode Nerd Font Mono"`;
 
         drops.forEach((drop, index) => {
           const char = chars[Math.floor(Math.random() * chars.length)];

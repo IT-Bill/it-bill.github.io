@@ -16,7 +16,7 @@ const { path, command, cursor = false, spaced = false } = Astro.props;
     <span class="prompt__host">saxton</span>
   </span>
   <span class="prompt__path">:{path}$</span>
-  <span class="prompt__symbol"></span>
+  <span class="prompt__symbol">❯</span>
   {command ? <span class="prompt__command">{command}</span> : null}
   {cursor ? <span class="cursor"></span> : null}
 </div>
