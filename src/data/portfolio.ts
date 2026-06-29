@@ -44,12 +44,23 @@ export const asciiArt = {
 };
 
 export const statusLines: StatusLine[] = [
-  { label: "SYSTEM", text: "English profile loaded", tone: "term-text-dim" },
   { label: "ROLE", text: profile.tagline, tone: "term-text" },
-  { label: "CURRENT", text: "M.Phil. in Data Science and Analytics @ HKUST(GZ)", tone: "term-text" },
-  { label: "FOCUS", text: "Large Audio Language Model safety and robustness testing", tone: "term-text" },
-  { label: "STACK", text: "Python, TypeScript, React, Node.js, PyTorch, TensorFlow", tone: "term-text" },
   { label: "STATUS", text: "Open to technology discussions, collaborations, and opportunities", tone: "term-text-amber" },
+];
+
+const englishResumeLinks = [
+  {
+    label: "EN",
+    command: "curl -O cv-zhanwei-en.pdf",
+    href: "/cv-zhanwei-en.pdf",
+    ariaLabel: "Download English CV",
+  },
+  {
+    label: "ZH",
+    command: "curl -O cv-zhanwei-zh.pdf",
+    href: "/cv-zhanwei-zh.pdf",
+    ariaLabel: "Download Chinese CV",
+  },
 ];
 
 export const aboutLines = [
@@ -410,7 +421,6 @@ export const contactLinks: ContactLink[] = [
   { label: "GitHub", value: "github.com/IT-Bill", href: "https://github.com/IT-Bill" },
   { label: "LinkedIn", value: "linkedin.com/in/it-bill", href: "https://www.linkedin.com/in/it-bill/" },
   { label: "X", value: "@IT_Billx", href: "https://x.com/IT_Billx" },
-  { label: "CV", value: "cv-zhanwei-en.pdf", href: profile.cvHref },
 ];
 
 export const englishPortfolio: PortfolioContent = {
@@ -439,6 +449,27 @@ export const englishPortfolio: PortfolioContent = {
   profile,
   asciiArt,
   statusLines,
+  heroResume: {
+    label: "RESUME",
+    command: "ls ./cv",
+    links: englishResumeLinks,
+  },
+  heroEducation: {
+    title: "Education",
+    command: "cat ./education.log",
+    items: [
+      {
+        degree: "M.Phil. in Data Science and Analytics",
+        institution: "The Hong Kong University of Science and Technology (Guangzhou)",
+        period: "2025 - Present",
+      },
+      {
+        degree: "B.Eng. in Computer Science and Technology",
+        institution: "Southern University of Science and Technology",
+        period: "2021 - 2025",
+      },
+    ],
+  },
   aboutLines,
   researchFocus,
   toolGroups,
@@ -471,12 +502,23 @@ const zhProfile = {
 };
 
 const zhStatusLines: StatusLine[] = [
-  { label: "系统", text: "中文资料已加载", tone: "term-text-dim" },
   { label: "角色", text: zhProfile.tagline, tone: "term-text" },
-  { label: "当前", text: "香港科技大学（广州）数据科学与分析哲学硕士在读", tone: "term-text" },
-  { label: "方向", text: "音频大语言模型安全性与鲁棒性测试", tone: "term-text" },
-  { label: "技术栈", text: "Python、TypeScript、React、Node.js、PyTorch、TensorFlow", tone: "term-text" },
   { label: "状态", text: "欢迎技术交流、科研合作与机会讨论", tone: "term-text-amber" },
+];
+
+const zhResumeLinks = [
+  {
+    label: "EN",
+    command: "curl -O cv-zhanwei-en.pdf",
+    href: "/cv-zhanwei-en.pdf",
+    ariaLabel: "下载英文简历",
+  },
+  {
+    label: "ZH",
+    command: "curl -O cv-zhanwei-zh.pdf",
+    href: "/cv-zhanwei-zh.pdf",
+    ariaLabel: "下载中文简历",
+  },
 ];
 
 const zhAboutLines = [
@@ -798,7 +840,6 @@ const zhContactLinks: ContactLink[] = [
   { label: "GitHub", value: "github.com/IT-Bill", href: "https://github.com/IT-Bill" },
   { label: "LinkedIn", value: "linkedin.com/in/it-bill", href: "https://www.linkedin.com/in/it-bill/" },
   { label: "X", value: "@IT_Billx", href: "https://x.com/IT_Billx" },
-  { label: "简历", value: "cv-zhanwei-zh.pdf", href: zhProfile.cvHref },
 ];
 
 export const zhPortfolio: PortfolioContent = {
@@ -827,6 +868,27 @@ export const zhPortfolio: PortfolioContent = {
   profile: zhProfile,
   asciiArt,
   statusLines: zhStatusLines,
+  heroResume: {
+    label: "简历",
+    command: "ls ./cv",
+    links: zhResumeLinks,
+  },
+  heroEducation: {
+    title: "教育经历",
+    command: "cat ./education.log",
+    items: [
+      {
+        degree: "数据科学与分析 哲学硕士",
+        institution: "香港科技大学（广州）",
+        period: "2025 - 至今",
+      },
+      {
+        degree: "计算机科学与技术 工学学士",
+        institution: "南方科技大学",
+        period: "2021 - 2025",
+      },
+    ],
+  },
   aboutLines: zhAboutLines,
   researchFocus: zhResearchFocus,
   toolGroups: zhToolGroups,

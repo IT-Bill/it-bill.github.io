@@ -65,6 +65,13 @@ export type ContactLink = {
   href: string;
 };
 
+export type ResumeDownload = {
+  label: string;
+  command: string;
+  href: string;
+  ariaLabel: string;
+};
+
 export type Locale = "en" | "zh";
 
 export type Profile = {
@@ -114,6 +121,24 @@ export type TerminalCopy = {
   privateAccess: string;
 };
 
+export type HeroResume = {
+  label: string;
+  command: string;
+  links: ResumeDownload[];
+};
+
+export type HeroEducationItem = {
+  degree: string;
+  institution: string;
+  period: string;
+};
+
+export type HeroEducation = {
+  title: string;
+  command: string;
+  items: HeroEducationItem[];
+};
+
 export type PortfolioMeta = {
   title: string;
   description: string;
@@ -128,6 +153,8 @@ export type PortfolioContent = {
   profile: Profile;
   asciiArt: AsciiArt;
   statusLines: StatusLine[];
+  heroResume: HeroResume;
+  heroEducation: HeroEducation;
   aboutLines: string[];
   researchFocus: string[];
   toolGroups: ToolGroup[];

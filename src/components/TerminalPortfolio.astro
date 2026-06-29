@@ -16,6 +16,8 @@ const { aboutLines, asciiArt, contactLinks, experiences, profile, projects, publ
 const countText = (template: string, count: number) => template.replace("{count}", String(count));
 const homeHref = getRelativeLocaleUrl(content.locale);
 const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
+const leadingStatusLines = statusLines.slice(0, -1);
+const finalStatusLine = statusLines.at(-1);
 ---
 
 <div class="terminal-page">
@@ -55,42 +57,100 @@ const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
     <section class="term-section term-section--hero" id="hero">
       <div class="term-container">
         <div class="hero-boot">
-          <div class="hero-boot__content">
-            <div class="hero-avatar">
-              <img
-                src={profile.avatar.src}
-                alt={profile.avatar.alt}
-                width={profile.avatar.width}
-                height={profile.avatar.height}
-                class="hero-avatar__img"
-                loading="eager"
-                decoding="async"
-                fetchpriority="high"
-              />
-            </div>
-            <div class="hero-ascii-wrapper">
-              <div class="ascii-lockup" aria-hidden="true">
-                <pre class="ascii-art ascii-art--first">{asciiArt.firstName}</pre>
-                <pre class="ascii-art ascii-art--last">{asciiArt.lastName}</pre>
-              </div>
-              <h1 class="visually-hidden">{profile.name}</h1>
-            </div>
-          </div>
-
-          <div class="hero-status stagger-in">
-            {
-              statusLines.map((line) => (
-                <div class="status-line">
-                  <span class="status-label">{line.label}</span>
-                  <span class="status-ok">[OK]</span>
-                  <span class={line.tone}>{line.text}</span>
+          <div class="hero-layout">
+            <div class="hero-layout__identity">
+              <div class="hero-boot__content">
+                <div class="hero-avatar">
+                  <img
+                    src={profile.avatar.src}
+                    alt={profile.avatar.alt}
+                    width={profile.avatar.width}
+                    height={profile.avatar.height}
+                    class="hero-avatar__img"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
                 </div>
-              ))
-            }
-            <div class="status-line status-line--ready">
-              <span class="term-text-bright">{content.terminal.ready}</span>
-              <span class="cursor"></span>
+                <div class="hero-ascii-wrapper">
+                  <div class="ascii-lockup" aria-hidden="true">
+                    <pre class="ascii-art ascii-art--first">{asciiArt.firstName}</pre>
+                    <pre class="ascii-art ascii-art--last">{asciiArt.lastName}</pre>
+                  </div>
+                  <h1 class="visually-hidden">{profile.name}</h1>
+                </div>
+              </div>
+
+              <div class="hero-status stagger-in">
+                {
+                  leadingStatusLines.map((line) => (
+                    <div class="status-line">
+                      <span class="status-label">{line.label}</span>
+                      <span class="status-ok">[OK]</span>
+                      <span class={line.tone}>{line.text}</span>
+                    </div>
+                  ))
+                }
+                {
+                  finalStatusLine ? (
+                    <div class="status-line">
+                      <span class="status-label">{finalStatusLine.label}</span>
+                      <span class="status-ok">[OK]</span>
+                      <span class={finalStatusLine.tone}>{finalStatusLine.text}</span>
+                    </div>
+                  ) : null
+                }
+                <div class="status-line status-line--ready">
+                  <span class="term-text-bright">{content.terminal.ready}</span>
+                  <span class="cursor"></span>
+                </div>
+              </div>
             </div>
+
+            <aside class="hero-side" aria-label={`${content.heroResume.label} ${content.heroEducation.title}`}>
+              <section class="hero-panel hero-resume-panel">
+                <div class="hero-panel__command">
+                  <span class="term-text-amber">$</span>
+                  <span>{content.heroResume.command}</span>
+                </div>
+                <div class="hero-panel__header">
+                  <span class="hero-panel__title">{content.heroResume.label}</span>
+                </div>
+                <div class="hero-resume-links">
+                  {
+                    content.heroResume.links.map((link) => (
+                      <a href={link.href} download class="hero-resume-link" aria-label={link.ariaLabel}>
+                        <span class="hero-resume-link__label">{link.label}</span>
+                        <span class="hero-resume-link__command">{link.command}</span>
+                      </a>
+                    ))
+                  }
+                </div>
+              </section>
+
+              <section class="hero-panel hero-education">
+                <div class="hero-panel__command">
+                  <span class="term-text-amber">$</span>
+                  <span>{content.heroEducation.command}</span>
+                </div>
+                <div class="hero-panel__header">
+                  <span class="hero-panel__title">{content.heroEducation.title}</span>
+                </div>
+                <div class="hero-education__list">
+                  {
+                    content.heroEducation.items.map((item) => (
+                      <article class="hero-education__item">
+                        <div class="hero-education__item-main">
+                          <h2 class="hero-education__degree">{item.degree}</h2>
+                          <p class="hero-education__institution">{item.institution}</p>
+                        </div>
+                        <span class="hero-education__period">{item.period}</span>
+                      </article>
+                    ))
+                  }
+                </div>
+              </section>
+            </aside>
           </div>
         </div>
       </div>

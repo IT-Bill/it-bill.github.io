@@ -1215,11 +1215,22 @@ html[lang="zh-CN"] {
   animation: boot-in 1s ease-out;
 }
 
+.hero-layout {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+}
+
+.hero-layout__identity {
+  min-width: 0;
+}
+
 .hero-boot__content {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: clamp(1.6rem, 2.8vw, 2.4rem);
 }
 
 .hero-ascii-wrapper {
@@ -1254,7 +1265,7 @@ html[lang="zh-CN"] {
   flex-direction: column;
   font-size: 0.9em;
   gap: 0.5em;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .status-line {
@@ -1300,6 +1311,147 @@ html[lang="zh-CN"] {
 .status-label {
   color: var(--term-gray);
   min-width: 200px;
+}
+
+.hero-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  justify-self: end;
+  max-width: 360px;
+  width: 100%;
+}
+
+.hero-panel {
+  animation: boot-in 0.5s ease-out forwards;
+  background: var(--term-skill-bg);
+  border: 1px solid var(--term-border);
+  border-radius: 8px;
+  box-shadow: var(--term-shadow-soft);
+  min-width: 0;
+  opacity: 0;
+  padding: 0.82rem 0.9rem;
+}
+
+.hero-panel:nth-child(1) {
+  animation-delay: 0.7s;
+}
+
+.hero-panel:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.hero-panel__command {
+  color: var(--term-green);
+  display: flex;
+  font-size: 0.82rem;
+  gap: 0.45rem;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+.hero-panel__header {
+  border-bottom: 1px solid var(--term-row-border);
+  margin-bottom: 0.72rem;
+  padding-bottom: 0.4rem;
+}
+
+.hero-panel__title {
+  color: var(--term-purple);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-resume-links {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.hero-resume-link {
+  align-items: stretch;
+  border: 1px solid var(--term-action-border);
+  border-radius: 6px;
+  color: var(--term-amber);
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.5rem 0.62rem;
+  text-decoration: none;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.hero-resume-link:hover,
+.hero-resume-link:focus-visible {
+  background: var(--term-action-hover-bg);
+  border-color: var(--term-amber);
+  color: var(--term-bright-white);
+  outline: none;
+}
+
+.hero-resume-link__label {
+  border: 1px solid var(--term-border);
+  border-radius: 4px;
+  color: var(--term-cyan);
+  display: grid;
+  font-weight: 700;
+  line-height: 1;
+  min-height: 1.55rem;
+  place-items: center;
+}
+
+.hero-resume-link__command {
+  align-items: center;
+  color: var(--term-amber);
+  display: flex;
+  line-height: 1.2;
+  min-height: 1.55rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-education__list {
+  display: grid;
+  gap: 0.72rem;
+  grid-template-columns: 1fr;
+}
+
+.hero-education__item {
+  border-left: 1px solid var(--term-border-strong);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  padding-left: 0.72rem;
+}
+
+.hero-education__item-main {
+  min-width: 0;
+}
+
+.hero-education__degree {
+  color: var(--term-bright-white);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.35;
+  margin: 0 0 0.28rem;
+}
+
+.hero-education__institution {
+  color: var(--term-white);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.hero-education__period {
+  color: var(--term-amber);
+  font-size: 0.78rem;
 }
 
 .term-nav {
@@ -1547,6 +1699,17 @@ html[lang="zh-CN"] {
   top: 0;
   width: 100%;
   z-index: 10000;
+}
+
+@media (max-width: 1180px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-side {
+    justify-self: stretch;
+    max-width: none;
+  }
 }
 
 @media (max-width: 1024px) {
