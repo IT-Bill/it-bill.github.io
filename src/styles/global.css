@@ -26,6 +26,14 @@
   src: url("/fonts/fira-code-nerd/FiraCodeNerdFontMono-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Sarasa Gothic SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@fontpkg/sarasa-gothic-sc/sarasa-gothic-sc-regular.ttf") format("truetype");
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -76,6 +84,9 @@
 :root {
   color-scheme: dark;
   --font-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body-en: var(--font-inter);
+  --font-body-zh: "Sarasa Gothic SC";
+  --font-body: var(--font-body-en);
   --font-fira-code-nerd-font: "FiraCode Nerd Font Mono", "Fira Code", "SF Mono", Menlo, Monaco, Consolas, monospace;
   --term-bg: #0f1115;
   --term-bg-light: #171a20;
@@ -163,6 +174,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+html[lang="zh-CN"] {
+  --font-body: var(--font-body-zh);
 }
 
 /* Catppuccin Latte surfaces with Starship-style prompt accents. */
@@ -630,6 +645,23 @@
   padding-left: 1em;
 }
 
+.copy-text,
+.output--copy,
+.skills-help__bubble,
+.timeline-entry__title,
+.timeline-entry__institution,
+.timeline-entry__description,
+.publication-card__title,
+.publication-card__venue,
+.publication-card__authors,
+.publication-card__description,
+.project-card__heading,
+.project-card__meta-line,
+.project-card__description,
+.term-comment {
+  font-family: var(--font-body);
+}
+
 .output--project-count {
   margin-bottom: 2rem;
 }
@@ -810,11 +842,19 @@
   opacity: 1;
 }
 
+.project-card-grid {
+  align-items: stretch;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-card {
   background: var(--term-card-bg);
   border: 1px solid var(--term-border);
   border-radius: 8px;
-  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
   scroll-margin-top: 90px;
   transition: all 0.3s ease;
 }
@@ -830,27 +870,36 @@
   align-items: center;
   border-bottom: 1px solid var(--term-border);
   display: flex;
+  gap: 0.75rem;
   justify-content: space-between;
   padding: 1em;
 }
 
 .project-card__title {
   color: var(--term-green);
-  font-size: 1.1em;
+  font-size: 0.86em;
   font-weight: 600;
+  line-height: 1.5;
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-shadow: none;
 }
 
 .project-card__meta {
   color: var(--term-gray);
   font-size: 0.8em;
+  flex: 0 0 auto;
 }
 
 .project-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 1.5em;
 }
 
 .project-card__image-container {
+  aspect-ratio: 16 / 9;
   background: var(--term-bg);
   border: 1px solid var(--term-border-strong);
   border-radius: 8px;
@@ -864,7 +913,8 @@
 .project-card__image {
   display: block;
   filter: var(--term-project-image-filter);
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: filter 0.3s ease;
   width: 100%;
 }
@@ -1593,6 +1643,15 @@
   .file-entry__group,
   .file-entry__date {
     display: none;
+  }
+
+  .project-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card__header {
+    align-items: start;
+    display: grid;
   }
 
   .project-card__image-container {

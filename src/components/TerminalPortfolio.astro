@@ -108,12 +108,12 @@ const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
           </div>
 
           <Prompt path="~/about" command="cat ./summary.txt" spaced />
-          <div class="output output--indented">
+          <div class="output output--indented output--copy">
             {aboutLines.map((line) => <span class="output__line term-text-white">{line}</span>)}
           </div>
 
           <Prompt path="~/about" command="cat ./research-focus.txt" spaced />
-          <div class="output output--indented">
+          <div class="output output--indented output--copy">
             {
               researchFocus.map((line) => (
                 <span class="output__line">
@@ -237,7 +237,9 @@ const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
           <div class="file-list">
             {projects.map((project) => <FileEntry project={project} loadingText={content.terminal.loadingImage} />)}
           </div>
-          {projects.map((project) => <ProjectCard project={project} privateAccess={content.terminal.privateAccess} />)}
+          <div class="project-card-grid">
+            {projects.map((project) => <ProjectCard project={project} privateAccess={content.terminal.privateAccess} />)}
+          </div>
         </TerminalWindow>
       </div>
     </section>
@@ -248,7 +250,7 @@ const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
           <Prompt path="~/contact" command="cat ./links.txt" />
           <div class="output output--indented stagger-in">
             <span class="output__line output__line--loose">
-              <span class="term-text-dim">// {content.terminal.contactComment}</span>
+              <span class="term-text-dim copy-text">// {content.terminal.contactComment}</span>
             </span>
             {
               contactLinks.map((link) => (
