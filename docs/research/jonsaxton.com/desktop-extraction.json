@@ -1,0 +1,3781 @@
+{
+  "url": "https://www.jonsaxton.com/?ref=onepagelove",
+  "title": "Jon Saxton – Senior Webflow Developer",
+  "lang": "en",
+  "htmlClasses": " w-mod-js",
+  "bodyClasses": "",
+  "viewport": {
+    "width": 1440,
+    "height": 1200,
+    "scrollHeight": 13699
+  },
+  "headLinks": [
+    {
+      "rel": "stylesheet",
+      "href": "https://www.jonsaxton.com/css/normalize.css",
+      "as": "",
+      "type": "text/css",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://fonts.googleapis.com/",
+      "as": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://fonts.gstatic.com/",
+      "as": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+      "as": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://www.jonsaxton.com/css/terminal.css",
+      "as": "",
+      "type": "text/css",
+      "sizes": ""
+    },
+    {
+      "rel": "shortcut icon",
+      "href": "https://www.jonsaxton.com/images/favicon.png",
+      "as": "",
+      "type": "image/x-icon",
+      "sizes": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://www.jonsaxton.com/images/webclip.png",
+      "as": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "rel": "canonical",
+      "href": "https://www.jonsaxton.com/",
+      "as": "",
+      "type": "",
+      "sizes": ""
+    }
+  ],
+  "meta": [
+    {
+      "name": "description",
+      "property": null,
+      "content": "Working with growth-stage and enterprise organizations to bring great designs to life."
+    },
+    {
+      "name": null,
+      "property": "og:title",
+      "content": "Jon Saxton – Senior Webflow Developer"
+    },
+    {
+      "name": null,
+      "property": "og:description",
+      "content": "Working with growth-stage and enterprise organizations to bring great designs to life."
+    },
+    {
+      "name": null,
+      "property": "og:image",
+      "content": "https://cdn.prod.website-files.com/67c76c95fb90edd656cb91c4/681f2c6f9987f40eabeb59d2_a30e6668899233e0856beb0f4349891f_og.jpg"
+    },
+    {
+      "name": null,
+      "property": "twitter:title",
+      "content": "Jon Saxton – Senior Webflow Developer"
+    },
+    {
+      "name": null,
+      "property": "twitter:description",
+      "content": "Working with growth-stage and enterprise organizations to bring great designs to life."
+    },
+    {
+      "name": null,
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "name": "twitter:card",
+      "property": null,
+      "content": "summary_large_image"
+    },
+    {
+      "name": "viewport",
+      "property": null,
+      "content": "width=device-width, initial-scale=1"
+    }
+  ],
+  "scripts": [
+    "https://f36d0351-241b-4239-9480-240a6d2b5f41.wf-app-prod.cosmic.webflow.services/_astro/BaseLayout.astro_astro_type_script_index_0_lang.DdPS9N8p.js",
+    "https://www.jonsaxton.com/js/terminal.js"
+  ],
+  "roots": [
+    {
+      "index": 0,
+      "tag": "div",
+      "id": "",
+      "classes": "terminal-page",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 13699
+      },
+      "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK] Portfolio v8.1 loaded ROLE [OK] Senior Solutions Architect @ Webflow SIDE GIG [OK] Freelance Dev @ Nights & Weekends SPECIALTY [OK] Webflow Development CERTIFICATION [OK] Certified Webflow Partner STATUS [OK] Av",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1440px",
+        "height": "13698.9px",
+        "minHeight": "1200px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden auto"
+      }
+    },
+    {
+      "index": 1,
+      "tag": "script",
+      "id": "",
+      "classes": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "text": "",
+      "styles": {
+        "position": "static",
+        "fontFamily": "sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    }
+  ],
+  "sectionCandidates": [
+    {
+      "i": 0,
+      "tag": "html",
+      "id": "",
+      "classes": "w-mod-js",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 13699
+      },
+      "text": "Jon Saxton – Senior Webflow Developer !function(o,c){var n=c.documentElement,t=\" w-mod-\";n.className+=t+\"js\",(\"ontouchstart\"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+\"touch\")}(window,document); /* Terminal Text Selection */ ::selection { background: #00ff41; color: #0a0a0a; } ::-moz-selection { background: #00ff41; color: #0a0a0a; } /* Smooth scrolling */ html { scroll-behavior: smooth; } /* Reset */ *, *::before, *::aft",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1440px",
+        "height": "13698.9px",
+        "fontFamily": "sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 1,
+      "tag": "body",
+      "id": "",
+      "classes": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 13699
+      },
+      "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1440px",
+        "height": "13698.9px",
+        "fontFamily": "sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "border": "0px none rgb(0, 0, 0)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 2,
+      "tag": "div",
+      "id": "",
+      "classes": "terminal-page",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 13699
+      },
+      "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1440px",
+        "height": "13698.9px",
+        "minHeight": "1200px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden auto"
+      }
+    },
+    {
+      "i": 3,
+      "tag": "main",
+      "id": "",
+      "classes": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 13699
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK]",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1440px",
+        "height": "13698.9px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "id": "hero",
+      "classes": "term-section term-section--hero is-visible",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1200
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK]",
+      "styles": {
+        "display": "flex",
+        "position": "relative",
+        "width": "1440px",
+        "height": "1200px",
+        "minHeight": "1200px",
+        "padding": "64px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 5,
+      "tag": "div",
+      "id": "",
+      "classes": "term-container",
+      "rect": {
+        "x": 220,
+        "y": 376,
+        "width": 1000,
+        "height": 448
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK]",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "448.453px",
+        "maxWidth": "1000px",
+        "margin": "0px 220px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 6,
+      "tag": "div",
+      "id": "",
+      "classes": "hero-boot",
+      "rect": {
+        "x": 220,
+        "y": 376,
+        "width": 1000,
+        "height": 448
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK]",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "448.453px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 7,
+      "tag": "div",
+      "id": "",
+      "classes": "hero-boot__content",
+      "rect": {
+        "x": 220,
+        "y": 376,
+        "width": 1000,
+        "height": 180
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1000px",
+        "height": "180px",
+        "gap": "48px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 8,
+      "tag": "div",
+      "id": "",
+      "classes": "hero-ascii-wrapper",
+      "rect": {
+        "x": 448,
+        "y": 393,
+        "width": 772,
+        "height": 146
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "772px",
+        "height": "145.578px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 9,
+      "tag": "pre",
+      "id": "",
+      "classes": "ascii-art",
+      "rect": {
+        "x": 448,
+        "y": 407,
+        "width": 772,
+        "height": 118
+      },
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "772px",
+        "height": "117.578px",
+        "margin": "14px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "16.8px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all"
+      }
+    },
+    {
+      "i": 10,
+      "tag": "div",
+      "id": "",
+      "classes": "hero-status stagger-in",
+      "rect": {
+        "x": 220,
+        "y": 604,
+        "width": 1000,
+        "height": 220
+      },
+      "text": "SYSTEM [OK] Portfolio v8.1 loaded ROLE [OK] Senior Solutions Architect @ Webflow SIDE GIG [OK] Freelance Dev @ Nights & Weekends SPECIALTY [OK] Webflow Development CERTIFICATION [OK] Certified Webflow Partner STATUS [OK] Available for freelance System ready. Scroll to explore.",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1000px",
+        "height": "220.453px",
+        "margin": "48px 0px 0px",
+        "gap": "7.2px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14.4px",
+        "fontWeight": "400",
+        "lineHeight": "23.04px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 11,
+      "tag": "section",
+      "id": "about",
+      "classes": "term-section",
+      "rect": {
+        "x": 0,
+        "y": 1200,
+        "width": 1440,
+        "height": 1200
+      },
+      "text": "jon@saxton: ~/about jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@s",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1440px",
+        "height": "1200px",
+        "minHeight": "1200px",
+        "padding": "64px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 12,
+      "tag": "div",
+      "id": "",
+      "classes": "term-container",
+      "rect": {
+        "x": 220,
+        "y": 1382,
+        "width": 1000,
+        "height": 836
+      },
+      "text": "jon@saxton: ~/about jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@s",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "835.891px",
+        "maxWidth": "1000px",
+        "margin": "0px 220px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 13,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window",
+      "rect": {
+        "x": 220,
+        "y": 1382,
+        "width": 1000,
+        "height": 836
+      },
+      "text": "jon@saxton: ~/about jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@s",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "835.891px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(15, 15, 15)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "borderRadius": "4px",
+        "boxShadow": "rgba(0, 255, 65, 0.1) 0px 0px 20px 0px, rgba(0, 0, 0, 0.3) 0px 0px 60px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 14,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__body",
+      "rect": {
+        "x": 221,
+        "y": 1419,
+        "width": 998,
+        "height": 798
+      },
+      "text": "jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@saxton :~/about$ cat ",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "998px",
+        "height": "797.703px",
+        "minHeight": "200px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 15,
+      "tag": "div",
+      "id": "",
+      "classes": "output",
+      "rect": {
+        "x": 245,
+        "y": 1504,
+        "width": 950,
+        "height": 175
+      },
+      "text": "Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "950px",
+        "height": "175.344px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 16,
+      "tag": "div",
+      "id": "",
+      "classes": "output output--indented",
+      "rect": {
+        "x": 245,
+        "y": 1772,
+        "width": 950,
+        "height": 173
+      },
+      "text": "→ Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "950px",
+        "height": "172.781px",
+        "padding": "0px 0px 0px 16px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 17,
+      "tag": "div",
+      "id": "",
+      "classes": "output output--indented",
+      "rect": {
+        "x": 245,
+        "y": 2038,
+        "width": 950,
+        "height": 131
+      },
+      "text": "Working with enterprise organizations to be successful with Webflow Previous agency dev lead Previous project manager // Dad of 2 cutie patooties",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "950px",
+        "height": "131.188px",
+        "padding": "0px 0px 0px 16px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 18,
+      "tag": "section",
+      "id": "projects",
+      "classes": "term-section",
+      "rect": {
+        "x": 0,
+        "y": 2400,
+        "width": 1440,
+        "height": 10692
+      },
+      "text": "jon@saxton: ~/projects jon@saxton :~/projects$ ls -la . total 10 featured projects dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1440px",
+        "height": "10691.8px",
+        "minHeight": "1200px",
+        "padding": "64px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 19,
+      "tag": "div",
+      "id": "",
+      "classes": "term-container term-container--wide",
+      "rect": {
+        "x": 120,
+        "y": 2464,
+        "width": 1200,
+        "height": 10564
+      },
+      "text": "jon@saxton: ~/projects jon@saxton :~/projects$ ls -la . total 10 featured projects dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1200px",
+        "height": "10563.8px",
+        "maxWidth": "1200px",
+        "margin": "0px 120px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 20,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window",
+      "rect": {
+        "x": 120,
+        "y": 2464,
+        "width": 1200,
+        "height": 10564
+      },
+      "text": "jon@saxton: ~/projects jon@saxton :~/projects$ ls -la . total 10 featured projects dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1200px",
+        "height": "10563.8px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(15, 15, 15)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "borderRadius": "4px",
+        "boxShadow": "rgba(0, 255, 65, 0.1) 0px 0px 20px 0px, rgba(0, 0, 0, 0.3) 0px 0px 60px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 21,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__body",
+      "rect": {
+        "x": 121,
+        "y": 2501,
+        "width": 1198,
+        "height": 10526
+      },
+      "text": "jon@saxton :~/projects$ ls -la . total 10 featured projects dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report/ // LOADING IMAGE... d",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1198px",
+        "height": "10525.6px",
+        "minHeight": "200px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 22,
+      "tag": "div",
+      "id": "",
+      "classes": "file-list",
+      "rect": {
+        "x": 145,
+        "y": 2672,
+        "width": 1150,
+        "height": 318
+      },
+      "text": "dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report/ // LOADING IMAGE... dev 2023 beefree-sdk/ // LOADING IMAGE... dev 2025 martha-and",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "317.656px",
+        "margin": "0px 0px 48px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 23,
+      "tag": "div",
+      "id": "ted-conferences",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 3038,
+        "width": 1150,
+        "height": 976
+      },
+      "text": "$ cat ./ted-conferences/README.md 2025 TED Conferences Built for total client control with a large component library, making full use of Webflow's Page Building experience. More control, speed to market, and lower costs. Client: TED Role: Lead Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "975.969px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 24,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 3100,
+        "width": 1148,
+        "height": 913
+      },
+      "text": "TED Conferences Built for total client control with a large component library, making full use of Webflow's Page Building experience. More control, speed to market, and lower costs. Client: TED Role: Lead Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "912.828px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 25,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 3124,
+        "width": 1100,
+        "height": 620
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "619.625px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 26,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 3125,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 27,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 3125,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 28,
+      "tag": "div",
+      "id": "global-leadership-network",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 4046,
+        "width": 1150,
+        "height": 976
+      },
+      "text": "$ cat ./global-leadership-network/README.md 2025 Global Leadership Network Annual Summit attended by 350,000 leaders spanning 100+ countries. Modular page building controls, custom accents, SVG masks, and a system to customize the brand for each year. Client: Global Leadership Network Role: Lead Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "975.969px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 29,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 4108,
+        "width": 1148,
+        "height": 913
+      },
+      "text": "Global Leadership Network Annual Summit attended by 350,000 leaders spanning 100+ countries. Modular page building controls, custom accents, SVG masks, and a system to customize the brand for each year. Client: Global Leadership Network Role: Lead Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "912.828px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 30,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 4132,
+        "width": 1100,
+        "height": 620
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "619.625px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 31,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 4133,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 32,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 4133,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 33,
+      "tag": "div",
+      "id": "captivateiq-dreamforce",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 5054,
+        "width": 1150,
+        "height": 954
+      },
+      "text": "$ cat ./captivateiq-dreamforce/README.md 2025 The Oasis at Dreamforce A fun, colorful landing page full of custom illustrations with movement to bring them all to life. Sometimes the brief is just 'make something awesome'. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "954.234px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 34,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 5116,
+        "width": 1148,
+        "height": 891
+      },
+      "text": "The Oasis at Dreamforce A fun, colorful landing page full of custom illustrations with movement to bring them all to life. Sometimes the brief is just 'make something awesome'. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "891.094px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 35,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 5140,
+        "width": 1100,
+        "height": 598
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "597.891px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 36,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 5141,
+        "width": 1098,
+        "height": 596
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "595.891px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 37,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 5141,
+        "width": 1098,
+        "height": 596
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "595.891px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 38,
+      "tag": "div",
+      "id": "state-of-icm-report",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 6040,
+        "width": 1150,
+        "height": 923
+      },
+      "text": "$ cat ./state-of-icm-report/README.md 2025 State of ICM Report Report microsite with fluid typography, offset grid system, and smooth scroll animations. Beautiful custom illustrations and unveiling effects without letting animation get in the way. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "923.484px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 39,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 6102,
+        "width": 1148,
+        "height": 860
+      },
+      "text": "State of ICM Report Report microsite with fluid typography, offset grid system, and smooth scroll animations. Beautiful custom illustrations and unveiling effects without letting animation get in the way. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "860.344px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 40,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 6126,
+        "width": 1100,
+        "height": 567
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "567.141px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 41,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 6127,
+        "width": 1098,
+        "height": 565
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "565.141px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 42,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 6127,
+        "width": 1098,
+        "height": 565
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "565.141px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 43,
+      "tag": "div",
+      "id": "pcc-christmas-eve",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 6996,
+        "width": 1150,
+        "height": 949
+      },
+      "text": "$ cat ./pcc-christmas-eve/README.md 2024 Christmas Eve 2024 Tasteful, well-branded microsite with lighting tricks for a shimmering backdrop and SVG path draw-in animation. Client: Passion City Church Role: Senior Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "948.781px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 44,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 7058,
+        "width": 1148,
+        "height": 886
+      },
+      "text": "Christmas Eve 2024 Tasteful, well-branded microsite with lighting tricks for a shimmering backdrop and SVG path draw-in animation. Client: Passion City Church Role: Senior Developer Agency: Whiteboard → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "885.641px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 45,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 7082,
+        "width": 1100,
+        "height": 620
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "619.625px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 46,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 7083,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 47,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 7083,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 48,
+      "tag": "div",
+      "id": "the-multiplier",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 7976,
+        "width": 1150,
+        "height": 926
+      },
+      "text": "$ cat ./the-multiplier/README.md 2024 The Multiplier Content hub for thought leadership. Free membership content site with access, profiles, and favoriting system using Memberstack, integrated with client's CRM. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "926px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 49,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 8039,
+        "width": 1148,
+        "height": 863
+      },
+      "text": "The Multiplier Content hub for thought leadership. Free membership content site with access, profiles, and favoriting system using Memberstack, integrated with client's CRM. Client: CaptivateIQ Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "862.859px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 50,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 8063,
+        "width": 1100,
+        "height": 570
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "569.656px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 51,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 8064,
+        "width": 1098,
+        "height": 568
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "567.656px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 52,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 8064,
+        "width": 1098,
+        "height": 568
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "567.656px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 53,
+      "tag": "div",
+      "id": "harness",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 8934,
+        "width": 1150,
+        "height": 1096
+      },
+      "text": "$ cat ./harness/README.md 2024 Harness Fundraising technology for nonprofits and financial institutions. Collaboration with top minds like Keegan Leary and Timothy Ricks on some fancy tricks. Client: Harness Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "1095.67px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 54,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 8997,
+        "width": 1148,
+        "height": 1033
+      },
+      "text": "Harness Fundraising technology for nonprofits and financial institutions. Collaboration with top minds like Keegan Leary and Timothy Ricks on some fancy tricks. Client: Harness Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "1032.53px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 55,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 9021,
+        "width": 1100,
+        "height": 739
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "739.328px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 56,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 9022,
+        "width": 1098,
+        "height": 737
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "737.328px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 57,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 9022,
+        "width": 1098,
+        "height": 737
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "737.328px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 58,
+      "tag": "div",
+      "id": "kalderos-annual-report",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 10062,
+        "width": 1150,
+        "height": 976
+      },
+      "text": "$ cat ./kalderos-annual-report/README.md 2023 Kalderos Annual Report 8-bit inspired annual report. Single-scroll, multi-chapter experience with custom illustrations and a whole lot of custom JavaScript. Plus a fun easter egg. Client: Kalderos Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "975.969px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 59,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 10124,
+        "width": 1148,
+        "height": 913
+      },
+      "text": "Kalderos Annual Report 8-bit inspired annual report. Single-scroll, multi-chapter experience with custom illustrations and a whole lot of custom JavaScript. Plus a fun easter egg. Client: Kalderos Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "912.828px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 60,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 10148,
+        "width": 1100,
+        "height": 620
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "619.625px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 61,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 10149,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 62,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 10149,
+        "width": 1098,
+        "height": 618
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 63,
+      "tag": "div",
+      "id": "beefree-sdk",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 11070,
+        "width": 1150,
+        "height": 896
+      },
+      "text": "$ cat ./beefree-sdk/README.md 2023 Beefree SDK Website for SaaS developers whose audience is other developers. Full company rebrand with mega menu, multiple products, and robust style system. Client: Beefree Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "896.078px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 64,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 11132,
+        "width": 1148,
+        "height": 833
+      },
+      "text": "Beefree SDK Website for SaaS developers whose audience is other developers. Full company rebrand with mega menu, multiple products, and robust style system. Client: Beefree Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "832.938px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 65,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 11156,
+        "width": 1100,
+        "height": 540
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "539.734px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 66,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 11157,
+        "width": 1098,
+        "height": 538
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "537.734px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 67,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 11157,
+        "width": 1098,
+        "height": 538
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "537.734px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 68,
+      "tag": "div",
+      "id": "martha-and-mary",
+      "classes": "project-card",
+      "rect": {
+        "x": 145,
+        "y": 11998,
+        "width": 1150,
+        "height": 973
+      },
+      "text": "$ cat ./martha-and-mary/README.md 2025 Martha & Mary Historic organization modernized. Component-based and flexible enough for team control with guardrails for brand consistency. Client: Martha & Mary Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1150px",
+        "height": "972.594px",
+        "margin": "0px 0px 32px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgba(0, 255, 65, 0.02)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "opacity": "1",
+        "transition": "0.3s",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 69,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__body",
+      "rect": {
+        "x": 146,
+        "y": 12060,
+        "width": 1148,
+        "height": 909
+      },
+      "text": "Martha & Mary Historic organization modernized. Component-based and flexible enough for team control with guardrails for brand consistency. Client: Martha & Mary Role: Developer → ./open --url",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1148px",
+        "height": "909.453px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 70,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-container",
+      "rect": {
+        "x": 170,
+        "y": 12084,
+        "width": 1100,
+        "height": 616
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "1100px",
+        "height": "616.25px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(10, 10, 10)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "boxShadow": "rgba(0, 255, 65, 0.2) 0px 0px 20px 0px, rgba(0, 0, 0, 0.5) 0px 0px 40px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 71,
+      "tag": "img",
+      "id": "",
+      "classes": "project-card__image",
+      "rect": {
+        "x": 171,
+        "y": 12085,
+        "width": 1098,
+        "height": 614
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "614.25px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "i": 72,
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 12085,
+        "width": 1098,
+        "height": 614
+      },
+      "text": "",
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "zIndex": "1",
+        "width": "1098px",
+        "height": "614.25px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundImage": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 73,
+      "tag": "section",
+      "id": "contact",
+      "classes": "term-section term-section--full",
+      "rect": {
+        "x": 0,
+        "y": 13092,
+        "width": 1440,
+        "height": 517
+      },
+      "text": "jon@saxton: ~/contact jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1440px",
+        "height": "516.562px",
+        "padding": "32px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 74,
+      "tag": "div",
+      "id": "",
+      "classes": "term-container",
+      "rect": {
+        "x": 220,
+        "y": 13124,
+        "width": 1000,
+        "height": 453
+      },
+      "text": "jon@saxton: ~/contact jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "452.562px",
+        "maxWidth": "1000px",
+        "margin": "0px 220px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 75,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window",
+      "rect": {
+        "x": 220,
+        "y": 13124,
+        "width": 1000,
+        "height": 453
+      },
+      "text": "jon@saxton: ~/contact jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1000px",
+        "height": "452.562px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "backgroundColor": "rgb(15, 15, 15)",
+        "border": "1px solid rgb(0, 170, 42)",
+        "borderRadius": "4px",
+        "boxShadow": "rgba(0, 255, 65, 0.1) 0px 0px 20px 0px, rgba(0, 0, 0, 0.3) 0px 0px 60px 0px inset",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "i": 76,
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__body",
+      "rect": {
+        "x": 221,
+        "y": 13161,
+        "width": 998,
+        "height": 414
+      },
+      "text": "jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "998px",
+        "height": "414.375px",
+        "minHeight": "200px",
+        "padding": "24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 77,
+      "tag": "div",
+      "id": "",
+      "classes": "output output--indented stagger-in",
+      "rect": {
+        "x": 245,
+        "y": 13246,
+        "width": 950,
+        "height": 213
+      },
+      "text": "// Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs",
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "950px",
+        "height": "212.781px",
+        "padding": "0px 0px 0px 16px",
+        "margin": "0px 0px 24px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    },
+    {
+      "i": 78,
+      "tag": "footer",
+      "id": "",
+      "classes": "term-section term-section--full",
+      "rect": {
+        "x": 0,
+        "y": 13608,
+        "width": 1440,
+        "height": 91
+      },
+      "text": "Built with Astro, Cursor, Webflow CMS, and Webflow Cloud. © 2026 Jon Saxton",
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "width": "1440px",
+        "height": "90.5938px",
+        "padding": "32px 0px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "all",
+        "overflow": "visible"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.jonsaxton.com/images/Jon.avif",
+      "alt": "Jon Saxton",
+      "width": 3015,
+      "height": 2261,
+      "rect": {
+        "x": 222,
+        "y": 378,
+        "width": 176,
+        "height": 176
+      },
+      "parentClasses": "hero-avatar",
+      "siblings": 1,
+      "styles": {
+        "display": "inline",
+        "position": "static",
+        "width": "176px",
+        "height": "176px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.15) contrast(1.05) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/TED.avif",
+      "alt": "TED Conferences preview",
+      "width": 3840,
+      "height": 2160,
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "222.75px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/f19f1fb61387b2e694d3d4b81617d0e4_685c1e5446d677e5cd68ba99_full_bleed-p-1600.webp",
+      "alt": "Global Leadership Network preview",
+      "width": 1600,
+      "height": 900,
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "222.75px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Dreamforce.svg",
+      "alt": "The Oasis at Dreamforce preview",
+      "width": 1920,
+      "height": 1042,
+      "rect": {
+        "x": 970,
+        "y": 493,
+        "width": 396,
+        "height": 215
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "214.906px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/SOIC.avif",
+      "alt": "State of ICM Report preview",
+      "width": 2720,
+      "height": 1400,
+      "rect": {
+        "x": 970,
+        "y": 498,
+        "width": 396,
+        "height": 204
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "203.812px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/PCC.avif",
+      "alt": "Christmas Eve 2024 preview",
+      "width": 3840,
+      "height": 2160,
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "222.75px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/The-Multiplier.avif",
+      "alt": "The Multiplier preview",
+      "width": 2089,
+      "height": 1080,
+      "rect": {
+        "x": 970,
+        "y": 498,
+        "width": 396,
+        "height": 205
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "204.719px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Harness.avif",
+      "alt": "Harness preview",
+      "width": 2880,
+      "height": 1934,
+      "rect": {
+        "x": 970,
+        "y": 467,
+        "width": 396,
+        "height": 266
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "265.922px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Kalderos-AR.avif",
+      "alt": "Kalderos Annual Report preview",
+      "width": 2880,
+      "height": 1620,
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "222.75px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Beefree-bg.avif",
+      "alt": "Beefree SDK preview",
+      "width": 2293,
+      "height": 1123,
+      "rect": {
+        "x": 970,
+        "y": 503,
+        "width": 396,
+        "height": 194
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "193.938px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Martha-and-Mary-Background.webp",
+      "alt": "Martha & Mary preview",
+      "width": 3214,
+      "height": 1798,
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 222
+      },
+      "parentClasses": "file-entry__preview-inner",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "zIndex": "1",
+        "width": "396px",
+        "height": "221.531px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "0",
+        "transition": "all",
+        "overflow": "clip",
+        "filter": "grayscale(0.3) contrast(1.1) brightness(0.9)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/TED.avif",
+      "alt": "TED Conferences screenshot",
+      "width": 3840,
+      "height": 2160,
+      "rect": {
+        "x": 171,
+        "y": 3125,
+        "width": 1098,
+        "height": 618
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/f19f1fb61387b2e694d3d4b81617d0e4_685c1e5446d677e5cd68ba99_full_bleed-p-1600.webp",
+      "alt": "Global Leadership Network screenshot",
+      "width": 1600,
+      "height": 900,
+      "rect": {
+        "x": 171,
+        "y": 4133,
+        "width": 1098,
+        "height": 618
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Dreamforce.svg",
+      "alt": "The Oasis at Dreamforce screenshot",
+      "width": 1920,
+      "height": 1042,
+      "rect": {
+        "x": 171,
+        "y": 5141,
+        "width": 1098,
+        "height": 596
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "595.891px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/SOIC.avif",
+      "alt": "State of ICM Report screenshot",
+      "width": 2720,
+      "height": 1400,
+      "rect": {
+        "x": 171,
+        "y": 6127,
+        "width": 1098,
+        "height": 565
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "565.141px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/PCC.avif",
+      "alt": "Christmas Eve 2024 screenshot",
+      "width": 3840,
+      "height": 2160,
+      "rect": {
+        "x": 171,
+        "y": 7083,
+        "width": 1098,
+        "height": 618
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/The-Multiplier.avif",
+      "alt": "The Multiplier screenshot",
+      "width": 2089,
+      "height": 1080,
+      "rect": {
+        "x": 171,
+        "y": 8064,
+        "width": 1098,
+        "height": 568
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "567.656px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Harness.avif",
+      "alt": "Harness screenshot",
+      "width": 2880,
+      "height": 1934,
+      "rect": {
+        "x": 171,
+        "y": 9022,
+        "width": 1098,
+        "height": 737
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "737.328px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Kalderos-AR.avif",
+      "alt": "Kalderos Annual Report screenshot",
+      "width": 2880,
+      "height": 1620,
+      "rect": {
+        "x": 171,
+        "y": 10149,
+        "width": 1098,
+        "height": 618
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "617.625px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Beefree-bg.avif",
+      "alt": "Beefree SDK screenshot",
+      "width": 2293,
+      "height": 1123,
+      "rect": {
+        "x": 171,
+        "y": 11157,
+        "width": 1098,
+        "height": 538
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "537.734px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    },
+    {
+      "src": "https://www.jonsaxton.com/images/Martha-and-Mary-Background.webp",
+      "alt": "Martha & Mary screenshot",
+      "width": 3214,
+      "height": 1798,
+      "rect": {
+        "x": 171,
+        "y": 12085,
+        "width": 1098,
+        "height": 614
+      },
+      "parentClasses": "project-card__image-container",
+      "siblings": 1,
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "width": "1098px",
+        "height": "614.25px",
+        "fontFamily": "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "25.6px",
+        "color": "rgb(0, 255, 65)",
+        "border": "0px none rgb(0, 255, 65)",
+        "opacity": "1",
+        "transition": "filter 0.3s",
+        "overflow": "clip",
+        "filter": "grayscale(0.2) contrast(1.15) brightness(0.95)"
+      }
+    }
+  ],
+  "videos": [],
+  "backgroundImages": [
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0px, rgba(0, 0, 0, 0.08) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "hero-avatar__scanlines",
+      "rect": {
+        "x": 222,
+        "y": 378,
+        "width": 176,
+        "height": 176
+      }
+    },
+    {
+      "url": "linear-gradient(rgb(26, 26, 26) 0%, rgb(15, 15, 15) 100%)",
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__header",
+      "rect": {
+        "x": 221,
+        "y": 1383,
+        "width": 998,
+        "height": 36
+      }
+    },
+    {
+      "url": "linear-gradient(rgb(26, 26, 26) 0%, rgb(15, 15, 15) 100%)",
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__header",
+      "rect": {
+        "x": 121,
+        "y": 2465,
+        "width": 1198,
+        "height": 36
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 493,
+        "width": 396,
+        "height": 215
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 498,
+        "width": 396,
+        "height": 204
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 498,
+        "width": 396,
+        "height": 205
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 467,
+        "width": 396,
+        "height": 266
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 223
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 503,
+        "width": 396,
+        "height": 194
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "file-entry__preview-scanlines",
+      "rect": {
+        "x": 970,
+        "y": 489,
+        "width": 396,
+        "height": 222
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 3125,
+        "width": 1098,
+        "height": 618
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 4133,
+        "width": 1098,
+        "height": 618
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 5141,
+        "width": 1098,
+        "height": 596
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 6127,
+        "width": 1098,
+        "height": 565
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 7083,
+        "width": 1098,
+        "height": 618
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 8064,
+        "width": 1098,
+        "height": 568
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 9022,
+        "width": 1098,
+        "height": 737
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 10149,
+        "width": 1098,
+        "height": 618
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 11157,
+        "width": 1098,
+        "height": 538
+      }
+    },
+    {
+      "url": "repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0px, rgba(0, 0, 0, 0.15) 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px)",
+      "tag": "div",
+      "id": "",
+      "classes": "project-card__image-scanlines",
+      "rect": {
+        "x": 171,
+        "y": 12085,
+        "width": 1098,
+        "height": 614
+      }
+    },
+    {
+      "url": "linear-gradient(rgb(26, 26, 26) 0%, rgb(15, 15, 15) 100%)",
+      "tag": "div",
+      "id": "",
+      "classes": "term-window__header",
+      "rect": {
+        "x": 221,
+        "y": 13125,
+        "width": 998,
+        "height": 36
+      }
+    }
+  ],
+  "fonts": [
+    "sans-serif",
+    "\"JetBrains Mono\", \"Fira Code\", \"SF Mono\", Consolas, monospace"
+  ],
+  "colors": [
+    "rgb(0, 0, 0)",
+    "rgb(0, 255, 65)",
+    "rgb(10, 10, 10)",
+    "rgba(10, 10, 10, 0.95)",
+    "rgb(0, 255, 65) rgb(0, 255, 65) rgb(0, 170, 42)",
+    "rgb(0, 170, 42)",
+    "rgb(102, 102, 102)",
+    "rgb(255, 102, 0)",
+    "rgb(51, 255, 102)",
+    "rgb(15, 15, 15)",
+    "rgb(255, 95, 86)",
+    "rgb(255, 189, 46)",
+    "rgb(39, 202, 64)",
+    "rgb(0, 170, 255)",
+    "rgb(204, 204, 204)",
+    "rgb(0, 255, 65) rgb(0, 255, 65) rgba(0, 255, 65, 0.1)",
+    "rgba(0, 255, 65, 0.02)",
+    "rgb(204, 85, 0)",
+    "rgb(0, 170, 42) rgb(0, 255, 65) rgb(0, 255, 65)"
+  ],
+  "svgs": [],
+  "anchors": [
+    {
+      "text": "jon@saxton:~$",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#",
+      "rect": {
+        "x": 220,
+        "y": 12,
+        "width": 125,
+        "height": 26
+      },
+      "classes": "term-nav__brand"
+    },
+    {
+      "text": "whoami",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#about",
+      "rect": {
+        "x": 952,
+        "y": 15,
+        "width": 65,
+        "height": 19
+      },
+      "classes": "term-nav__link"
+    },
+    {
+      "text": "projects",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#projects",
+      "rect": {
+        "x": 1040,
+        "y": 15,
+        "width": 82,
+        "height": 19
+      },
+      "classes": "term-nav__link"
+    },
+    {
+      "text": "contact",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#contact",
+      "rect": {
+        "x": 1147,
+        "y": 15,
+        "width": 73,
+        "height": 19
+      },
+      "classes": "term-nav__link"
+    },
+    {
+      "text": "dev 2025 ted-conferences/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#ted-conferences",
+      "rect": {
+        "x": 145,
+        "y": 2672,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2025 global-leadership-network/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#global-leadership-network",
+      "rect": {
+        "x": 145,
+        "y": 2704,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2025 captivateiq-dreamforce/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#captivateiq-dreamforce",
+      "rect": {
+        "x": 145,
+        "y": 2736,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2025 state-of-icm-report/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#state-of-icm-report",
+      "rect": {
+        "x": 145,
+        "y": 2768,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2024 pcc-christmas-eve/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#pcc-christmas-eve",
+      "rect": {
+        "x": 145,
+        "y": 2799,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2024 the-multiplier/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#the-multiplier",
+      "rect": {
+        "x": 145,
+        "y": 2831,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2024 harness/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#harness",
+      "rect": {
+        "x": 145,
+        "y": 2863,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2023 kalderos-annual-report/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#kalderos-annual-report",
+      "rect": {
+        "x": 145,
+        "y": 2895,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2023 beefree-sdk/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#beefree-sdk",
+      "rect": {
+        "x": 145,
+        "y": 2927,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "dev 2025 martha-and-mary/ // LOADING IMAGE...",
+      "href": "https://www.jonsaxton.com/?ref=onepagelove#martha-and-mary",
+      "rect": {
+        "x": 145,
+        "y": 2958,
+        "width": 1150,
+        "height": 32
+      },
+      "classes": "file-entry"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://conferences.ted.com/",
+      "rect": {
+        "x": 170,
+        "y": 3945,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://www.globalleadership.org/",
+      "rect": {
+        "x": 170,
+        "y": 4953,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://captivateiq.com/dreamforce",
+      "rect": {
+        "x": 170,
+        "y": 5940,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://stateoficmreport.captivateiq.com/",
+      "rect": {
+        "x": 170,
+        "y": 6895,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://pcc-christmas-eve-24.webflow.io/",
+      "rect": {
+        "x": 170,
+        "y": 7876,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://multiplier.captivateiq.com/",
+      "rect": {
+        "x": 170,
+        "y": 8834,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://www.goharness.com/",
+      "rect": {
+        "x": 170,
+        "y": 9962,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://www.kalderos.com/2023-annual-report",
+      "rect": {
+        "x": 170,
+        "y": 10970,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://developers.beefree.io/",
+      "rect": {
+        "x": 170,
+        "y": 11898,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "→ ./open --url",
+      "href": "https://www.marthaandmary.org/",
+      "rect": {
+        "x": 170,
+        "y": 12902,
+        "width": 168,
+        "height": 44
+      },
+      "classes": "project-card__link"
+    },
+    {
+      "text": "@JonSaxton",
+      "href": "https://x.com/JonSaxton",
+      "rect": {
+        "x": 357,
+        "y": 13294,
+        "width": 96,
+        "height": 22
+      },
+      "classes": "term-link"
+    },
+    {
+      "text": "/in/jpsaxton",
+      "href": "https://www.linkedin.com/in/jpsaxton/",
+      "rect": {
+        "x": 367,
+        "y": 13322,
+        "width": 115,
+        "height": 22
+      },
+      "classes": "term-link"
+    },
+    {
+      "text": "@jonsaxton.com",
+      "href": "https://bsky.app/profile/jonsaxton.com",
+      "rect": {
+        "x": 357,
+        "y": 13351,
+        "width": 134,
+        "height": 22
+      },
+      "classes": "term-link"
+    }
+  ],
+  "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK] Portfolio v8.1 loaded ROLE [OK] Senior Solutions Architect @ Webflow SIDE GIG [OK] Freelance Dev @ Nights & Weekends SPECIALTY [OK] Webflow Development CERTIFICATION [OK] Certified Webflow Partner STATUS [OK] Available for freelance System ready. Scroll to explore. jon@saxton: ~/about jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@saxton :~/about$ cat ./background.txt Working with enterprise organizations to be successful with Webflow Previous agency dev lead Previous project manager // Dad of 2 cutie patooties jon@saxton: ~/projects jon@saxton :~/projects$ ls -la . total 10 featured projects dev 2025 ted-conferences/ // LOADING IMAGE... dev 2025 global-leadership-network/ // LOADING IMAGE... dev 2025 captivateiq-dreamforce/ // LOADING IMAGE... dev 2025 state-of-icm-report/ // LOADING IMAGE... dev 2024 pcc-christmas-eve/ // LOADING IMAGE... dev 2024 the-multiplier/ // LOADING IMAGE... dev 2024 harness/ // LOADING IMAGE... dev 2023 kalderos-annual-report/ // LOADING IMAGE... dev 2023 beefree-sdk/ // LOADING IMAGE... dev 2025 martha-and-mary/ // LOADING IMAGE... $ cat ./ted-conferences/README.md 2025 TED Conferences Built for total client control with a large component library, making full use of Webflow's Page Building experience. More control, speed to market, and lower costs. Client: TED Role: Lead Developer Agency: Whiteboard → ./open --url $ cat ./global-leadership-network/README.md 2025 Global Leadership Network Annual Summit attended by 350,000 leaders spanning 100+ countries. Modular page building controls, custom accents, SVG masks, and a system to customize the brand for each year. Client: Global Leadership Network Role: Lead Developer Agency: Whiteboard → ./open --url $ cat ./captivateiq-dreamforce/README.md 2025 The Oasis at Dreamforce A fun, colorful landing page full of custom illustrations with movement to bring them all to life. Sometimes the brief is just 'make something awesome'. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./state-of-icm-report/README.md 2025 State of ICM Report Report microsite with fluid typography, offset grid system, and smooth scroll animations. Beautiful custom illustrations and unveiling effects without letting animation get in the way. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./pcc-christmas-eve/README.md 2024 Christmas Eve 2024 Tasteful, well-branded microsite with lighting tricks for a shimmering backdrop and SVG path draw-in animation. Client: Passion City Church Role: Senior Developer Agency: Whiteboard → ./open --url $ cat ./the-multiplier/README.md 2024 The Multiplier Content hub for thought leadership. Free membership content site with access, profiles, and favoriting system using Memberstack, integrated with client's CRM. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./harness/README.md 2024 Harness Fundraising technology for nonprofits and financial institutions. Collaboration with top minds like Keegan Leary and Timothy Ricks on some fancy tricks. Client: Harness Role: Developer → ./open --url $ cat ./kalderos-annual-report/README.md 2023 Kalderos Annual Report 8-bit inspired annual report. Single-scroll, multi-chapter experience with custom illustrations and a whole lot of custom JavaScript. Plus a fun easter egg. Client: Kalderos Role: Developer → ./open --url $ cat ./beefree-sdk/README.md 2023 Beefree SDK Website for SaaS developers whose audience is other developers. Full company rebrand with mega menu, multiple products, and robust style system. Client: Beefree Role: Developer → ./open --url $ cat ./martha-and-mary/README.md 2025 Martha & Mary Historic organization modernized. Component-based and flexible enough for team control with guardrails for brand consistency. Client: Martha & Mary Role: Developer → ./open --url jon@saxton: ~/contact jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$ Built with Astro, Cursor, Webflow CMS, and Webflow Cloud. © 2026 Jon Saxton"
+}

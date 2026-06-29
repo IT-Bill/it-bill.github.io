@@ -1,0 +1,854 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 8530
+  },
+  "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK] Portfolio v8.1 loaded ROLE [OK] Senior Solutions Architect @ Webflow SIDE GIG [OK] Freelance Dev @ Nights & Weekends SPECIALTY [OK] Webflow Development CERTIFICATION [OK] Certified Webflow Partner STATUS [OK] Available for freelance System ready. Scroll to explore. jon@saxton: ~/about jon@saxton :~/about$ whoami Jon Saxton Senior Frontend Developer specializing in Webflow // Serving customers at Webflow // Freelancing nights & weekends // Orlando, FL jon@saxton :~/about$ cat ./skills.txt → Webflow Development & Architecture → Component Libraries & Design Systems → Page Building & Client Empowerment → Responsive & Accessible Design → JavaScript & Integrations → Consulting, Pondering, Tinkering, Jamming jon@saxton :~/about$ cat ./background.txt Working with enterprise organizations to be successful with Webflow Previous agency dev lead Previous project manager // Dad of 2 cutie patooties jon@saxton: ~/projects jon@saxton :~/projects$ ls -la . total 10 featured projects ted-conferences/ global-leadership-network/ captivateiq-dreamforce/ state-of-icm-report/ pcc-christmas-eve/ the-multiplier/ harness/ kalderos-annual-report/ beefree-sdk/ martha-and-mary/ $ cat ./ted-conferences/README.md 2025 TED Conferences Built for total client control with a large component library, making full use of Webflow's Page Building experience. More control, speed to market, and lower costs. Client: TED Role: Lead Developer Agency: Whiteboard → ./open --url $ cat ./global-leadership-network/README.md 2025 Global Leadership Network Annual Summit attended by 350,000 leaders spanning 100+ countries. Modular page building controls, custom accents, SVG masks, and a system to customize the brand for each year. Client: Global Leadership Network Role: Lead Developer Agency: Whiteboard → ./open --url $ cat ./captivateiq-dreamforce/README.md 2025 The Oasis at Dreamforce A fun, colorful landing page full of custom illustrations with movement to bring them all to life. Sometimes the brief is just 'make something awesome'. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./state-of-icm-report/README.md 2025 State of ICM Report Report microsite with fluid typography, offset grid system, and smooth scroll animations. Beautiful custom illustrations and unveiling effects without letting animation get in the way. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./pcc-christmas-eve/README.md 2024 Christmas Eve 2024 Tasteful, well-branded microsite with lighting tricks for a shimmering backdrop and SVG path draw-in animation. Client: Passion City Church Role: Senior Developer Agency: Whiteboard → ./open --url $ cat ./the-multiplier/README.md 2024 The Multiplier Content hub for thought leadership. Free membership content site with access, profiles, and favoriting system using Memberstack, integrated with client's CRM. Client: CaptivateIQ Role: Developer → ./open --url $ cat ./harness/README.md 2024 Harness Fundraising technology for nonprofits and financial institutions. Collaboration with top minds like Keegan Leary and Timothy Ricks on some fancy tricks. Client: Harness Role: Developer → ./open --url $ cat ./kalderos-annual-report/README.md 2023 Kalderos Annual Report 8-bit inspired annual report. Single-scroll, multi-chapter experience with custom illustrations and a whole lot of custom JavaScript. Plus a fun easter egg. Client: Kalderos Role: Developer → ./open --url $ cat ./beefree-sdk/README.md 2023 Beefree SDK Website for SaaS developers whose audience is other developers. Full company rebrand with mega menu, multiple products, and robust style system. Client: Beefree Role: Developer → ./open --url $ cat ./martha-and-mary/README.md 2025 Martha & Mary Historic organization modernized. Component-based and flexible enough for team control with guardrails for brand consistency. Client: Martha & Mary Role: Developer → ./open --url jon@saxton: ~/contact jon@saxton :~/contact$ cat ./links.txt // Let's connect TWITTER → @JonSaxton LINKEDIN → /in/jpsaxton BLUESKY → @jonsaxton.com // For project inquiries PROJECTS → Available through LinkedIn or Twitter DMs jon@saxton :~/contact$ Built with Astro, Cursor, Webflow CMS, and Webflow Cloud. © 2026 Jon Saxton",
+  "roots": [
+    {
+      "index": 0,
+      "tag": "div",
+      "id": "",
+      "classes": "terminal-page",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 8530
+      },
+      "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██╗ ██║ ███████╗███████║ ╚███╔╝ ██║ ██║ ██║██╔██╗ ██║ ██ ██║██║ ██║██║╚██╗██║ ╚════██║██╔══██║ ██╔██╗ ██║ ██║ ██║██║╚██╗██║ ╚█████╔╝╚██████╔╝██║ ╚████║ ███████║██║ ██║██╔╝ ██╗ ██║ ╚██████╔╝██║ ╚████║ ╚════╝ ╚═════╝ ╚═╝ ╚═══╝ ╚══════╝╚═╝ ╚═╝╚═╝ ╚═╝ ╚═╝ ╚═════╝ ╚═╝ ╚═══╝ Jon Saxton SYSTEM [OK] Portfolio v"
+    },
+    {
+      "index": 1,
+      "tag": "script",
+      "id": "",
+      "classes": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "text": ""
+    }
+  ],
+  "visibleTop": [
+    {
+      "tag": "div",
+      "classes": "terminal-page",
+      "text": "jon@saxton:~$ whoami projects contact ██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 8530
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "nav",
+      "classes": "term-nav",
+      "text": "jon@saxton:~$ whoami projects contact",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 48
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "term-container term-nav__inner",
+      "text": "jon@saxton:~$ whoami projects contact",
+      "rect": {
+        "x": 10,
+        "y": 12,
+        "width": 371,
+        "height": 23
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "a",
+      "classes": "term-nav__brand",
+      "text": "jon@saxton:~$",
+      "rect": {
+        "x": 10,
+        "y": 13,
+        "width": 109,
+        "height": 22
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "ul",
+      "classes": "term-nav__links",
+      "text": "whoami projects contact",
+      "rect": {
+        "x": 167,
+        "y": 12,
+        "width": 213,
+        "height": 23
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "li",
+      "classes": "",
+      "text": "whoami",
+      "rect": {
+        "x": 167,
+        "y": 12,
+        "width": 52,
+        "height": 23
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "a",
+      "classes": "term-nav__link",
+      "text": "whoami",
+      "rect": {
+        "x": 167,
+        "y": 14,
+        "width": 52,
+        "height": 19
+      },
+      "style": {
+        "fontSize": "14.4px",
+        "display": "inline",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "li",
+      "classes": "",
+      "text": "projects",
+      "rect": {
+        "x": 235,
+        "y": 12,
+        "width": 69,
+        "height": 23
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "a",
+      "classes": "term-nav__link",
+      "text": "projects",
+      "rect": {
+        "x": 235,
+        "y": 14,
+        "width": 69,
+        "height": 19
+      },
+      "style": {
+        "fontSize": "14.4px",
+        "display": "inline",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "li",
+      "classes": "",
+      "text": "contact",
+      "rect": {
+        "x": 320,
+        "y": 12,
+        "width": 60,
+        "height": 23
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "list-item",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "a",
+      "classes": "term-nav__link",
+      "text": "contact",
+      "rect": {
+        "x": 320,
+        "y": 14,
+        "width": 60,
+        "height": 19
+      },
+      "style": {
+        "fontSize": "14.4px",
+        "display": "inline",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "main",
+      "classes": "",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 8530
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "section",
+      "classes": "term-section term-section--hero is-visible",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "term-container",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 10,
+        "y": 204,
+        "width": 371,
+        "height": 468
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-boot",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 10,
+        "y": 204,
+        "width": 371,
+        "height": 468
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-boot__content",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 10,
+        "y": 204,
+        "width": 371,
+        "height": 225
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-avatar",
+      "text": "",
+      "rect": {
+        "x": 135,
+        "y": 204,
+        "width": 120,
+        "height": 120
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "img",
+      "classes": "hero-avatar__img",
+      "text": "",
+      "rect": {
+        "x": 137,
+        "y": 206,
+        "width": 116,
+        "height": 116
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "inline",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-avatar__scanlines",
+      "text": "",
+      "rect": {
+        "x": 137,
+        "y": 206,
+        "width": 116,
+        "height": 116
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-ascii-wrapper",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 20,
+        "y": 356,
+        "width": 351,
+        "height": 73
+      },
+      "style": {
+        "fontSize": "14px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "pre",
+      "classes": "ascii-art",
+      "text": "██╗ ██████╗ ███╗ ██╗ ███████╗ █████╗ ██╗ ██╗████████╗ ██████╗ ███╗ ██╗ ██║██╔═══██╗████╗ ██║ ██╔════╝██╔══██╗╚██╗██╔╝╚══██╔══╝██╔═══██╗████╗ ██║ ██║██║ ██║██╔██",
+      "rect": {
+        "x": 20,
+        "y": 363,
+        "width": 351,
+        "height": 59
+      },
+      "style": {
+        "fontSize": "7.02px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "hero-status stagger-in",
+      "text": "SYSTEM [OK] Portfolio v8.1 loaded ROLE [OK] Senior Solutions Architect @ Webflow SIDE GIG [OK] Freelance Dev @ Nights & Weekends SPECIALTY [OK] Webflow Developm",
+      "rect": {
+        "x": 10,
+        "y": 477,
+        "width": 371,
+        "height": 195
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "column",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "SYSTEM [OK] Portfolio v8.1 loaded",
+      "rect": {
+        "x": 10,
+        "y": 477,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "SYSTEM",
+      "rect": {
+        "x": 10,
+        "y": 477,
+        "width": 45,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 68,
+        "y": 477,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text-dim",
+      "text": "Portfolio v8.1 loaded",
+      "rect": {
+        "x": 111,
+        "y": 477,
+        "width": 159,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "ROLE [OK] Senior Solutions Architect @ Webflow",
+      "rect": {
+        "x": 10,
+        "y": 503,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "ROLE",
+      "rect": {
+        "x": 10,
+        "y": 503,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 53,
+        "y": 503,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text",
+      "text": "Senior Solutions Architect @ Webflow",
+      "rect": {
+        "x": 95,
+        "y": 503,
+        "width": 272,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "SIDE GIG [OK] Freelance Dev @ Nights & Weekends",
+      "rect": {
+        "x": 10,
+        "y": 530,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "SIDE GIG",
+      "rect": {
+        "x": 10,
+        "y": 530,
+        "width": 60,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 83,
+        "y": 530,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text",
+      "text": "Freelance Dev @ Nights & Weekends",
+      "rect": {
+        "x": 126,
+        "y": 530,
+        "width": 249,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "SPECIALTY [OK] Webflow Development",
+      "rect": {
+        "x": 10,
+        "y": 556,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "SPECIALTY",
+      "rect": {
+        "x": 10,
+        "y": 556,
+        "width": 68,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 90,
+        "y": 556,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text",
+      "text": "Webflow Development",
+      "rect": {
+        "x": 133,
+        "y": 556,
+        "width": 144,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "CERTIFICATION [OK] Certified Webflow Partner",
+      "rect": {
+        "x": 10,
+        "y": 583,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "CERTIFICATION",
+      "rect": {
+        "x": 10,
+        "y": 583,
+        "width": 98,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 121,
+        "y": 583,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text",
+      "text": "Certified Webflow Partner",
+      "rect": {
+        "x": 163,
+        "y": 583,
+        "width": 189,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "STATUS [OK] Available for freelance",
+      "rect": {
+        "x": 10,
+        "y": 609,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-label",
+      "text": "STATUS",
+      "rect": {
+        "x": 10,
+        "y": 609,
+        "width": 45,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "status-ok",
+      "text": "[OK]",
+      "rect": {
+        "x": 68,
+        "y": 609,
+        "width": 30,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text-amber",
+      "text": "Available for freelance",
+      "rect": {
+        "x": 111,
+        "y": 609,
+        "width": 174,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "div",
+      "classes": "status-line",
+      "text": "System ready. Scroll to explore.",
+      "rect": {
+        "x": 10,
+        "y": 652,
+        "width": 371,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "flex",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    },
+    {
+      "tag": "span",
+      "classes": "term-text-bright",
+      "text": "System ready. Scroll to explore.",
+      "rect": {
+        "x": 10,
+        "y": 652,
+        "width": 242,
+        "height": 20
+      },
+      "style": {
+        "fontSize": "12.6px",
+        "display": "block",
+        "flexDirection": "row",
+        "gridTemplateColumns": "none"
+      }
+    }
+  ]
+}

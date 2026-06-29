@@ -1,20 +1,43 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import { TerminalEffects } from "@/components/TerminalEffects";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  metadataBase: new URL("https://www.jonsaxton.com"),
+  title: "Jon Saxton – Senior Webflow Developer",
+  description: "Working with growth-stage and enterprise organizations to bring great designs to life.",
+  icons: {
+    icon: "/seo/jonsaxton-favicon.png",
+    shortcut: "/seo/jonsaxton-favicon.png",
+    apple: "/seo/jonsaxton-webclip.png",
+  },
+  openGraph: {
+    title: "Jon Saxton – Senior Webflow Developer",
+    description: "Working with growth-stage and enterprise organizations to bring great designs to life.",
+    type: "website",
+    images: ["/seo/jonsaxton-og.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jon Saxton – Senior Webflow Developer",
+    description: "Working with growth-stage and enterprise organizations to bring great designs to life.",
+    images: ["/seo/jonsaxton-og.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +48,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+        <TerminalEffects />
+        {children}
+      </body>
     </html>
   );
 }

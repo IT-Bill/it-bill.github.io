@@ -1,0 +1,125 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 8530
+  },
+  "hero": {
+    "container": {
+      "x": 10,
+      "y": 204,
+      "width": 371,
+      "height": 468
+    },
+    "avatar": {
+      "x": 135,
+      "y": 204,
+      "width": 120,
+      "height": 120
+    },
+    "ascii": {
+      "x": 20,
+      "y": 363,
+      "width": 351,
+      "height": 59
+    },
+    "status": {
+      "x": 10,
+      "y": 477,
+      "width": 371,
+      "height": 195
+    }
+  },
+  "aboutWindow": {
+    "x": 10,
+    "y": 892,
+    "width": 371,
+    "height": 973
+  },
+  "projectsWindow": {
+    "x": 10,
+    "y": 1961,
+    "width": 371,
+    "height": 5752
+  },
+  "fileList": {
+    "x": 27,
+    "y": 2201,
+    "width": 337,
+    "height": 458
+  },
+  "cards": [
+    {
+      "id": "ted-conferences",
+      "y": 2707,
+      "width": 337,
+      "height": 601
+    },
+    {
+      "id": "global-leadership-network",
+      "y": 3336,
+      "width": 337,
+      "height": 658
+    },
+    {
+      "id": "captivateiq-dreamforce",
+      "y": 4022,
+      "width": 337,
+      "height": 566
+    },
+    {
+      "id": "state-of-icm-report",
+      "y": 4616,
+      "width": 337,
+      "height": 432
+    },
+    {
+      "id": "pcc-christmas-eve",
+      "y": 5076,
+      "width": 337,
+      "height": 414
+    },
+    {
+      "id": "the-multiplier",
+      "y": 5518,
+      "width": 337,
+      "height": 432
+    },
+    {
+      "id": "harness",
+      "y": 5977,
+      "width": 337,
+      "height": 407
+    },
+    {
+      "id": "kalderos-annual-report",
+      "y": 6412,
+      "width": 337,
+      "height": 432
+    },
+    {
+      "id": "beefree-sdk",
+      "y": 6872,
+      "width": 337,
+      "height": 383
+    },
+    {
+      "id": "martha-and-mary",
+      "y": 7283,
+      "width": 337,
+      "height": 384
+    }
+  ],
+  "contactWindow": {
+    "x": 10,
+    "y": 7809,
+    "width": 371,
+    "height": 525
+  },
+  "footer": {
+    "x": 0,
+    "y": 8382,
+    "width": 390,
+    "height": 148
+  }
+}

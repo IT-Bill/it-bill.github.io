@@ -1,0 +1,116 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "scrollHeight": 9631
+  },
+  "ascii": {
+    "x": 10,
+    "y": 367,
+    "width": 523,
+    "height": 50
+  },
+  "avatar": {
+    "x": 211,
+    "y": 208,
+    "width": 120,
+    "height": 120
+  },
+  "font": {
+    "family": "\"JetBrains Mono\", \"JetBrains Mono Fallback\", \"Fira Code\", \"SF Mono\", Consolas, monospace",
+    "size": "7.02px",
+    "lineHeight": "8.424px"
+  },
+  "images": [
+    {
+      "complete": true,
+      "w": 3840,
+      "h": 2160,
+      "rect": {
+        "w": 291,
+        "h": 163
+      }
+    },
+    {
+      "complete": true,
+      "w": 1600,
+      "h": 900,
+      "rect": {
+        "w": 291,
+        "h": 163
+      }
+    },
+    {
+      "complete": true,
+      "w": 1920,
+      "h": 1042,
+      "rect": {
+        "w": 291,
+        "h": 158
+      }
+    },
+    {
+      "complete": true,
+      "w": 2720,
+      "h": 1400,
+      "rect": {
+        "w": 291,
+        "h": 150
+      }
+    },
+    {
+      "complete": true,
+      "w": 3840,
+      "h": 2160,
+      "rect": {
+        "w": 291,
+        "h": 163
+      }
+    },
+    {
+      "complete": true,
+      "w": 2089,
+      "h": 1080,
+      "rect": {
+        "w": 291,
+        "h": 150
+      }
+    },
+    {
+      "complete": true,
+      "w": 2880,
+      "h": 1934,
+      "rect": {
+        "w": 291,
+        "h": 195
+      }
+    },
+    {
+      "complete": true,
+      "w": 2880,
+      "h": 1620,
+      "rect": {
+        "w": 291,
+        "h": 163
+      }
+    },
+    {
+      "complete": true,
+      "w": 2293,
+      "h": 1123,
+      "rect": {
+        "w": 291,
+        "h": 142
+      }
+    },
+    {
+      "complete": true,
+      "w": 3214,
+      "h": 1798,
+      "rect": {
+        "w": 291,
+        "h": 163
+      }
+    }
+  ]
+}
