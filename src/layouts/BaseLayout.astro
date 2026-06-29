@@ -8,13 +8,13 @@ interface Props {
 }
 
 const {
-  title = "Jon Saxton – Senior Webflow Developer",
-  description = "Working with growth-stage and enterprise organizations to bring great designs to life.",
-  image = "/seo/jonsaxton-og.jpg",
+  title = "Zhanwei Zhang - Software Engineer & Machine Learning Researcher",
+  description = "Personal terminal portfolio for Zhanwei Zhang, an aspiring software engineer and machine learning researcher.",
+  image = "/images/it-bill/avatar.jpg",
 } = Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, "https://www.jonsaxton.com").toString();
-const imageUrl = new URL(image, "https://www.jonsaxton.com").toString();
+const canonicalUrl = new URL(Astro.url.pathname, "https://it-bill.github.io").toString();
+const imageUrl = new URL(image, "https://it-bill.github.io").toString();
 ---
 
 <!doctype html>
@@ -25,9 +25,9 @@ const imageUrl = new URL(image, "https://www.jonsaxton.com").toString();
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" type="image/png" href="/seo/jonsaxton-favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="/seo/jonsaxton-favicon.png" />
-    <link rel="apple-touch-icon" href="/seo/jonsaxton-webclip.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/it-bill/avatar.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -1,7 +1,7 @@
 <span hidden data-terminal-effects></span>
 
 <script>
-  const sectionIds = ["hero", "about", "projects", "contact"] as const;
+  const sectionIds = ["hero", "about", "experiences", "publications", "projects", "contact"] as const;
   const konamiSequence = [
     "ArrowUp",
     "ArrowUp",
@@ -32,7 +32,8 @@
   function scrollToSection(target: Element, hash: string) {
     const nav = document.querySelector<HTMLElement>(".term-nav");
     const navHeight = nav?.offsetHeight ?? 0;
-    const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+    const scrollTarget = target.querySelector<HTMLElement>(".term-window") ?? target;
+    const top = scrollTarget.getBoundingClientRect().top + window.scrollY - navHeight - 20;
 
     window.scrollTo({ top, behavior: "smooth" });
     history.pushState(null, "", hash);

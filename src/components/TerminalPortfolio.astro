@@ -3,22 +3,39 @@ import FileEntry from "@/components/FileEntry.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Prompt from "@/components/Prompt.astro";
 import TerminalWindow from "@/components/TerminalWindow.astro";
-import { asciiArt, background, projects, skills, statusLines } from "@/data/portfolio";
+import {
+  aboutLines,
+  asciiArt,
+  contactLinks,
+  experiences,
+  profile,
+  projects,
+  publications,
+  researchFocus,
+  statusLines,
+  toolGroups,
+} from "@/data/portfolio";
 ---
 
 <div class="terminal-page">
   <nav class="term-nav">
     <div class="term-container term-nav__inner">
-      <a href="#" class="term-nav__brand">jon@saxton:~$</a>
+      <a href="#" class="term-nav__brand"><span class="term-nav__brand-user">zhanwei@</span>it-bill:~$</a>
       <ul class="term-nav__links">
         <li>
-          <a href="#about" class="term-nav__link">whoami</a>
+          <a href="#about" class="term-nav__link"><span class="term-nav__label-full">whoami</span><span class="term-nav__label-short">who</span></a>
         </li>
         <li>
-          <a href="#projects" class="term-nav__link">projects</a>
+          <a href="#experiences" class="term-nav__link"><span class="term-nav__label-full">exp</span><span class="term-nav__label-short">exp</span></a>
         </li>
         <li>
-          <a href="#contact" class="term-nav__link">contact</a>
+          <a href="#publications" class="term-nav__link"><span class="term-nav__label-full">papers</span><span class="term-nav__label-short">pub</span></a>
+        </li>
+        <li>
+          <a href="#projects" class="term-nav__link"><span class="term-nav__label-full">projects</span><span class="term-nav__label-short">proj</span></a>
+        </li>
+        <li>
+          <a href="#contact" class="term-nav__link"><span class="term-nav__label-full">contact</span><span class="term-nav__label-short">mail</span></a>
         </li>
       </ul>
     </div>
@@ -31,10 +48,10 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
           <div class="hero-boot__content">
             <div class="hero-avatar">
               <img
-                src="/images/jonsaxton/Jon.avif"
-                alt="Jon Saxton"
-                width="3015"
-                height="2261"
+                src={profile.avatar.src}
+                alt={profile.avatar.alt}
+                width={profile.avatar.width}
+                height={profile.avatar.height}
                 class="hero-avatar__img"
                 loading="eager"
                 decoding="async"
@@ -43,7 +60,7 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
             </div>
             <div class="hero-ascii-wrapper">
               <pre class="ascii-art" aria-hidden="true">{asciiArt}</pre>
-              <h1 class="visually-hidden">Jon Saxton</h1>
+              <h1 class="visually-hidden">{profile.name}</h1>
             </div>
           </div>
 
@@ -58,7 +75,7 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
               ))
             }
             <div class="status-line status-line--ready">
-              <span class="term-text-bright">System ready. Scroll to explore.</span>
+              <span class="term-text-bright">English profile ready. Press Enter to continue.</span>
               <span class="cursor"></span>
             </div>
           </div>
@@ -68,33 +85,130 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
 
     <section class="term-section" id="about">
       <div class="term-container">
-        <TerminalWindow title="jon@saxton: ~/about">
+        <TerminalWindow title="zhanwei@it-bill: ~/about">
           <Prompt path="~/about" command="whoami" />
           <div class="output">
-            <span class="output__line output__line--name term-text-bright">Jon Saxton</span>
-            <span class="output__line term-text">Senior Frontend Developer specializing in Webflow</span>
-            <span class="output__line output__line--comment term-text-dim">// Serving customers at Webflow</span>
-            <span class="output__line term-text-dim">// Freelancing nights & weekends</span>
-            <span class="output__line term-text-dim">// Orlando, FL</span>
+            <span class="output__line output__line--name term-text-bright">{profile.name}</span>
+            <span class="output__line term-text">{profile.tagline}</span>
+            <span class="output__line term-text-dim">// {profile.location}</span>
+            <span class="output__line term-text-dim">// {profile.email}</span>
           </div>
 
-          <Prompt path="~/about" command="cat ./skills.txt" spaced />
+          <Prompt path="~/about" command="cat ./summary.txt" spaced />
+          <div class="output output--indented">
+            {aboutLines.map((line) => <span class="output__line term-text-white">{line}</span>)}
+          </div>
+
+          <Prompt path="~/about" command="cat ./research-focus.txt" spaced />
           <div class="output output--indented">
             {
-              skills.map((skill) => (
+              researchFocus.map((line) => (
                 <span class="output__line">
-                  <span class="term-text-amber">→</span> {skill}
+                  <span class="term-text-amber">→</span> <span class="term-text-white">{line}</span>
                 </span>
               ))
             }
           </div>
 
-          <Prompt path="~/about" command="cat ./background.txt" spaced />
-          <div class="output output--indented">
-            {background.map((line) => <span class="output__line term-text-white">{line}</span>)}
-            <span class="output__line output__line--comment">
-              <span class="term-text-dim">// Dad of 2 cutie patooties</span>
-            </span>
+          <Prompt path="~/about" command="ls ./skills" spaced />
+          <div class="skills-icon-grid">
+            {
+              toolGroups.map((group) => (
+                <section class="skills-icon-group">
+                  <div class="skills-icon-group__header">
+                    <h2 class="skills-icon-group__title">{group.title}</h2>
+                    {group.description ? (
+                      <span class="skills-help" tabindex="0" aria-label={group.description}>
+                        ?
+                        <span class="skills-help__bubble">{group.description}</span>
+                      </span>
+                    ) : null}
+                  </div>
+                  <div class="skills-icon-group__items">
+                    {group.items.map((item) => (
+                      <img
+                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item.icon}.svg`}
+                        alt={item.name}
+                        title={item.name}
+                        class="skills-icon-group__icon"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))
+            }
+          </div>
+        </TerminalWindow>
+      </div>
+    </section>
+
+    <section class="term-section" id="experiences">
+      <div class="term-container">
+        <TerminalWindow title="zhanwei@it-bill: ~/experiences">
+          <Prompt path="~/experiences" command="cat ./timeline.log" />
+          <div class="timeline">
+            {
+              experiences.map((experience) => (
+                <article class="timeline-entry">
+                  <div class="timeline-entry__marker">{experience.type}</div>
+                  <div class="timeline-entry__body">
+                    <div class="timeline-entry__header">
+                      <h2 class="timeline-entry__title">{experience.title}</h2>
+                      <span class="timeline-entry__period">{experience.period}</span>
+                    </div>
+                    <p class="timeline-entry__institution">{experience.institution}</p>
+                    <div class="timeline-entry__description">
+                      {experience.description.map((line) => (
+                        <span class="output__line term-text-white">{line}</span>
+                      ))}
+                    </div>
+                    <div class="project-card__tags">
+                      {experience.tags.map((tag) => <span class="project-card__tag">{tag}</span>)}
+                    </div>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+        </TerminalWindow>
+      </div>
+    </section>
+
+    <section class="term-section" id="publications">
+      <div class="term-container term-container--wide">
+        <TerminalWindow title="zhanwei@it-bill: ~/publications">
+          <Prompt path="~/publications" command="ls -la ./papers" />
+          <div class="output output--project-count">
+            <span class="output__line term-text-dim">total {publications.length} publications</span>
+          </div>
+          <div class="publication-list">
+            {
+              publications.map((publication) => (
+                <article class="publication-card">
+                  <div class="publication-card__header">
+                    <h2 class="publication-card__title">{publication.title}</h2>
+                    <span class="publication-card__year">{publication.year}</span>
+                  </div>
+                  <p class="publication-card__venue">{publication.venue}</p>
+                  <p class="publication-card__authors">{publication.authors.join(", ")}</p>
+                  <p class="publication-card__description">{publication.description}</p>
+                  <div class="project-card__links">
+                    {publication.paperUrl ? (
+                      <a href={publication.paperUrl} target="_blank" rel="noopener noreferrer" class="project-card__link">
+                        <span>→ ./open --paper</span>
+                      </a>
+                    ) : null}
+                    {publication.repoUrl ? (
+                      <a href={publication.repoUrl} target="_blank" rel="noopener noreferrer" class="project-card__link">
+                        <span>→ ./open --code</span>
+                      </a>
+                    ) : null}
+                  </div>
+                </article>
+              ))
+            }
           </div>
         </TerminalWindow>
       </div>
@@ -102,10 +216,10 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
 
     <section class="term-section" id="projects">
       <div class="term-container term-container--wide">
-        <TerminalWindow title="jon@saxton: ~/projects">
+        <TerminalWindow title="zhanwei@it-bill: ~/projects">
           <Prompt path="~/projects" command="ls -la" />
           <div class="output output--project-count">
-            <span class="output__line term-text-dim">total 10 featured projects</span>
+            <span class="output__line term-text-dim">total {projects.length} projects</span>
           </div>
           <div class="file-list">
             {projects.map((project) => <FileEntry project={project} />)}
@@ -117,35 +231,28 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
 
     <section class="term-section term-section--full" id="contact">
       <div class="term-container">
-        <TerminalWindow title="jon@saxton: ~/contact">
+        <TerminalWindow title="zhanwei@it-bill: ~/contact">
           <Prompt path="~/contact" command="cat ./links.txt" />
           <div class="output output--indented stagger-in">
             <span class="output__line output__line--loose">
-              <span class="term-text-dim">// Let's connect</span>
+              <span class="term-text-dim">// Open to discussing technology, collaborations, and opportunities.</span>
             </span>
-            <span class="output__line">
-              <span class="term-text-amber">TWITTER</span>
-              <span class="term-text-dim"> → </span>
-              <a href="https://x.com/JonSaxton" target="_blank" rel="noopener noreferrer" class="term-link">@JonSaxton</a>
-            </span>
-            <span class="output__line">
-              <span class="term-text-amber">LINKEDIN</span>
-              <span class="term-text-dim"> → </span>
-              <a href="https://www.linkedin.com/in/jpsaxton/" target="_blank" rel="noopener noreferrer" class="term-link">/in/jpsaxton</a>
-            </span>
-            <span class="output__line">
-              <span class="term-text-amber">BLUESKY</span>
-              <span class="term-text-dim"> → </span>
-              <a href="https://bsky.app/profile/jonsaxton.com" target="_blank" rel="noopener noreferrer" class="term-link">@jonsaxton.com</a>
-            </span>
-            <span class="output__line output__line--project-inquiries">
-              <span class="term-text-dim">// For project inquiries</span>
-            </span>
-            <span class="output__line">
-              <span class="term-text-amber">PROJECTS</span>
-              <span class="term-text-dim"> → </span>
-              <span class="term-text-bright">Available through LinkedIn or Twitter DMs</span>
-            </span>
+            {
+              contactLinks.map((link) => (
+                <span class="output__line">
+                  <span class="term-text-amber">{link.label.toUpperCase()}</span>
+                  <span class="term-text-dim"> → </span>
+                  <a
+                    href={link.href}
+                    target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+                    rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                    class="term-link"
+                  >
+                    {link.value}
+                  </a>
+                </span>
+              ))
+            }
           </div>
           <Prompt path="~/contact" cursor spaced />
         </TerminalWindow>
@@ -156,9 +263,9 @@ import { asciiArt, background, projects, skills, statusLines } from "@/data/port
       <div class="term-container">
         <div class="term-footer__inner">
           <span class="term-text-dim">
-            <span class="term-comment">Built with Astro, Cursor, Webflow CMS, and Webflow Cloud.</span>
+            <span class="term-comment">Built with Astro and terminal-inspired interaction.</span>
           </span>
-          <span class="term-text-dim">© 2026 Jon Saxton</span>
+          <span class="term-text-dim">© 2026 {profile.name}</span>
         </div>
       </div>
     </footer>
