@@ -22,6 +22,22 @@ const imageUrl = new URL(image, "https://it-bill.github.io").toString();
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      (() => {
+        const storedTheme = localStorage.getItem("theme");
+        const themeMode = storedTheme === "light" || storedTheme === "dark" || storedTheme === "system" ? storedTheme : "system";
+        const theme =
+          themeMode === "system"
+            ? window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark"
+            : themeMode;
+
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.themeMode = themeMode;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />

@@ -21,23 +21,55 @@ import {
   <nav class="term-nav">
     <div class="term-container term-nav__inner">
       <a href="#" class="term-nav__brand"><span class="term-nav__brand-user">zhanwei@</span>it-bill:~$</a>
-      <ul class="term-nav__links">
-        <li>
-          <a href="#about" class="term-nav__link"><span class="term-nav__label-full">whoami</span><span class="term-nav__label-short">who</span></a>
-        </li>
-        <li>
-          <a href="#experiences" class="term-nav__link"><span class="term-nav__label-full">exp</span><span class="term-nav__label-short">exp</span></a>
-        </li>
-        <li>
-          <a href="#publications" class="term-nav__link"><span class="term-nav__label-full">papers</span><span class="term-nav__label-short">pub</span></a>
-        </li>
-        <li>
-          <a href="#projects" class="term-nav__link"><span class="term-nav__label-full">projects</span><span class="term-nav__label-short">proj</span></a>
-        </li>
-        <li>
-          <a href="#contact" class="term-nav__link"><span class="term-nav__label-full">contact</span><span class="term-nav__label-short">mail</span></a>
-        </li>
-      </ul>
+      <div class="term-nav__actions">
+        <ul class="term-nav__links">
+          <li>
+            <a href="#about" class="term-nav__link"><span class="term-nav__label-full">whoami</span><span class="term-nav__label-short">who</span></a>
+          </li>
+          <li>
+            <a href="#experiences" class="term-nav__link"><span class="term-nav__label-full">exp</span><span class="term-nav__label-short">exp</span></a>
+          </li>
+          <li>
+            <a href="#publications" class="term-nav__link"><span class="term-nav__label-full">papers</span><span class="term-nav__label-short">pub</span></a>
+          </li>
+          <li>
+            <a href="#projects" class="term-nav__link"><span class="term-nav__label-full">projects</span><span class="term-nav__label-short">proj</span></a>
+          </li>
+          <li>
+            <a href="#contact" class="term-nav__link"><span class="term-nav__label-full">contact</span><span class="term-nav__label-short">mail</span></a>
+          </li>
+        </ul>
+        <div class="theme-menu" data-theme-menu>
+          <button
+            class="theme-command"
+            type="button"
+            data-theme-menu-button
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Select theme style"
+          >
+            <span class="theme-command__prompt" aria-hidden="true">❯</span>
+            <span class="theme-command__name">style</span>
+            <span class="theme-command__flag" data-theme-label>--system</span>
+            <span class="theme-command__flag theme-command__flag--short" data-theme-label-short>--sys</span>
+            <span class="theme-command__caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="theme-menu__panel" data-theme-panel role="menu" aria-label="Theme style" hidden>
+            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="system" aria-checked="false">
+              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
+              <span>style --system</span>
+            </button>
+            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="light" aria-checked="false">
+              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
+              <span>style --light</span>
+            </button>
+            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="dark" aria-checked="false">
+              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
+              <span>style --dark</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 

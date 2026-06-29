@@ -21,6 +21,68 @@
     }
   }
 
+  type Theme = "light" | "dark";
+  type ThemeMode = "system" | Theme;
+
+  function isThemeMode(value: string | undefined | null): value is ThemeMode {
+    return value === "system" || value === "light" || value === "dark";
+  }
+
+  function getStoredThemeMode(): ThemeMode {
+    const storedTheme = localStorage.getItem("theme");
+    return isThemeMode(storedTheme) ? storedTheme : "system";
+  }
+
+  function getSystemTheme(): Theme {
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+
+  function resolveTheme(mode: ThemeMode): Theme {
+    return mode === "system" ? getSystemTheme() : mode;
+  }
+
+  function updateThemeMenu(mode: ThemeMode, theme: Theme) {
+    const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
+    const themeLabel = document.querySelector<HTMLElement>("[data-theme-label]");
+    const themeShortLabel = document.querySelector<HTMLElement>("[data-theme-label-short]");
+    const themeMenu = document.querySelector<HTMLElement>("[data-theme-menu]");
+    const shortLabels: Record<ThemeMode, string> = {
+      system: "--sys",
+      light: "--lt",
+      dark: "--dk",
+    };
+
+    themeLabel?.replaceChildren(`--${mode}`);
+    themeShortLabel?.replaceChildren(shortLabels[mode]);
+    themeButton?.setAttribute("aria-label", `Current theme command: style --${mode}`);
+    themeMenu?.setAttribute("data-resolved-theme", theme);
+
+    document.querySelectorAll<HTMLButtonElement>("[data-theme-option]").forEach((option) => {
+      option.setAttribute("aria-checked", option.dataset.themeOption === mode ? "true" : "false");
+    });
+  }
+
+  function setThemeMenuOpen(open: boolean) {
+    const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
+    const themePanel = document.querySelector<HTMLElement>("[data-theme-panel]");
+
+    if (!themeButton || !themePanel) {
+      return;
+    }
+
+    themeButton.setAttribute("aria-expanded", String(open));
+    themePanel.hidden = !open;
+  }
+
+  function applyThemeMode(mode: ThemeMode) {
+    const theme = resolveTheme(mode);
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.dataset.themeMode = mode;
+    document.documentElement.style.colorScheme = theme;
+    localStorage.setItem("theme", mode);
+    updateThemeMenu(mode, theme);
+  }
+
   function isTypingTarget(element: Element | null) {
     return (
       element instanceof HTMLInputElement ||
@@ -47,6 +109,49 @@
     window.__terminalEffectsLoaded = true;
     const matrixIntervals: number[] = [];
     const matrixTimeouts: number[] = [];
+    const initialMode = isThemeMode(document.documentElement.dataset.themeMode)
+      ? document.documentElement.dataset.themeMode
+      : getStoredThemeMode();
+    applyThemeMode(initialMode);
+
+    document.querySelector<HTMLButtonElement>("[data-theme-menu-button]")?.addEventListener("click", () => {
+      const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
+      setThemeMenuOpen(themeButton?.getAttribute("aria-expanded") !== "true");
+    });
+
+    document.querySelectorAll<HTMLButtonElement>("[data-theme-option]").forEach((option) => {
+      option.addEventListener("click", () => {
+        const nextMode = option.dataset.themeOption;
+        if (isThemeMode(nextMode)) {
+          applyThemeMode(nextMode);
+          setThemeMenuOpen(false);
+        }
+      });
+    });
+
+    const systemThemeQuery = window.matchMedia("(prefers-color-scheme: light)");
+    systemThemeQuery.addEventListener("change", () => {
+      const mode = isThemeMode(document.documentElement.dataset.themeMode)
+        ? document.documentElement.dataset.themeMode
+        : getStoredThemeMode();
+
+      if (mode === "system") {
+        applyThemeMode("system");
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      const themeMenu = document.querySelector<HTMLElement>("[data-theme-menu]");
+      if (themeMenu && event.target instanceof Node && !themeMenu.contains(event.target)) {
+        setThemeMenuOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setThemeMenuOpen(false);
+      }
+    });
 
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (event) => {
@@ -137,14 +242,17 @@
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
+      const rootStyles = getComputedStyle(document.documentElement);
+      const matrixFade = rootStyles.getPropertyValue("--term-matrix-fade").trim();
+      const matrixText = rootStyles.getPropertyValue("--term-green").trim();
       const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()";
       const fontSize = 14;
       const drops = Array.from({ length: Math.floor(canvas.width / fontSize) }, () => 1);
 
       const interval = window.setInterval(() => {
-        context.fillStyle = "rgba(15, 17, 21, 0.08)";
+        context.fillStyle = matrixFade;
         context.fillRect(0, 0, canvas.width, canvas.height);
-        context.fillStyle = "#b9ca4a";
+        context.fillStyle = matrixText;
         context.font = `${fontSize}px "FiraCode Nerd Font Mono"`;
 
         drops.forEach((drop, index) => {
