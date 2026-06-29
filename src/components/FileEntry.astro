@@ -3,9 +3,10 @@ import type { Project } from "@/types/portfolio";
 
 interface Props {
   project: Project;
+  loadingText: string;
 }
 
-const { project } = Astro.props;
+const { project, loadingText } = Astro.props;
 ---
 
 <a href={`#${project.id}`} class="file-entry" data-project-image={project.image.src}>
@@ -15,7 +16,7 @@ const { project } = Astro.props;
   <div class="file-entry__preview" aria-hidden="true">
     <div class="file-entry__preview-inner">
       <div class="file-entry__preview-loading">
-        <span class="term-text-dim">// LOADING IMAGE...</span>
+        <span class="term-text-dim">// {loadingText}</span>
       </div>
       <img
         src={project.image.src}

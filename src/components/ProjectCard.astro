@@ -3,9 +3,10 @@ import type { Project } from "@/types/portfolio";
 
 interface Props {
   project: Project;
+  privateAccess: string;
 }
 
-const { project } = Astro.props;
+const { project, privateAccess } = Astro.props;
 ---
 
 <div id={project.id} class="project-card">
@@ -46,7 +47,7 @@ const { project } = Astro.props;
           ))}
         </div>
       ) : (
-        <span class="project-card__private">./access --private</span>
+        <span class="project-card__private">{privateAccess}</span>
       )
     }
   </div>

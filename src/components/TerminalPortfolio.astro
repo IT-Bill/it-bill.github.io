@@ -3,42 +3,44 @@ import FileEntry from "@/components/FileEntry.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Prompt from "@/components/Prompt.astro";
 import TerminalWindow from "@/components/TerminalWindow.astro";
-import {
-  aboutLines,
-  asciiArt,
-  contactLinks,
-  experiences,
-  profile,
-  projects,
-  publications,
-  researchFocus,
-  statusLines,
-  toolGroups,
-} from "@/data/portfolio";
+import type { PortfolioContent } from "@/types/portfolio";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  content: PortfolioContent;
+}
+
+const { content } = Astro.props;
+const { aboutLines, asciiArt, contactLinks, experiences, profile, projects, publications, researchFocus, statusLines, toolGroups } =
+  content;
+const countText = (template: string, count: number) => template.replace("{count}", String(count));
+const homeHref = getRelativeLocaleUrl(content.locale);
+const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
 ---
 
 <div class="terminal-page">
   <nav class="term-nav">
     <div class="term-container term-nav__inner">
-      <a href="#" class="term-nav__brand"><span class="term-nav__brand-user">zhanwei@</span>it-bill:~$</a>
+      <a href={homeHref} class="term-nav__brand"><span class="term-nav__brand-user">zhanwei@</span>it-bill:~$</a>
       <div class="term-nav__actions">
         <ul class="term-nav__links">
-          <li>
-            <a href="#about" class="term-nav__link"><span class="term-nav__label-full">whoami</span><span class="term-nav__label-short">who</span></a>
-          </li>
-          <li>
-            <a href="#experiences" class="term-nav__link"><span class="term-nav__label-full">exp</span><span class="term-nav__label-short">exp</span></a>
-          </li>
-          <li>
-            <a href="#publications" class="term-nav__link"><span class="term-nav__label-full">papers</span><span class="term-nav__label-short">pub</span></a>
-          </li>
-          <li>
-            <a href="#projects" class="term-nav__link"><span class="term-nav__label-full">projects</span><span class="term-nav__label-short">proj</span></a>
-          </li>
-          <li>
-            <a href="#contact" class="term-nav__link"><span class="term-nav__label-full">contact</span><span class="term-nav__label-short">mail</span></a>
-          </li>
+          {
+            content.nav.items.map((item) => (
+              <li>
+                <a href={item.href} class="term-nav__link">
+                  <span class="term-nav__label-full">{item.label}</span>
+                  <span class="term-nav__label-short">{item.shortLabel}</span>
+                </a>
+              </li>
+            ))
+          }
         </ul>
+        <a href={languageHref} class="language-command" aria-label={content.nav.languageAriaLabel}>
+          <span class="language-command__prompt" aria-hidden="true">❯</span>
+          <span class="language-command__name">{content.nav.languageCommand}</span>
+          <span class="language-command__flag">{content.nav.languageFlag}</span>
+          <span class="language-command__flag language-command__flag--short">{content.nav.languageShortFlag}</span>
+        </a>
         <div class="theme-menu" data-theme-menu>
           <button
             class="theme-command"
@@ -46,7 +48,7 @@ import {
             data-theme-menu-button
             aria-haspopup="menu"
             aria-expanded="false"
-            aria-label="Select theme style"
+            aria-label={content.nav.themeAriaLabel}
           >
             <span class="theme-command__prompt" aria-hidden="true">❯</span>
             <span class="theme-command__name">style</span>
@@ -54,7 +56,7 @@ import {
             <span class="theme-command__flag theme-command__flag--short" data-theme-label-short>--sys</span>
             <span class="theme-command__caret" aria-hidden="true">▾</span>
           </button>
-          <div class="theme-menu__panel" data-theme-panel role="menu" aria-label="Theme style" hidden>
+          <div class="theme-menu__panel" data-theme-panel role="menu" aria-label={content.nav.themeMenuLabel} hidden>
             <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="system" aria-checked="false">
               <span class="theme-menu__prompt" aria-hidden="true">❯</span>
               <span>style --system</span>
@@ -110,7 +112,7 @@ import {
               ))
             }
             <div class="status-line status-line--ready">
-              <span class="term-text-bright">English profile ready. Press Enter to continue.</span>
+              <span class="term-text-bright">{content.terminal.ready}</span>
               <span class="cursor"></span>
             </div>
           </div>
@@ -216,7 +218,7 @@ import {
         <TerminalWindow title="zhanwei@it-bill: ~/publications">
           <Prompt path="~/publications" command="ls -la ./papers" />
           <div class="output output--project-count">
-            <span class="output__line term-text-dim">total {publications.length} publications</span>
+            <span class="output__line term-text-dim">{countText(content.terminal.totalPublications, publications.length)}</span>
           </div>
           <div class="publication-list">
             {
@@ -254,12 +256,12 @@ import {
         <TerminalWindow title="zhanwei@it-bill: ~/projects">
           <Prompt path="~/projects" command="ls -la" />
           <div class="output output--project-count">
-            <span class="output__line term-text-dim">total {projects.length} projects</span>
+            <span class="output__line term-text-dim">{countText(content.terminal.totalProjects, projects.length)}</span>
           </div>
           <div class="file-list">
-            {projects.map((project) => <FileEntry project={project} />)}
+            {projects.map((project) => <FileEntry project={project} loadingText={content.terminal.loadingImage} />)}
           </div>
-          {projects.map((project) => <ProjectCard project={project} />)}
+          {projects.map((project) => <ProjectCard project={project} privateAccess={content.terminal.privateAccess} />)}
         </TerminalWindow>
       </div>
     </section>
@@ -270,7 +272,7 @@ import {
           <Prompt path="~/contact" command="cat ./links.txt" />
           <div class="output output--indented stagger-in">
             <span class="output__line output__line--loose">
-              <span class="term-text-dim">// Open to discussing technology, collaborations, and opportunities.</span>
+              <span class="term-text-dim">// {content.terminal.contactComment}</span>
             </span>
             {
               contactLinks.map((link) => (
@@ -298,7 +300,7 @@ import {
       <div class="term-container">
         <div class="term-footer__inner">
           <span class="term-text-dim">
-            <span class="term-comment">Built with Astro and terminal-inspired interaction.</span>
+            <span class="term-comment">{content.terminal.builtWith}</span>
           </span>
           <span class="term-text-dim">© 2026 {profile.name}</span>
         </div>
