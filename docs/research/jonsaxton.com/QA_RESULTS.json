@@ -1,5 +1,29 @@
 {
   "desktop": {
+    "astroMigration": {
+      "title": "Jon Saxton – Senior Webflow Developer",
+      "clientEffectsLoaded": true,
+      "consoleErrors": 0,
+      "desktopTopMetrics": {
+        "scrollHeight": 13593,
+        "avatar": {
+          "x": 220,
+          "y": 376,
+          "w": 180,
+          "h": 180
+        },
+        "ascii": {
+          "x": 448,
+          "y": 415,
+          "w": 772,
+          "h": 101
+        }
+      },
+      "screenshots": [
+        "docs/design-references/jonsaxton.com/astro-desktop-y0.png",
+        "docs/design-references/jonsaxton.com/astro-mobile-y0.png"
+      ]
+    },
     "clientEffects": {
       "anchorRendered": true,
       "effectLoaded": true,

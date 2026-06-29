@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="term-window">
+  <div class="term-window__header">
+    <div class="term-window__dots" aria-hidden="true">
+      <span class="term-window__dot term-window__dot--red"></span>
+      <span class="term-window__dot term-window__dot--yellow"></span>
+      <span class="term-window__dot term-window__dot--green"></span>
+    </div>
+    <span class="term-window__title">{title}</span>
+  </div>
+  <div class="term-window__body">
+    <slot />
+  </div>
+</div>

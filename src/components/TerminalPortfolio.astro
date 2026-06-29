@@ -1,0 +1,167 @@
+---
+import FileEntry from "@/components/FileEntry.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import Prompt from "@/components/Prompt.astro";
+import TerminalWindow from "@/components/TerminalWindow.astro";
+import { asciiArt, background, projects, skills, statusLines } from "@/data/portfolio";
+---
+
+<div class="terminal-page">
+  <nav class="term-nav">
+    <div class="term-container term-nav__inner">
+      <a href="#" class="term-nav__brand">jon@saxton:~$</a>
+      <ul class="term-nav__links">
+        <li>
+          <a href="#about" class="term-nav__link">whoami</a>
+        </li>
+        <li>
+          <a href="#projects" class="term-nav__link">projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="term-nav__link">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="term-section term-section--hero" id="hero">
+      <div class="term-container">
+        <div class="hero-boot">
+          <div class="hero-boot__content">
+            <div class="hero-avatar">
+              <img
+                src="/images/jonsaxton/Jon.avif"
+                alt="Jon Saxton"
+                width="3015"
+                height="2261"
+                class="hero-avatar__img"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+              <div class="hero-avatar__scanlines"></div>
+            </div>
+            <div class="hero-ascii-wrapper">
+              <pre class="ascii-art" aria-hidden="true">{asciiArt}</pre>
+              <h1 class="visually-hidden">Jon Saxton</h1>
+            </div>
+          </div>
+
+          <div class="hero-status stagger-in">
+            {
+              statusLines.map((line) => (
+                <div class="status-line">
+                  <span class="status-label">{line.label}</span>
+                  <span class="status-ok">[OK]</span>
+                  <span class={line.tone}>{line.text}</span>
+                </div>
+              ))
+            }
+            <div class="status-line status-line--ready">
+              <span class="term-text-bright">System ready. Scroll to explore.</span>
+              <span class="cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="term-section" id="about">
+      <div class="term-container">
+        <TerminalWindow title="jon@saxton: ~/about">
+          <Prompt path="~/about" command="whoami" />
+          <div class="output">
+            <span class="output__line output__line--name term-text-bright">Jon Saxton</span>
+            <span class="output__line term-text">Senior Frontend Developer specializing in Webflow</span>
+            <span class="output__line output__line--comment term-text-dim">// Serving customers at Webflow</span>
+            <span class="output__line term-text-dim">// Freelancing nights & weekends</span>
+            <span class="output__line term-text-dim">// Orlando, FL</span>
+          </div>
+
+          <Prompt path="~/about" command="cat ./skills.txt" spaced />
+          <div class="output output--indented">
+            {
+              skills.map((skill) => (
+                <span class="output__line">
+                  <span class="term-text-amber">→</span> {skill}
+                </span>
+              ))
+            }
+          </div>
+
+          <Prompt path="~/about" command="cat ./background.txt" spaced />
+          <div class="output output--indented">
+            {background.map((line) => <span class="output__line term-text-white">{line}</span>)}
+            <span class="output__line output__line--comment">
+              <span class="term-text-dim">// Dad of 2 cutie patooties</span>
+            </span>
+          </div>
+        </TerminalWindow>
+      </div>
+    </section>
+
+    <section class="term-section" id="projects">
+      <div class="term-container term-container--wide">
+        <TerminalWindow title="jon@saxton: ~/projects">
+          <Prompt path="~/projects" command="ls -la" />
+          <div class="output output--project-count">
+            <span class="output__line term-text-dim">total 10 featured projects</span>
+          </div>
+          <div class="file-list">
+            {projects.map((project) => <FileEntry project={project} />)}
+          </div>
+          {projects.map((project) => <ProjectCard project={project} />)}
+        </TerminalWindow>
+      </div>
+    </section>
+
+    <section class="term-section term-section--full" id="contact">
+      <div class="term-container">
+        <TerminalWindow title="jon@saxton: ~/contact">
+          <Prompt path="~/contact" command="cat ./links.txt" />
+          <div class="output output--indented stagger-in">
+            <span class="output__line output__line--loose">
+              <span class="term-text-dim">// Let's connect</span>
+            </span>
+            <span class="output__line">
+              <span class="term-text-amber">TWITTER</span>
+              <span class="term-text-dim"> → </span>
+              <a href="https://x.com/JonSaxton" target="_blank" rel="noopener noreferrer" class="term-link">@JonSaxton</a>
+            </span>
+            <span class="output__line">
+              <span class="term-text-amber">LINKEDIN</span>
+              <span class="term-text-dim"> → </span>
+              <a href="https://www.linkedin.com/in/jpsaxton/" target="_blank" rel="noopener noreferrer" class="term-link">/in/jpsaxton</a>
+            </span>
+            <span class="output__line">
+              <span class="term-text-amber">BLUESKY</span>
+              <span class="term-text-dim"> → </span>
+              <a href="https://bsky.app/profile/jonsaxton.com" target="_blank" rel="noopener noreferrer" class="term-link">@jonsaxton.com</a>
+            </span>
+            <span class="output__line output__line--project-inquiries">
+              <span class="term-text-dim">// For project inquiries</span>
+            </span>
+            <span class="output__line">
+              <span class="term-text-amber">PROJECTS</span>
+              <span class="term-text-dim"> → </span>
+              <span class="term-text-bright">Available through LinkedIn or Twitter DMs</span>
+            </span>
+          </div>
+          <Prompt path="~/contact" cursor spaced />
+        </TerminalWindow>
+      </div>
+    </section>
+
+    <footer class="term-section term-section--full term-footer">
+      <div class="term-container">
+        <div class="term-footer__inner">
+          <span class="term-text-dim">
+            <span class="term-comment">Built with Astro, Cursor, Webflow CMS, and Webflow Cloud.</span>
+          </span>
+          <span class="term-text-dim">© 2026 Jon Saxton</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>

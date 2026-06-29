@@ -1,0 +1,40 @@
+---
+import type { Project } from "@/types/portfolio";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<div id={project.id} class="project-card">
+  <div class="project-card__header">
+    <span class="project-card__title">
+      <span class="term-text-amber">$</span> cat ./{project.slug}/README.md
+    </span>
+    <span class="project-card__meta">{project.year}</span>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__image-container">
+      <img
+        src={project.image.src}
+        alt={project.image.alt}
+        width={project.image.width}
+        height={project.image.height}
+        class="project-card__image"
+        loading="eager"
+        decoding="async"
+      />
+      <div class="project-card__image-scanlines"></div>
+    </div>
+    <h3 class="project-card__heading">{project.title}</h3>
+    <p class="project-card__description">{project.description}</p>
+    <div class="project-card__tags">
+      {project.tags.map((tag) => <span class="project-card__tag">{tag}</span>)}
+    </div>
+    <a href={project.href} target="_blank" rel="noopener noreferrer" class="project-card__link">
+      <span>→ ./open --url</span>
+    </a>
+  </div>
+</div>

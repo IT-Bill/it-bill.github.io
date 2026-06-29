@@ -1,8 +1,8 @@
 # AI Website Cloner Template
 
-<a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a> <a href="https://github.com/JCodesMore/ai-website-cloner-template/stargazers"><img src="https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat" alt="Stars" /></a> <a href="https://discord.gg/hrTSX5yTpB"><img src="https://img.shields.io/discord/1400896964597383279?label=discord" alt="Discord" /></a>
+<a href="https://github.com/JCodesMore/ai-website-cloner-template/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a> <a href="https://github.com/JCodesMore/ai-website-cloner-template/stargazers"><img src="https://img.shields.io/github/stars/JCodesMore/ai-website-cloner-template?style=flat" alt="Stars" /></a> <a href="https://discord.gg/hrTSX5yTpB"><img src="https://img.shields.io/discord/1400896964597383279?label=discord" alt="Discord" /></a>
 
-A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. 
+A reusable template for reverse-engineering any website into a clean, modern Astro codebase using AI coding agents.
 
 **Recommended: [Claude Code](https://docs.anthropic.com/en/docs/claude-code) with Opus 4.7 for best results** — but works with a variety of AI coding agents.
 
@@ -39,7 +39,7 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
 
 3. **Install dependencies**
    ```bash
-   npm install
+   pnpm install
    ```
 4. **Start your AI agent** — Claude Code recommended:
    ```bash
@@ -53,35 +53,25 @@ Point it at a URL, run `/clone-website`, and your AI agent will inspect the site
 
 > Using a different agent? Open `AGENTS.md` for project instructions — most agents pick it up automatically.
 
-## Supported Platforms
+## Agent Files
 
-| Agent                                                         | Status                     |
-| ------------------------------------------------------------- | -------------------------- |
-| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | **Recommended** — Opus 4.7 |
-| [Codex CLI](https://github.com/openai/codex)                  | Supported                  |
-| [OpenCode](https://opencode.ai/)                              | Supported                  |
-| [GitHub Copilot](https://github.com/features/copilot)         | Supported                  |
-| [Cursor](https://cursor.com/)                                 | Supported                  |
-| [Windsurf](https://codeium.com/windsurf)                      | Supported                  |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli)     | Supported                  |
-| [Cline](https://github.com/cline/cline)                       | Supported                  |
-| [Roo Code](https://github.com/RooCodeInc/Roo-Code)            | Supported                  |
-| [Continue](https://continue.dev/)                             | Supported                  |
-| [Amazon Q](https://aws.amazon.com/q/developer/)               | Supported                  |
-| [Augment Code](https://www.augmentcode.com/)                  | Supported                  |
-| [Aider](https://aider.chat/)                                  | Supported                  |
+This repository keeps agent skill files only for:
+
+- Codex CLI: `.codex/skills/`
+- Claude Code: `.claude/skills/`
+
+Other generated `.xxx` agent skill/config folders are intentionally excluded.
 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) 24+
-- An AI coding agent (see [Supported Platforms](#supported-platforms))
+- Codex CLI or Claude Code
 
 ## Tech Stack
 
-- **Next.js 16** — App Router, React 19, TypeScript strict
-- **shadcn/ui** — Radix primitives + Tailwind CSS v4
+- **Astro 7** — static-first routing, layouts, components, TypeScript strict
 - **Tailwind CSS v4** — oklch design tokens
-- **Lucide React** — default icons (replaced by extracted SVGs during cloning)
+- **Astro components** — framework-native HTML components with minimal client JavaScript
 
 ## How It Works
 
@@ -97,7 +87,7 @@ Each builder agent receives the full component specification inline — exact `g
 
 ## Use Cases
 
-- **Platform migration** — rebuild a site you own from WordPress/Webflow/Squarespace into a modern Next.js codebase
+- **Platform migration** — rebuild a site you own from WordPress/Webflow/Squarespace into a modern Astro codebase
 - **Lost source code** — your site is live but the repo is gone, the developer left, or the stack is legacy. Get the code back in a modern format
 - **Learning** — deconstruct how production sites achieve specific layouts, animations, and responsive behavior by working with real code
 
@@ -111,13 +101,12 @@ Each builder agent receives the full component specification inline — exact `g
 
 ```
 src/
-  app/              # Next.js routes
-  components/       # React components
-    ui/             # shadcn/ui primitives
-    icons.tsx       # Extracted SVG icons
-  lib/utils.ts      # cn() utility
+  pages/            # Astro routes
+  layouts/          # Shared Astro page layouts
+  components/       # Astro components
+  data/             # Structured content/data modules
+  styles/           # Global Tailwind/CSS entrypoints
   types/            # TypeScript interfaces
-  hooks/            # Custom React hooks
 public/
   images/           # Downloaded images from target
   videos/           # Downloaded videos from target
@@ -126,21 +115,20 @@ docs/
   research/         # Extraction output & component specs
   design-references/ # Screenshots
 scripts/
-  sync-agent-rules.sh  # Regenerate agent instruction files
-  sync-skills.mjs      # Regenerate /clone-website for all platforms
+  sync-agent-rules.sh  # Validate AGENTS.md as the instruction source
+  sync-skills.mjs      # Sync /clone-website from Claude to Codex
 AGENTS.md           # Agent instructions (single source of truth)
 CLAUDE.md           # Claude Code config (imports AGENTS.md)
-GEMINI.md           # Gemini CLI config (imports AGENTS.md)
 ```
 
 ## Commands
 
 ```bash
-npm run dev    # Start dev server
-npm run build  # Production build
-npm run lint   # ESLint check
-npm run typecheck # TypeScript check
-npm run check  # Run lint + typecheck + build
+pnpm run dev       # Start dev server
+pnpm run build     # Production build
+pnpm run lint      # ESLint check
+pnpm run typecheck # Astro type check
+pnpm run check     # Run lint + typecheck + build
 ```
 
 ### If using docker
@@ -150,16 +138,16 @@ docker compose up app --build # build and run the app
 docker compose up dev --build # run the app in dev mode on port 3001
 ```
 
-## Updating for Other Platforms
+## Updating Agent Files
 
-Two source-of-truth files power all platform support. Edit the source, then run the sync script:
+Two source-of-truth files power the retained Codex/Claude agent setup. Edit the source, then run the relevant script:
 
 | What                   | Source of truth                         | Sync command                       |
 | ---------------------- | --------------------------------------- | ---------------------------------- |
 | Project instructions   | `AGENTS.md`                             | `bash scripts/sync-agent-rules.sh` |
 | `/clone-website` skill | `.claude/skills/clone-website/SKILL.md` | `node scripts/sync-skills.mjs`     |
 
-Each script regenerates the platform-specific copies automatically. Agents that read the source files natively need no regeneration.
+`sync-agent-rules.sh` validates that `AGENTS.md` exists. `sync-skills.mjs` copies the Claude skill into `.codex/skills/`.
 
 
 ## Star History

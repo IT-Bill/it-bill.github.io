@@ -1,0 +1,50 @@
+---
+import "@/styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = "Jon Saxton – Senior Webflow Developer",
+  description = "Working with growth-stage and enterprise organizations to bring great designs to life.",
+  image = "/seo/jonsaxton-og.jpg",
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, "https://www.jonsaxton.com").toString();
+const imageUrl = new URL(image, "https://www.jonsaxton.com").toString();
+---
+
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/png" href="/seo/jonsaxton-favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/seo/jonsaxton-favicon.png" />
+    <link rel="apple-touch-icon" href="/seo/jonsaxton-webclip.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

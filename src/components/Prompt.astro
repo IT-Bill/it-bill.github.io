@@ -1,0 +1,22 @@
+---
+interface Props {
+  path: string;
+  command?: string;
+  cursor?: boolean;
+  spaced?: boolean;
+}
+
+const { path, command, cursor = false, spaced = false } = Astro.props;
+---
+
+<div class={spaced ? "prompt prompt--spaced" : "prompt"}>
+  <span class="prompt__identity">
+    <span class="prompt__user">jon</span>
+    <span class="prompt__at">@</span>
+    <span class="prompt__host">saxton</span>
+  </span>
+  <span class="prompt__path">:{path}$</span>
+  <span class="prompt__symbol"></span>
+  {command ? <span class="prompt__command">{command}</span> : null}
+  {cursor ? <span class="cursor"></span> : null}
+</div>
