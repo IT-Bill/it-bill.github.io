@@ -27,13 +27,8 @@ const imageUrl = new URL(image, "https://it-bill.github.io").toString();
     <script is:inline>
       (() => {
         const storedTheme = localStorage.getItem("theme");
-        const themeMode = storedTheme === "light" || storedTheme === "dark" || storedTheme === "system" ? storedTheme : "system";
-        const theme =
-          themeMode === "system"
-            ? window.matchMedia("(prefers-color-scheme: light)").matches
-              ? "light"
-              : "dark"
-            : themeMode;
+        const themeMode = storedTheme === "light" || storedTheme === "dark" ? storedTheme : "light";
+        const theme = themeMode;
 
         document.documentElement.dataset.theme = theme;
         document.documentElement.dataset.themeMode = themeMode;

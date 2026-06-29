@@ -22,65 +22,41 @@
   }
 
   type Theme = "light" | "dark";
-  type ThemeMode = "system" | Theme;
 
-  function isThemeMode(value: string | undefined | null): value is ThemeMode {
-    return value === "system" || value === "light" || value === "dark";
+  function isTheme(value: string | undefined | null): value is Theme {
+    return value === "light" || value === "dark";
   }
 
-  function getStoredThemeMode(): ThemeMode {
+  function getStoredTheme(): Theme {
     const storedTheme = localStorage.getItem("theme");
-    return isThemeMode(storedTheme) ? storedTheme : "system";
+    return isTheme(storedTheme) ? storedTheme : "light";
   }
 
-  function getSystemTheme(): Theme {
-    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-  }
-
-  function resolveTheme(mode: ThemeMode): Theme {
-    return mode === "system" ? getSystemTheme() : mode;
-  }
-
-  function updateThemeMenu(mode: ThemeMode, theme: Theme) {
-    const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
+  function updateThemeButton(theme: Theme) {
+    const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-toggle-button]");
     const themeLabel = document.querySelector<HTMLElement>("[data-theme-label]");
     const themeShortLabel = document.querySelector<HTMLElement>("[data-theme-label-short]");
-    const themeMenu = document.querySelector<HTMLElement>("[data-theme-menu]");
-    const shortLabels: Record<ThemeMode, string> = {
-      system: "--sys",
+    const shortLabels: Record<Theme, string> = {
       light: "--lt",
       dark: "--dk",
     };
 
-    themeLabel?.replaceChildren(`--${mode}`);
-    themeShortLabel?.replaceChildren(shortLabels[mode]);
-    themeButton?.setAttribute("aria-label", `Current theme command: style --${mode}`);
-    themeMenu?.setAttribute("data-resolved-theme", theme);
-
-    document.querySelectorAll<HTMLButtonElement>("[data-theme-option]").forEach((option) => {
-      option.setAttribute("aria-checked", option.dataset.themeOption === mode ? "true" : "false");
-    });
+    themeLabel?.replaceChildren(`--${theme}`);
+    themeShortLabel?.replaceChildren(shortLabels[theme]);
+    themeButton?.setAttribute("aria-label", `Current theme command: style --${theme}`);
+    themeButton?.setAttribute("data-resolved-theme", theme);
   }
 
-  function setThemeMenuOpen(open: boolean) {
-    const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
-    const themePanel = document.querySelector<HTMLElement>("[data-theme-panel]");
-
-    if (!themeButton || !themePanel) {
-      return;
-    }
-
-    themeButton.setAttribute("aria-expanded", String(open));
-    themePanel.hidden = !open;
-  }
-
-  function applyThemeMode(mode: ThemeMode) {
-    const theme = resolveTheme(mode);
+  function applyTheme(theme: Theme) {
     document.documentElement.dataset.theme = theme;
-    document.documentElement.dataset.themeMode = mode;
+    document.documentElement.dataset.themeMode = theme;
     document.documentElement.style.colorScheme = theme;
-    localStorage.setItem("theme", mode);
-    updateThemeMenu(mode, theme);
+    localStorage.setItem("theme", theme);
+    updateThemeButton(theme);
+  }
+
+  function getCurrentTheme(): Theme {
+    return isTheme(document.documentElement.dataset.theme) ? document.documentElement.dataset.theme : getStoredTheme();
   }
 
   function isTypingTarget(element: Element | null) {
@@ -109,48 +85,13 @@
     window.__terminalEffectsLoaded = true;
     const matrixIntervals: number[] = [];
     const matrixTimeouts: number[] = [];
-    const initialMode = isThemeMode(document.documentElement.dataset.themeMode)
+    const initialTheme = isTheme(document.documentElement.dataset.themeMode)
       ? document.documentElement.dataset.themeMode
-      : getStoredThemeMode();
-    applyThemeMode(initialMode);
+      : getStoredTheme();
+    applyTheme(initialTheme);
 
-    document.querySelector<HTMLButtonElement>("[data-theme-menu-button]")?.addEventListener("click", () => {
-      const themeButton = document.querySelector<HTMLButtonElement>("[data-theme-menu-button]");
-      setThemeMenuOpen(themeButton?.getAttribute("aria-expanded") !== "true");
-    });
-
-    document.querySelectorAll<HTMLButtonElement>("[data-theme-option]").forEach((option) => {
-      option.addEventListener("click", () => {
-        const nextMode = option.dataset.themeOption;
-        if (isThemeMode(nextMode)) {
-          applyThemeMode(nextMode);
-          setThemeMenuOpen(false);
-        }
-      });
-    });
-
-    const systemThemeQuery = window.matchMedia("(prefers-color-scheme: light)");
-    systemThemeQuery.addEventListener("change", () => {
-      const mode = isThemeMode(document.documentElement.dataset.themeMode)
-        ? document.documentElement.dataset.themeMode
-        : getStoredThemeMode();
-
-      if (mode === "system") {
-        applyThemeMode("system");
-      }
-    });
-
-    document.addEventListener("click", (event) => {
-      const themeMenu = document.querySelector<HTMLElement>("[data-theme-menu]");
-      if (themeMenu && event.target instanceof Node && !themeMenu.contains(event.target)) {
-        setThemeMenuOpen(false);
-      }
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        setThemeMenuOpen(false);
-      }
+    document.querySelector<HTMLButtonElement>("[data-theme-toggle-button]")?.addEventListener("click", () => {
+      applyTheme(getCurrentTheme() === "light" ? "dark" : "light");
     });
 
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {

@@ -97,7 +97,6 @@ export type NavItem = {
 export type PortfolioNav = {
   items: NavItem[];
   themeAriaLabel: string;
-  themeMenuLabel: string;
   languageTargetLocale: Locale;
   languageAriaLabel: string;
   languageCommand: string;

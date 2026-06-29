@@ -41,36 +41,12 @@ const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
           <span class="language-command__flag">{content.nav.languageFlag}</span>
           <span class="language-command__flag language-command__flag--short">{content.nav.languageShortFlag}</span>
         </a>
-        <div class="theme-menu" data-theme-menu>
-          <button
-            class="theme-command"
-            type="button"
-            data-theme-menu-button
-            aria-haspopup="menu"
-            aria-expanded="false"
-            aria-label={content.nav.themeAriaLabel}
-          >
-            <span class="theme-command__prompt" aria-hidden="true">❯</span>
-            <span class="theme-command__name">style</span>
-            <span class="theme-command__flag" data-theme-label>--system</span>
-            <span class="theme-command__flag theme-command__flag--short" data-theme-label-short>--sys</span>
-            <span class="theme-command__caret" aria-hidden="true">▾</span>
-          </button>
-          <div class="theme-menu__panel" data-theme-panel role="menu" aria-label={content.nav.themeMenuLabel} hidden>
-            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="system" aria-checked="false">
-              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
-              <span>style --system</span>
-            </button>
-            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="light" aria-checked="false">
-              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
-              <span>style --light</span>
-            </button>
-            <button class="theme-menu__item" type="button" role="menuitemradio" data-theme-option="dark" aria-checked="false">
-              <span class="theme-menu__prompt" aria-hidden="true">❯</span>
-              <span>style --dark</span>
-            </button>
-          </div>
-        </div>
+        <button class="theme-command" type="button" data-theme-toggle-button aria-label={content.nav.themeAriaLabel}>
+          <span class="theme-command__prompt" aria-hidden="true">❯</span>
+          <span class="theme-command__name">style</span>
+          <span class="theme-command__flag" data-theme-label>--light</span>
+          <span class="theme-command__flag theme-command__flag--short" data-theme-label-short>--lt</span>
+        </button>
       </div>
     </div>
   </nav>
