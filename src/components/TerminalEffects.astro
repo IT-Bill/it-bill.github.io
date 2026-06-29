@@ -289,7 +289,7 @@
       }
     });
 
-    const ascii = document.querySelector<HTMLElement>(".ascii-art");
+    const ascii = document.querySelector<HTMLElement>(".ascii-lockup");
     let asciiClicks = 0;
     let asciiClickTimer = 0;
     ascii?.addEventListener("click", () => {
@@ -297,8 +297,10 @@
       window.clearTimeout(asciiClickTimer);
 
       if (asciiClicks >= 5) {
-        ascii.classList.add("ascii-art--glitching");
-        window.setTimeout(() => ascii.classList.remove("ascii-art--glitching"), 500);
+        ascii.querySelectorAll(".ascii-art").forEach((line) => line.classList.add("ascii-art--glitching"));
+        window.setTimeout(() => {
+          ascii.querySelectorAll(".ascii-art").forEach((line) => line.classList.remove("ascii-art--glitching"));
+        }, 500);
         asciiClicks = 0;
       }
 

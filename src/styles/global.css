@@ -655,15 +655,34 @@
   margin-top: 1.5rem;
 }
 
+.ascii-lockup {
+  display: grid;
+  gap: 0.1rem;
+  margin: 1em 0;
+  max-width: 100%;
+}
+
 .ascii-art {
   animation: terminal-pulse 4s ease-in-out infinite;
   color: var(--term-bright-white);
   font-family: var(--font-terminal);
-  font-size: clamp(6px, 1.2vw, 14px);
-  line-height: 1.2;
-  margin: 1em 0;
+  font-size: clamp(6px, 0.95vw, 13px);
+  line-height: 1.08;
+  margin: 0;
   text-shadow: none;
   white-space: pre;
+}
+
+.ascii-art--first {
+  justify-self: start;
+}
+
+.ascii-art--last {
+  animation-delay: 0.25s;
+  color: var(--term-gray);
+  justify-self: start;
+  margin-left: clamp(1.8rem, 9vw, 7rem);
+  margin-top: 0.65rem;
 }
 
 .ascii-art--glitching {
@@ -1135,12 +1154,8 @@
 
 .term-container {
   margin: 0 auto;
-  max-width: 1000px;
-  width: 90%;
-}
-
-.term-container--wide {
   max-width: 1200px;
+  width: 90%;
 }
 
 .hero-boot {
@@ -1534,7 +1549,12 @@
   }
 
   .ascii-art {
-    font-size: clamp(4px, 2vw, 10px);
+    font-size: clamp(4.2px, 1.72vw, 8.8px);
+  }
+
+  .ascii-art--last {
+    margin-left: clamp(1rem, 7vw, 3rem);
+    margin-top: 0.48rem;
   }
 
   .term-window__body {
@@ -1644,7 +1664,12 @@
 
   .ascii-art {
     margin: 0.5em 0;
-    font-size: clamp(3px, 1.8vw, 8px);
+    font-size: clamp(3px, 1.7vw, 6.6px);
+  }
+
+  .ascii-art--last {
+    margin-left: 1.1rem;
+    margin-top: 0.42rem;
   }
 
   .term-nav__brand {

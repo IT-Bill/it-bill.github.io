@@ -91,7 +91,10 @@ import {
               />
             </div>
             <div class="hero-ascii-wrapper">
-              <pre class="ascii-art" aria-hidden="true">{asciiArt}</pre>
+              <div class="ascii-lockup" aria-hidden="true">
+                <pre class="ascii-art ascii-art--first">{asciiArt.firstName}</pre>
+                <pre class="ascii-art ascii-art--last">{asciiArt.lastName}</pre>
+              </div>
               <h1 class="visually-hidden">{profile.name}</h1>
             </div>
           </div>
@@ -209,7 +212,7 @@ import {
     </section>
 
     <section class="term-section" id="publications">
-      <div class="term-container term-container--wide">
+      <div class="term-container">
         <TerminalWindow title="zhanwei@it-bill: ~/publications">
           <Prompt path="~/publications" command="ls -la ./papers" />
           <div class="output output--project-count">
@@ -247,7 +250,7 @@ import {
     </section>
 
     <section class="term-section" id="projects">
-      <div class="term-container term-container--wide">
+      <div class="term-container">
         <TerminalWindow title="zhanwei@it-bill: ~/projects">
           <Prompt path="~/projects" command="ls -la" />
           <div class="output output--project-count">
