@@ -119,7 +119,13 @@ const finalStatusLine = statusLines.at(-1);
                 <div class="hero-resume-links">
                   {
                     content.heroResume.links.map((link) => (
-                      <a href={link.href} download class="hero-resume-link" aria-label={link.ariaLabel}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hero-resume-link"
+                        aria-label={link.ariaLabel}
+                      >
                         <span class="hero-resume-link__label">{link.label}</span>
                         <span class="hero-resume-link__command">{link.command}</span>
                       </a>
@@ -329,6 +335,51 @@ const finalStatusLine = statusLines.at(-1);
               ))
             }
           </div>
+          <Prompt path="~/contact" command={content.contactComposer.command} spaced />
+          <form
+            class="mail-composer"
+            data-mail-composer
+            data-recipient={profile.email}
+            data-mailto-status={content.contactComposer.mailtoStatus}
+            data-copied-status={content.contactComposer.copiedStatus}
+            data-copy-failed-status={content.contactComposer.copyFailedStatus}
+          >
+            <div class="mail-composer__row mail-composer__row--to">
+              <span class="mail-composer__label">{content.contactComposer.toLabel}</span>
+              <a href={`mailto:${profile.email}`} class="mail-composer__address">{profile.email}</a>
+            </div>
+            <label class="mail-composer__field">
+              <span class="mail-composer__label">{content.contactComposer.subjectLabel}</span>
+              <input
+                type="text"
+                class="mail-composer__input"
+                name="subject"
+                placeholder={content.contactComposer.subjectPlaceholder}
+                autocomplete="off"
+                data-mail-subject
+              />
+            </label>
+            <label class="mail-composer__field">
+              <span class="mail-composer__label">{content.contactComposer.messageLabel}</span>
+              <textarea
+                class="mail-composer__textarea"
+                name="body"
+                rows="5"
+                placeholder={content.contactComposer.messagePlaceholder}
+                data-mail-body></textarea>
+            </label>
+            <div class="mail-composer__actions">
+              <a href={`mailto:${profile.email}`} class="mail-composer__button mail-composer__button--primary" data-mail-send>
+                <span class="mail-composer__button-prompt">❯</span>
+                <span>{content.contactComposer.sendLabel}</span>
+              </a>
+              <button type="button" class="mail-composer__button" data-copy-email>
+                <span class="mail-composer__button-prompt">❯</span>
+                <span>{content.contactComposer.copyLabel}</span>
+              </button>
+              <span class="mail-composer__status" aria-live="polite" data-mail-status></span>
+            </div>
+          </form>
           <Prompt path="~/contact" cursor spaced />
         </TerminalWindow>
       </div>

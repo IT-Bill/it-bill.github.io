@@ -65,6 +65,20 @@ export type ContactLink = {
   href: string;
 };
 
+export type ContactComposer = {
+  command: string;
+  toLabel: string;
+  subjectLabel: string;
+  subjectPlaceholder: string;
+  messageLabel: string;
+  messagePlaceholder: string;
+  sendLabel: string;
+  copyLabel: string;
+  mailtoStatus: string;
+  copiedStatus: string;
+  copyFailedStatus: string;
+};
+
 export type ResumeDownload = {
   label: string;
   command: string;
@@ -162,5 +176,6 @@ export type PortfolioContent = {
   publications: Publication[];
   projects: Project[];
   contactLinks: ContactLink[];
+  contactComposer: ContactComposer;
   terminal: TerminalCopy;
 };

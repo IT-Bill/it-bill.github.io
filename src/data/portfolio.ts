@@ -22,9 +22,9 @@ export const profile = {
     width: 3159,
     height: 3159,
   },
-  tagline: "Aspiring Software Engineer & Machine Learning Researcher",
+  tagline: "AI-native Software Engineer focused on Agentic Systems",
   summary:
-    "A dedicated and innovative engineer with a strong background in software development and machine learning, seeking to apply academic knowledge and practical skills to solve complex challenges.",
+    "I build software with coding agents, programmable workflows, and application-layer infrastructure for agentic systems.",
   cvHref: "/cv-zhanwei-en.pdf",
 };
 
@@ -45,7 +45,7 @@ export const asciiArt = {
 
 export const statusLines: StatusLine[] = [
   { label: "ROLE", text: profile.tagline, tone: "term-text" },
-  { label: "STATUS", text: "Open to technology discussions, collaborations, and opportunities", tone: "term-text-amber" },
+  { label: "STATUS", text: "Building software with Codex, Claude Code, and programmable workflows", tone: "term-text-amber" },
 ];
 
 const englishResumeLinks = [
@@ -423,12 +423,27 @@ export const contactLinks: ContactLink[] = [
   { label: "X", value: "@IT_Billx", href: "https://x.com/IT_Billx" },
 ];
 
+const contactComposer = {
+  command: "mail --compose",
+  toLabel: "to",
+  subjectLabel: "subject",
+  subjectPlaceholder: "Project / collaboration / question",
+  messageLabel: "message",
+  messagePlaceholder: "Write a short note...",
+  sendLabel: "send --mailto",
+  copyLabel: "copy --email",
+  mailtoStatus: "opening mail client",
+  copiedStatus: "email copied",
+  copyFailedStatus: "copy failed",
+};
+
 export const englishPortfolio: PortfolioContent = {
   locale: "en",
   htmlLang: "en",
   meta: {
-    title: "Zhanwei Zhang - Software Engineer & Machine Learning Researcher",
-    description: "Personal terminal portfolio for Zhanwei Zhang, an aspiring software engineer and machine learning researcher.",
+    title: "Zhanwei Zhang",
+    description:
+      "Personal terminal portfolio for Zhanwei Zhang, an AI-native software engineer focused on agentic systems, developer tools, and workflow infrastructure.",
     image: profile.avatar.src,
   },
   nav: {
@@ -477,6 +492,7 @@ export const englishPortfolio: PortfolioContent = {
   publications,
   projects,
   contactLinks,
+  contactComposer,
   terminal: {
     ready: "English profile ready. Press Enter to continue.",
     totalPublications: "total {count} publications",
@@ -496,14 +512,15 @@ const zhProfile = {
     ...profile.avatar,
     alt: "张展玮",
   },
-  tagline: "软件工程师 & 机器学习研究者",
-  summary: "一位充满热情的工程师，在软件开发和机器学习领域拥有扎实的背景，致力于将学术知识和实践技能应用于解决复杂的工程挑战。",
+  tagline: "AI Native 软件工程师",
+  summary: "我重度使用 Codex、Claude Code 等 coding agents 构建软件，关注 Agent 应用、开发者工具、自动化工作流和应用层基础设施。",
   cvHref: "/cv-zhanwei-zh.pdf",
 };
 
 const zhStatusLines: StatusLine[] = [
   { label: "角色", text: zhProfile.tagline, tone: "term-text" },
-  { label: "状态", text: "欢迎技术交流、科研合作与机会讨论", tone: "term-text-amber" },
+  { label: "方向", text: "Agent 应用与工作流", tone: "term-text" },
+  { label: "状态", text: "使用 Codex、Claude Code 和自动化开发流程构建软件", tone: "term-text-amber" },
 ];
 
 const zhResumeLinks = [
@@ -523,7 +540,7 @@ const zhResumeLinks = [
 
 const zhAboutLines = [
   zhProfile.summary,
-  "香港科技大学（广州）数据科学与分析哲学硕士在读。",
+  "香港科技大学（广州）数据科学与分析研究型硕士在读。",
   "南方科技大学计算机科学与技术工学学士。",
 ];
 
@@ -557,7 +574,7 @@ const zhExperiences: Experience[] = [
   {
     id: "hkustgz-mphil",
     period: "2025年9月 - 至今",
-    title: "数据科学与分析 哲学硕士",
+    title: "数据科学与分析 研究型硕士",
     institution: "香港科技大学（广州）",
     type: "教育",
     description: ["信息枢纽 | 导师：丁子硕 教授", "研究方向：音频大语言模型（LALM）的安全性与鲁棒性测试。"],
@@ -842,12 +859,26 @@ const zhContactLinks: ContactLink[] = [
   { label: "X", value: "@IT_Billx", href: "https://x.com/IT_Billx" },
 ];
 
+const zhContactComposer = {
+  command: "mail --compose",
+  toLabel: "收件人",
+  subjectLabel: "主题",
+  subjectPlaceholder: "项目合作 / 科研交流 / 其他问题",
+  messageLabel: "正文",
+  messagePlaceholder: "写一段简短的信息...",
+  sendLabel: "send --mailto",
+  copyLabel: "copy --email",
+  mailtoStatus: "正在打开邮件客户端",
+  copiedStatus: "邮箱已复制",
+  copyFailedStatus: "复制失败",
+};
+
 export const zhPortfolio: PortfolioContent = {
   locale: "zh",
   htmlLang: "zh-CN",
   meta: {
-    title: "张展玮 - 软件工程师 & 机器学习研究者",
-    description: "张展玮的终端风格个人主页，展示软件工程、机器学习、科研经历与项目作品。",
+    title: "张展玮",
+    description: "张展玮的终端风格个人主页，展示 Agent 应用、开发者工具、自动化工作流与软件工程项目。",
     image: zhProfile.avatar.src,
   },
   nav: {
@@ -878,7 +909,7 @@ export const zhPortfolio: PortfolioContent = {
     command: "cat ./education.log",
     items: [
       {
-        degree: "数据科学与分析 哲学硕士",
+        degree: "数据科学与分析 研究型硕士",
         institution: "香港科技大学（广州）",
         period: "2025 - 至今",
       },
@@ -896,6 +927,7 @@ export const zhPortfolio: PortfolioContent = {
   publications: zhPublications,
   projects: zhProjects,
   contactLinks: zhContactLinks,
+  contactComposer: zhContactComposer,
   terminal: {
     ready: "中文资料已加载。按 Enter 继续。",
     totalPublications: "共 {count} 篇论文",

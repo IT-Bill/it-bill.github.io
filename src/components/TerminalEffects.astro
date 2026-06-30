@@ -77,6 +77,54 @@
     history.pushState(null, "", hash);
   }
 
+  function createMailtoHref(recipient: string, subject: string, body: string) {
+    const params = [
+      subject ? `subject=${encodeURIComponent(subject)}` : "",
+      body ? `body=${encodeURIComponent(body)}` : "",
+    ].filter(Boolean);
+
+    return `mailto:${recipient}${params.length ? `?${params.join("&")}` : ""}`;
+  }
+
+  function initMailComposers() {
+    document.querySelectorAll<HTMLFormElement>("[data-mail-composer]").forEach((form) => {
+      const recipient = form.dataset.recipient;
+      const subjectInput = form.querySelector<HTMLInputElement>("[data-mail-subject]");
+      const bodyInput = form.querySelector<HTMLTextAreaElement>("[data-mail-body]");
+      const sendLink = form.querySelector<HTMLAnchorElement>("[data-mail-send]");
+      const copyButton = form.querySelector<HTMLButtonElement>("[data-copy-email]");
+      const status = form.querySelector<HTMLElement>("[data-mail-status]");
+
+      if (!recipient || !subjectInput || !bodyInput || !sendLink) {
+        return;
+      }
+
+      const updateMailto = () => {
+        sendLink.href = createMailtoHref(recipient, subjectInput.value.trim(), bodyInput.value.trim());
+      };
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+      });
+      subjectInput.addEventListener("input", updateMailto);
+      bodyInput.addEventListener("input", updateMailto);
+      sendLink.addEventListener("click", updateMailto);
+      sendLink.addEventListener("click", () => {
+        status?.replaceChildren(form.dataset.mailtoStatus ?? "");
+      });
+      copyButton?.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(recipient);
+          status?.replaceChildren(form.dataset.copiedStatus ?? "");
+        } catch {
+          status?.replaceChildren(form.dataset.copyFailedStatus ?? "");
+        }
+      });
+
+      updateMailto();
+    });
+  }
+
   function initTerminalEffects() {
     if (window.__terminalEffectsLoaded) {
       return;
@@ -93,6 +141,8 @@
     document.querySelector<HTMLButtonElement>("[data-theme-toggle-button]")?.addEventListener("click", () => {
       applyTheme(getCurrentTheme() === "light" ? "dark" : "light");
     });
+
+    initMailComposers();
 
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (event) => {
