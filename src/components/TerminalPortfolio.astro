@@ -18,6 +18,7 @@ const homeHref = getRelativeLocaleUrl(content.locale);
 const languageHref = getRelativeLocaleUrl(content.nav.languageTargetLocale);
 const leadingStatusLines = statusLines.slice(0, -1);
 const finalStatusLine = statusLines.at(-1);
+const projectCategories = Array.from(new Set(projects.map((project) => project.category)));
 ---
 
 <div class="terminal-page">
@@ -296,9 +297,28 @@ const finalStatusLine = statusLines.at(-1);
     <section class="term-section" id="projects">
       <div class="term-container">
         <TerminalWindow title="zhanwei@it-bill: ~/projects">
-          <Prompt path="~/projects" command="ls -la" />
+          <Prompt path="~/projects" command="ls -la | filter --category" />
+          <div class="project-filters" data-project-filter-group>
+            <button
+              type="button"
+              class="project-filter is-active"
+              data-project-filter="__all"
+              aria-pressed="true"
+            >
+              <span>{content.terminal.projectFilterAll}</span>
+            </button>
+            {
+              projectCategories.map((category) => (
+                <button type="button" class="project-filter" data-project-filter={category} aria-pressed="false">
+                  <span>{category}</span>
+                </button>
+              ))
+            }
+          </div>
           <div class="output output--project-count">
-            <span class="output__line term-text-dim">{countText(content.terminal.totalProjects, projects.length)}</span>
+            <span class="output__line term-text-dim" data-project-count data-project-count-template={content.terminal.totalProjects}>
+              {countText(content.terminal.totalProjects, projects.length)}
+            </span>
           </div>
           <div class="file-list">
             {projects.map((project) => <FileEntry project={project} loadingText={content.terminal.loadingImage} />)}

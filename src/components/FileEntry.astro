@@ -9,7 +9,7 @@ interface Props {
 const { project, loadingText } = Astro.props;
 ---
 
-<a href={`#${project.id}`} class="file-entry" data-project-image={project.image.src}>
+<a href={`#${project.id}`} class="file-entry" data-project-item data-project-category={project.category} data-project-image={project.image.src}>
   <span class="file-entry__group">{project.category}</span>
   <span class="file-entry__date">{project.period}</span>
   <span class="file-entry__name file-entry__name--exec">{project.slug}/</span>

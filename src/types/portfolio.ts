@@ -129,6 +129,7 @@ export type TerminalCopy = {
   ready: string;
   totalPublications: string;
   totalProjects: string;
+  projectFilterAll: string;
   contactComment: string;
   builtWith: string;
   loadingImage: string;

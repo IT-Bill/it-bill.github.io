@@ -9,7 +9,7 @@ interface Props {
 const { project, privateAccess } = Astro.props;
 ---
 
-<div id={project.id} class="project-card">
+<div id={project.id} class="project-card" data-project-item data-project-category={project.category}>
   <div class="project-card__header">
     <span class="project-card__title">
       <span class="term-text-amber">$</span> cat ./{project.slug}/README.md
@@ -47,7 +47,11 @@ const { project, privateAccess } = Astro.props;
           ))}
         </div>
       ) : (
-        <span class="project-card__private">{privateAccess}</span>
+        <div class="project-card__links">
+          <button type="button" class="project-card__link project-card__link--disabled project-card__private" disabled>
+            <span>→ {privateAccess}</span>
+          </button>
+        </div>
       )
     }
   </div>

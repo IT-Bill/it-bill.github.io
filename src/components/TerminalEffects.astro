@@ -125,6 +125,48 @@
     });
   }
 
+  function initProjectFilters() {
+    document.querySelectorAll<HTMLElement>("[data-project-filter-group]").forEach((filterGroup) => {
+      const termWindow = filterGroup.closest<HTMLElement>(".term-window");
+      const filterButtons = Array.from(filterGroup.querySelectorAll<HTMLButtonElement>("[data-project-filter]"));
+      const projectItems = Array.from(termWindow?.querySelectorAll<HTMLElement>("[data-project-item]") ?? []);
+      const projectCards = projectItems.filter((item) => item.classList.contains("project-card"));
+      const countElement = termWindow?.querySelector<HTMLElement>("[data-project-count]");
+      const countTemplate = countElement?.dataset.projectCountTemplate ?? "{count}";
+
+      const applyFilter = (category: string) => {
+        let visibleProjectCount = 0;
+
+        projectItems.forEach((item) => {
+          const isVisible = category === "__all" || item.dataset.projectCategory === category;
+          item.hidden = !isVisible;
+        });
+
+        projectCards.forEach((card) => {
+          if (!card.hidden) {
+            visibleProjectCount += 1;
+          }
+        });
+
+        filterButtons.forEach((button) => {
+          const isActive = button.dataset.projectFilter === category;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        countElement?.replaceChildren(countTemplate.replace("{count}", String(visibleProjectCount)));
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyFilter(button.dataset.projectFilter ?? "__all");
+        });
+      });
+
+      applyFilter("__all");
+    });
+  }
+
   function initTerminalEffects() {
     if (window.__terminalEffectsLoaded) {
       return;
@@ -143,6 +185,7 @@
     });
 
     initMailComposers();
+    initProjectFilters();
 
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (event) => {
