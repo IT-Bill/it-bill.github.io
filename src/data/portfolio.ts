@@ -242,6 +242,22 @@ export const publications: Publication[] = [
 
 export const projects: Project[] = [
   {
+    id: "wth-today",
+    slug: "wth-today",
+    period: "Jun. 2026",
+    year: "2026",
+    title: "WiTH",
+    category: "Software Engineering",
+    description:
+      "Built an AI health companion for the 2026 Shenzhen Hackathon, combining health records, AI chat, and personalized reminders; the project won Third Prize.",
+    image: { src: `${projectImageBase}/wth-today.png`, alt: "WiTH project cover", width: 1440, height: 900 },
+    techStack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "AI Chat", "ASR"],
+    links: [
+      { label: "Code", href: "https://github.com/IT-Bill/what-the-health" },
+      { label: "Demo", href: "https://wth.today/landing/" },
+    ],
+  },
+  {
     id: "bicone",
     slug: "bicone",
     period: "Mar. 2026",
@@ -688,6 +704,21 @@ const zhPublications: Publication[] = [
 ];
 
 const zhProjects: Project[] = [
+  {
+    id: "wth-today",
+    slug: "wth-today",
+    period: "2026年6月",
+    year: "2026",
+    title: "WiTH AI 健康伙伴",
+    category: "软件工程",
+    description: "参加 2026 深圳黑客松比赛的 AI 健康管理项目，结合健康记录、AI 对话与个性化提醒任务，获得三等奖。",
+    image: { src: `${projectImageBase}/wth-today.png`, alt: "WiTH AI 健康伙伴项目封面", width: 1440, height: 900 },
+    techStack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "AI Chat", "ASR"],
+    links: [
+      { label: "Code", href: "https://github.com/IT-Bill/what-the-health" },
+      { label: "Demo", href: "https://wth.today/landing/" },
+    ],
+  },
   {
     id: "bicone",
     slug: "bicone",

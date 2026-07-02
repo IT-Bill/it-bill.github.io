@@ -15,7 +15,7 @@
   body-size: 8pt,
   body-leading: 0.92em,
   header-left: [个人简历： 张展玮],
-  header-right: [上次更新: 2026.2.6],
+  header-right: [上次更新: 2026.7.3],
   name: [张展玮（Zhanwei Zhang）],
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
@@ -45,7 +45,11 @@
   ]
 
   #zh-section[项目]
-  #zh-entry[AI 短剧工作室][2025.9 ~ 至今][
+  #zh-entry[WiTH AI 健康伙伴][2026.6][
+    #zh-line[参加 2026 深圳黑客松比赛的 AI 健康管理项目，整合健康记录、AI 对话与个性化提醒任务。]
+    #zh-line[设计从日常健康记录到陪伴式交互的产品流程，帮助团队获得三等奖。]
+  ]
+  #zh-entry[AI 短剧工作室][2025.9 ~ 2026.1][
     #zh-line[搭建端到端流程，能够将小说或剧本直接转化为生产级的分镜工作流平台。]
     #zh-line[在集成界面中整合创作、生成、编辑和导出功能，简化了达到发布标准的AI短剧制作流程。]
   ]
@@ -70,7 +74,6 @@
   #zh-section[科研经历]
   #zh-entry[浮点计算中的数值错误检测][2024.9 ~ 2026.2][
     #zh-line[PI-detector：提出一种条件数 (Condition-number) 引导的扰动方法以替代昂贵的高精度 Oracle。以仅约 0.13% 的 Oracle 开销发现了 173 个显著错误案例（速度提升高达 73.46 倍）。]
-    #pagebreak(weak: false)
     #zh-line[MGDE：将错误检测转化为 Newton-Raphson 引导的收敛输入搜索。在 47 个函数中检测出 80 个 Bug（相比之下 ATOMU 为 70/46，FPCC 为 53/42），速度分别提升了 41.71 倍和 10.17 倍。]
   ]
   #zh-entry[R1 类推理流程复现与评估][2025.5 ~ 2025.6][
@@ -99,10 +102,11 @@
   #zh-line[#strong[开发工具：] IntelliJ IDEA, PyCharm, Visual Studio Code, Anaconda, Git, CMake]
 
   #zh-section[荣誉奖项]
-  #zh-entry[OpenHarmony 竞赛训练营 | 特别创新奖 (唯一获奖团队) & 二等奖][2025.9][]
-  #zh-entry[香港科技大学（广州）| 研究生奖学金 (PGS)][2025.9][]
-  #zh-entry[南方科技大学 | 优秀学生][2024.1][]
-  #zh-entry[全国大学生数学建模竞赛 | 三等奖][2023.9][]
-  #zh-entry[国家级大学生创新创业训练计划 | 优胜奖][2023.6][]
-  #zh-entry[美国大学生数学建模竞赛 (MCM) | H 奖 (Honorable Mention)][2023.5][]
+  #cv-honor(title: [2026 深圳黑客松 | 三等奖], date: "2026.6")
+  #cv-honor(title: [OpenHarmony 竞赛训练营 | 特别创新奖 (唯一获奖团队) & 二等奖], date: "2025.9")
+  #cv-honor(title: [香港科技大学（广州）| 研究生奖学金 (PGS)], date: "2025.9")
+  #cv-honor(title: [南方科技大学 | 优秀学生], date: "2024.1")
+  #cv-honor(title: [全国大学生数学建模竞赛 | 三等奖], date: "2023.9")
+  #cv-honor(title: [国家级大学生创新创业训练计划 | 优胜奖], date: "2023.6")
+  #cv-honor(title: [美国大学生数学建模竞赛 (MCM) | H 奖 (Honorable Mention)], date: "2023.5")
 ]

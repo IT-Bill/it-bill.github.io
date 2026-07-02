@@ -5,7 +5,7 @@
   body-size: 9pt,
   body-leading: 0.88em,
   header-left: [Curriculum Vitae for Zhanwei Zhang],
-  header-right: [Last Update: Feb 6, 2026],
+  header-right: [Last Update: Jul 3, 2026],
   name: [Zhanwei Zhang (张展玮)],
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
@@ -37,7 +37,11 @@
   ]
 
   #cv-section[Selected Projects]
-  #cv-entry(title: [AI Micro-Drama Studio], date: "Sep 2025 ~ Present")[
+  #cv-entry(title: [WiTH - AI Health Companion], date: "Jun 2026")[
+    #cv-line[Built an AI health companion for the 2026 Shenzhen Hackathon, combining health records, AI chat, and personalized reminders.]
+    #cv-line[Designed the product workflow from daily health tracking to companion-style interaction, helping the team win Third Prize.]
+  ]
+  #cv-entry(title: [AI Micro-Drama Studio], date: "Sep 2025 ~ Jan 2026")[
     #cv-line[Built an end-to-end pipeline that transforms novels or scripts into production-ready storyboards.]
     #cv-line[Unified creation, generation, editing, and export in one interface to streamline publish-ready video production.]
   ]
@@ -56,7 +60,6 @@
   #cv-entry(title: [Simple Compiler], date: "Sep 2023 ~ Jan 2024")[
     #cv-line[Developed a compiler that translates C language files into Intermediate Representation (IR) and MIPS32.]
     #cv-line[Supported essential features such as I/O operations, control flow and function calls.]
-    #cv-line[Included lexical, syntax, and semantic analysis, along with informative error messages.]
   ]
 
   #pagebreak(weak: false)
@@ -90,10 +93,11 @@
   #cv-skill[Tools][IntelliJ IDEA, PyCharm, Visual Studio Code, Anaconda, Git, CMake]
 
   #cv-section[Honors & Scholarships]
-  #cv-entry(title: [Special Innovation Award (Unique Winner) & Second Prize, OpenHarmony Competition Training Camp], date: "Sep 2025")[]
-  #cv-entry(title: [Postgraduate Studentship (PGS), HKUST(GZ)], date: "Sep 2025")[]
-  #cv-entry(title: [Outstanding Student, SUSTech], date: "Jan 2024")[]
-  #cv-entry(title: [Honorable Mention, Mathematical Contest in Modeling], date: "May 2023")[]
-  #cv-entry(title: [Finalist, National College Students' Innovation and Entrepreneurship Training program], date: "Jun 2023")[]
-  #cv-entry(title: [Third Prize, China Undergraduate Mathematical Contest in Model], date: "Sep 2023")[]
+  #cv-honor(title: [Third Prize, Shenzhen Hackathon], date: "Jun 2026")
+  #cv-honor(title: [Special Innovation Award (Unique Winner) & Second Prize, OpenHarmony Competition Training Camp], date: "Sep 2025")
+  #cv-honor(title: [Postgraduate Studentship (PGS), HKUST(GZ)], date: "Sep 2025")
+  #cv-honor(title: [Outstanding Student, SUSTech], date: "Jan 2024")
+  #cv-honor(title: [Honorable Mention, Mathematical Contest in Modeling], date: "May 2023")
+  #cv-honor(title: [Finalist, National College Students' Innovation and Entrepreneurship Training program], date: "Jun 2023")
+  #cv-honor(title: [Third Prize, China Undergraduate Mathematical Contest in Model], date: "Sep 2023")
 ]

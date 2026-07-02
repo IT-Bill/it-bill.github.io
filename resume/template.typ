@@ -19,10 +19,10 @@
   ]
 }
 
-#let cv-entry(body, title: [], date: none, title-size: 9pt, line-below: 0pt) = {
+#let cv-entry(body, title: [], date: none, title-size: 9pt, title-weight: "bold", line-below: 0pt) = {
   block(width: 100%, below: 8.6pt, sticky: true)[
     #grid(columns: (1fr, auto), column-gutter: 8pt)[
-      #text(size: title-size, weight: "bold")[#title]
+      #text(size: title-size, weight: title-weight)[#title]
     ][
       #align(right)[
         #if date != none {
@@ -34,6 +34,18 @@
   body
   v(line-below)
 }
+
+#let cv-honor(title: [], date: none, title-size: 9pt, below: 8.6pt) = block(width: 100%, below: below)[
+  #grid(columns: (1fr, auto), column-gutter: 8pt)[
+    #text(size: title-size, weight: "regular")[#title]
+  ][
+    #align(right)[
+      #if date != none {
+        text(size: title-size, weight: "bold")[#date]
+      }
+    ]
+  ]
+]
 
 #let cv-skill(label, body, size: auto) = cv-line(size: size, below: 8.6pt)[
   #strong[#label:] #body
