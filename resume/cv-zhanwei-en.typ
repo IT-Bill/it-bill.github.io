@@ -25,6 +25,10 @@
   ]
 
   #cv-section[Internships]
+  #cv-entry(title: [Agent Platform Intern in Qualcomm, Shenzhen], date: "May 2026 ~ Present")[
+    #cv-line[Built internal platform infrastructure for AI agent development and workflow integration.]
+    #cv-line[Developed foundational framework components for orchestrating agent tools, workflows, and application-layer capabilities.]
+  ]
   #cv-entry(title: [Large Language Model Intern in Lingsome, Shenzhen], date: "Aug 2024 ~ Aug 2025")[
     #cv-line[Integrated multi-type Retrieval Augmented Generation (RAG) and GraphRAG systems.]
     #cv-line[Optimized GraphRAG code to extract better entities & relationships and construct domain-specific knowledge graphs.]
@@ -62,7 +66,6 @@
     #cv-line[Supported essential features such as I/O operations, control flow and function calls.]
   ]
 
-  #pagebreak(weak: false)
   #cv-section[Research]
   #cv-entry(title: [Numerical Error Detection in Floating-Point Computing], date: "Sep 2024 ~ Feb 2026")[
     #cv-line[PI-detector: A condition-number-guided perturbation approach can replace costly high-precision oracles, finding 173/174 significant-error cases at about 0.13% of oracle cost (up to 73.46× faster).]

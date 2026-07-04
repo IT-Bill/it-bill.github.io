@@ -123,6 +123,19 @@ export const toolGroups: ToolGroup[] = [
 
 export const experiences: Experience[] = [
   {
+    id: "qualcomm-agent-intern",
+    period: "May 2026 - Present",
+    title: "Agent Platform Intern",
+    institution: "Qualcomm, Shenzhen",
+    type: "work",
+    description: [
+      "Built internal platform infrastructure for AI agent development and workflow integration.",
+      "Developed foundational framework components for orchestrating agent tools, workflows, and application-layer capabilities.",
+      "Integrated team workflows into a unified platform to improve reuse, execution, and collaboration across agent-based applications.",
+    ],
+    tags: ["AI Agent", "Agent Platform", "Workflow Integration", "Platform Infrastructure", "LLM Applications"],
+  },
+  {
     id: "hkustgz-mphil",
     period: "Sep 2025 - Present",
     title: "M.Phil. in Data Science and Analytics",
@@ -588,6 +601,19 @@ const zhToolGroups: ToolGroup[] = [
 ];
 
 const zhExperiences: Experience[] = [
+  {
+    id: "qualcomm-agent-intern",
+    period: "2026年5月 - 至今",
+    title: "Agent 平台开发实习生",
+    institution: "高通，深圳",
+    type: "工作",
+    description: [
+      "参与 AI Agent 相关内部平台基础框架开发，支撑智能体应用与工作流集成。",
+      "开发用于整合工具、工作流和应用层能力的平台组件。",
+      "将团队工作流接入统一平台，提升 Agent 应用开发中的复用、执行和协作效率。",
+    ],
+    tags: ["AI Agent", "智能体平台", "工作流集成", "平台基础设施", "LLM 应用"],
+  },
   {
     id: "hkustgz-mphil",
     period: "2025年9月 - 至今",

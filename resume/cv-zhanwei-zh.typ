@@ -33,6 +33,10 @@
   ]
 
   #zh-section[实习经历]
+  #zh-entry[高通，深圳 | Agent 平台开发实习生][2026.5 ~ 至今][
+    #zh-line[参与 AI Agent 相关内部平台基础框架开发，支撑智能体应用与工作流集成。]
+    #zh-line[开发用于整合工具、工作流和应用层能力的平台组件。]
+  ]
   #zh-entry[领寻，深圳 | 大语言模型实习生][2024.8 ~ 2025.8][
     #zh-line[集成多种类型的检索增强生成 (RAG) 和 GraphRAG 系统。]
     #zh-line[优化 GraphRAG 代码，提升实体 (Entity) 与关系 (Relationship) 的提取质量，构建特定领域的知识图谱。]
