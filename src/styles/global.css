@@ -1465,6 +1465,10 @@ html[lang="zh-CN"] {
   margin-top: 1rem;
 }
 
+.status-line--social {
+  align-items: center;
+}
+
 .status-ok {
   color: var(--term-green);
 }
@@ -1472,6 +1476,84 @@ html[lang="zh-CN"] {
 .status-label {
   color: var(--term-gray);
   min-width: 200px;
+}
+
+.hero-socials {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.hero-socials__command {
+  color: var(--term-bright-white);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero-socials__links {
+  display: flex;
+  gap: 0.45rem;
+  position: relative;
+}
+
+.hero-social-link {
+  align-items: center;
+  background: var(--term-skill-bg);
+  border: 1px solid var(--term-action-border);
+  border-radius: 5px;
+  color: var(--term-cyan);
+  display: inline-flex;
+  height: 2rem;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  width: 2rem;
+}
+
+.hero-social-link svg {
+  fill: none;
+  height: 1.05rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  width: 1.05rem;
+}
+
+.hero-social-link::after {
+  background: var(--term-bg-elevated);
+  border: 1px solid var(--term-border-strong);
+  border-radius: 4px;
+  color: var(--term-bright-white);
+  content: attr(data-label);
+  font-size: 0.7rem;
+  left: calc(100% + 0.45rem);
+  line-height: 1;
+  opacity: 0;
+  padding: 0.35rem 0.45rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-0.2rem, -50%);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus-visible {
+  background: var(--term-action-hover-bg);
+  border-color: var(--term-amber);
+  color: var(--term-amber);
+  outline: none;
+}
+
+.hero-social-link:hover::after,
+.hero-social-link:focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
 }
 
 .hero-side {
@@ -2094,9 +2176,22 @@ html[lang="zh-CN"] {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 
+  .status-line--social {
+    align-items: center;
+  }
+
   .status-label {
     min-width: auto;
     white-space: nowrap;
+  }
+
+  .hero-socials {
+    gap: 0.55rem;
+  }
+
+  .hero-social-link {
+    height: 1.9rem;
+    width: 1.9rem;
   }
 
   .file-entry {
