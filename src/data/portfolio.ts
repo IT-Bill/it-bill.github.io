@@ -191,6 +191,16 @@ export const experiences: Experience[] = [
 
 export const publications: Publication[] = [
   {
+    id: "ice",
+    title: "ICE: Reducing Search Space for Error-inducing Input Detection",
+    venue: "IEEE Transactions on Software Engineering",
+    year: "2026",
+    authors: ["Youshuai Tan", "Zhanwei Zhang", "Zishuo Ding", "Jinfu Chen", "Weiyi Shang"],
+    description:
+      "ICE reduces the search space for detecting inputs that induce substantial floating-point errors, improving the efficiency of bug-triggering input discovery in numerical programs.",
+    paperUrl: "https://doi.org/10.1109/TSE.2026.3703362",
+  },
+  {
     id: "mgde",
     title: "A Mathematics-Guided Approach to Floating-Point Error Detection",
     venue: "arXiv preprint",
@@ -666,6 +676,15 @@ const zhExperiences: Experience[] = [
 ];
 
 const zhPublications: Publication[] = [
+  {
+    id: "ice",
+    title: "ICE: Reducing Search Space for Error-inducing Input Detection",
+    venue: "IEEE Transactions on Software Engineering",
+    year: "2026",
+    authors: ["Youshuai Tan", "Zhanwei Zhang", "Zishuo Ding", "Jinfu Chen", "Weiyi Shang"],
+    description: "ICE 通过缩小错误诱导输入的搜索空间，提高了在数值程序中发现浮点错误触发输入的效率。",
+    paperUrl: "https://doi.org/10.1109/TSE.2026.3703362",
+  },
   {
     id: "mgde",
     title: "A Mathematics-Guided Approach to Floating-Point Error Detection",

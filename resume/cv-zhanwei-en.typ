@@ -5,7 +5,7 @@
   body-size: 9pt,
   body-leading: 0.88em,
   header-left: [Curriculum Vitae for Zhanwei Zhang],
-  header-right: [Last Update: Jul 3, 2026],
+  header-right: [Last Update: Jul 17, 2026],
   name: [Zhanwei Zhang (张展玮)],
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
@@ -80,6 +80,7 @@
   ]
 
   #cv-section[Publications]
+  #cv-line[Tan, Y., #strong[Zhang, Z.], Ding, Z., Chen, J., & Shang, W. (2026). #emph[ICE: Reducing search space for error-inducing input detection.] #emph[IEEE Transactions on Software Engineering], 1-14. #cv-link("https://doi.org/10.1109/TSE.2026.3703362", "doi:10.1109/TSE.2026.3703362")]
   #cv-line[Tan, Y., #strong[Zhang, Z.], Ding, Z., Zheng, L., Chen, J., & Shang, W. (2025). #emph[A mathematics-guided approach to floating-point error detection.] arXiv. #cv-link("https://arxiv.org/abs/2510.10081", "https://arxiv.org/abs/2510.10081") (Under Review)]
   #cv-line[Tan, Y., #strong[Zhang, Z.], Chen, J., Ding, Z., Xuan, J., & Shang, W. (2025). #emph[Computing floating-point errors by injecting perturbations.] arXiv. #cv-link("https://arxiv.org/abs/2507.08467", "https://arxiv.org/abs/2507.08467")]
   #cv-line[Han, Y., Shen, H., He, X., Mai, Z., Zhang, R., Zheng, Z., Liu, Y., Zhang, X., Li, G., #strong[Zhang, Z.], Liang, Z., Chen, Y., Xie, Y., Li, M., Shen, G., Wang, C., Ye, J., Zhu, L., Fu, T.-M., & Yang, X. (2025). A comprehensive analysis of interflight variability in carbon dioxide emissions from global aviation. #emph[Environmental Science & Technology], 59(12), 6179-6191. doi:10.1021/acs.est.5c02371]
