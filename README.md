@@ -1,19 +1,20 @@
 # Personal Website
 
-A personal portfolio website. The site presents an English profile, research focus, experience, publications, selected projects, skills, and contact links in a terminal-inspired interface.
+Zhanwei Zhang's bilingual personal portfolio, presented in a terminal-inspired interface. The site includes research interests, experience, publications, selected projects, skills, contact links, and downloadable CVs.
 
 ## Tech Stack
 
-- **Astro 7** for static site generation
-- **TypeScript** with strict checking
-- **Tailwind CSS v4** for styling and design tokens
-- **ESLint** and `astro check` for quality gates
-- **GitHub Actions** CI on `main` pushes and pull requests
+- Astro 7
+- TypeScript with strict checking
+- Tailwind CSS v4
+- ESLint and `astro check`
+- Typst for CV generation
 
 ## Prerequisites
 
 - Node.js 24+
 - pnpm
+- Typst, when rebuilding the CVs
 
 ## Commands
 
@@ -25,6 +26,7 @@ pnpm run preview
 pnpm run lint
 pnpm run typecheck
 pnpm run check
+pnpm run cv:build
 ```
 
 `pnpm run check` runs linting, Astro type checking, and a production build.
@@ -34,52 +36,21 @@ pnpm run check
 ```text
 src/
   components/       Astro UI components
-  data/             Portfolio content and structured data
+  data/             Bilingual portfolio content
   layouts/          Shared page layouts
-  pages/            Astro routes
-  styles/           Global CSS and Tailwind entrypoint
+  pages/            English and Chinese routes
+  styles/           Global styles and Tailwind entrypoint
   types/            Shared TypeScript interfaces
 public/
-  images/           Avatar and project cover images
-  *.pdf             Public documents
-  favicon.ico       Site favicon
-docs/
-  research/         Local research notes retained for development
-  design-references/ Visual references retained for development
-scripts/
-  sync-agent-rules.sh
-  sync-skills.mjs
+  fonts/             Local font assets and licenses
+  images/            Avatar and project cover images
+  *.pdf              Published CVs and reports
+resume/              Typst CV sources
+scripts/             CV build script
 ```
 
 ## Content Editing
 
-Most visible site content is maintained in `src/data/portfolio.ts`:
+Most visible content lives in `src/data/portfolio.ts`, including profile details, research interests, experience, publications, projects, skills, and contact links. Shared data interfaces live in `src/types/portfolio.ts`.
 
-- Profile and status lines
-- About and research focus
-- Tool and skill groups
-- Experience entries
-- Publications
-- Project cards and image metadata
-- Contact links
-
-Project images and the avatar live under the public images directory.
-
-## CI
-
-The workflow in `.github/workflows/ci.yml` installs dependencies with pnpm on Node.js 24, then runs:
-
-```bash
-pnpm run lint
-pnpm run typecheck
-pnpm run build
-```
-
-## Agent Notes
-
-Agent-facing instructions are kept in `AGENTS.md`. The retained local agent skill directories are:
-
-- `.codex/skills/`
-- `.claude/skills/`
-
-Run `bash scripts/sync-agent-rules.sh` after editing `AGENTS.md`.
+Project images and the avatar live in `public/images/`. The Typst sources in `resume/` generate the public CV PDFs through `pnpm run cv:build`.

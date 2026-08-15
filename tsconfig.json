@@ -6,6 +6,6 @@
     },
     "types": ["astro/client"]
   },
-  "include": [".astro/types.d.ts", "astro.config.mjs", "src/**/*", "scripts/**/*.mjs"],
-  "exclude": ["dist", "node_modules", "docs/research"]
+  "include": [".astro/types.d.ts", "astro.config.mjs", "src/**/*"],
+  "exclude": ["dist", "node_modules"]
 }
