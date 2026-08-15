@@ -1,63 +1,50 @@
-<!-- BEGIN:astro-agent-rules -->
-# Astro Project Rules
+# Personal Portfolio
 
-Use Astro conventions for routing, layouts, static assets, scripts, and styling. When changing framework-level behavior, read the relevant current Astro docs first.
-<!-- END:astro-agent-rules -->
+## Project
 
-# Website Reverse-Engineer Template
-
-## What This Is
-A reusable template for reverse-engineering any website into a clean, modern Astro codebase using AI coding agents. The Astro + Tailwind v4 base is pre-scaffolded — just run `/clone-website <url1> [<url2> ...]`.
+This repository contains Zhanwei Zhang's bilingual personal portfolio. It is a static Astro site with English at `/` and Chinese at `/zh/`.
 
 ## Tech Stack
-- **Framework:** Astro 7 (static-first, file-based routing, TypeScript strict)
-- **UI:** Astro components with Tailwind CSS v4 design tokens
-- **Icons:** Extracted SVGs or Astro-native assets as needed
-- **Styling:** Tailwind CSS v4 with oklch design tokens
-- **Deployment:** Vercel
+
+- Astro 7 with file-based routing
+- TypeScript in strict mode
+- Astro components
+- Tailwind CSS v4 through Vite
+- Static assets served from `public/`
 
 ## Commands
-- `pnpm run dev` — Start dev server
-- `pnpm run build` — Production build
-- `pnpm run lint` — ESLint check
-- `pnpm run typecheck` — Astro type check
-- `pnpm run check` — Run lint + typecheck + build
+
+- `pnpm run dev` — start the development server
+- `pnpm run build` — create the production build
+- `pnpm run preview` — preview the production build
+- `pnpm run lint` — run ESLint
+- `pnpm run typecheck` — run Astro type checking
+- `pnpm run check` — run lint, typecheck, and build
+- `pnpm run cv:build` — rebuild both CV PDFs with Typst
 
 ## Code Style
-- TypeScript strict mode, no `any`
-- Named exports, PascalCase components, camelCase utils
-- Tailwind utility classes, no inline styles
-- 2-space indentation
-- Responsive: mobile-first
 
-## Design Principles
-- **Pixel-perfect emulation** — match the target's spacing, colors, typography exactly
-- **No personal aesthetic changes during emulation phase** — match 1:1 first, customize later
-- **Real content** — use actual text and assets from the target site, not placeholders
-- **Beauty-first** — every pixel matters
+- Use Astro conventions for routes, layouts, assets, scripts, and styling.
+- Use TypeScript strict mode and avoid `any`.
+- Use named exports, PascalCase components, and camelCase utilities.
+- Use two-space indentation and mobile-first responsive styles.
+- Keep content in `src/data/portfolio.ts` and shared interfaces in `src/types/portfolio.ts`.
+- Preserve the existing terminal-inspired visual language unless a redesign is requested.
 
 ## Project Structure
-```
+
+```text
 src/
-  pages/            # Astro routes
-  layouts/          # Shared Astro page layouts
-  components/       # Astro components
-  data/             # Structured content/data modules
-  styles/           # Global Tailwind/CSS entrypoints
-  types/            # TypeScript interfaces
+  components/       Astro UI components
+  data/             Bilingual portfolio content
+  layouts/          Shared page layouts
+  pages/            English and Chinese routes
+  styles/           Global styles and Tailwind entrypoint
+  types/            Shared TypeScript interfaces
 public/
-  images/           # Downloaded images from target site
-  videos/           # Downloaded videos from target site
-  seo/              # Favicons, OG images, webmanifest
-docs/
-  research/         # Inspection output (design tokens, components, layout)
-  design-references/ # Screenshots and visual references
-scripts/            # Asset download scripts
+  fonts/             Local font assets and licenses
+  images/            Avatar and project images
+  *.pdf              Published CVs and reports
+resume/              Typst CV sources
+scripts/             CV build script
 ```
-
-## MOST IMPORTANT NOTES
-- When launching Claude Code agent teams, ALWAYS have each teammate work in their own worktree branch and merge everyone's work at the end, resolving any merge conflicts smartly since you are basically serving the orchestrator role and have full context to our goals, work given, work achieved, and desired outcomes.
-- After editing `AGENTS.md`, run `bash scripts/sync-agent-rules.sh` to validate the instruction source.
-- After editing `.claude/skills/clone-website/SKILL.md`, run `node scripts/sync-skills.mjs` to sync the Codex skill copy.
-
-@docs/research/INSPECTION_GUIDE.md
