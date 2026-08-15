@@ -202,13 +202,13 @@ export const publications: Publication[] = [
   },
   {
     id: "mgde",
-    title: "A Mathematics-Guided Approach to Floating-Point Error Detection",
-    venue: "arXiv preprint",
-    year: "2025",
-    authors: ["Youshuai Tan", "Zhanwei Zhang", "Zishuo Ding", "Lianyu Zheng", "Jinfu Chen", "Weiyi Shang"],
+    title: "Mathematically-Guided Detection of Floating-Point Errors",
+    venue: "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)",
+    year: "2026",
+    authors: ["Youshuai Tan", "Zhanwei Zhang", "Haonan Zhang", "Lianyu Zheng", "Zishuo Ding", "Jinfu Chen", "Weiyi Shang"],
     description:
       "We propose MGDE, a novel method to detect error-inducing inputs based on mathematical guidance using the Newton-Raphson method with quadratic convergence properties. Our method identifies 89 bugs across 44 programs while being 6.4x faster than the baseline.",
-    paperUrl: "https://arxiv.org/abs/2510.10081",
+    paperUrl: "https://www.researchgate.net/publication/396459778_A_Mathematics-Guided_Approach_to_Floating-Point_Error_Detection",
   },
   {
     id: "pi-detector",
@@ -687,13 +687,13 @@ const zhPublications: Publication[] = [
   },
   {
     id: "mgde",
-    title: "A Mathematics-Guided Approach to Floating-Point Error Detection",
-    venue: "arXiv preprint",
-    year: "2025",
-    authors: ["Youshuai Tan", "Zhanwei Zhang", "Zishuo Ding", "Lianyu Zheng", "Jinfu Chen", "Weiyi Shang"],
+    title: "Mathematically-Guided Detection of Floating-Point Errors",
+    venue: "ACM SIGSOFT 国际软件测试与分析研讨会（ISSTA）",
+    year: "2026",
+    authors: ["Youshuai Tan", "Zhanwei Zhang", "Haonan Zhang", "Lianyu Zheng", "Zishuo Ding", "Jinfu Chen", "Weiyi Shang"],
     description:
       "我们提出 MGDE，一种基于数学引导的新方法，利用具有二次收敛性质的牛顿-拉夫森方法检测错误诱导输入。该方法在 44 个程序中识别出 89 个 bug，速度比基线快 6.4 倍。",
-    paperUrl: "https://arxiv.org/abs/2510.10081",
+    paperUrl: "https://www.researchgate.net/publication/396459778_A_Mathematics-Guided_Approach_to_Floating-Point_Error_Detection",
   },
   {
     id: "pi-detector",
