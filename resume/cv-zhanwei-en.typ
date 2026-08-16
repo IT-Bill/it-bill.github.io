@@ -46,6 +46,11 @@
     #cv-line[Built Chat / Explore / Watch Agent workflows for open-source project discovery, understanding, and continuous tracking.]
     #cv-line[Designed Agent research and Watch pipelines to investigate README / Release / Activity via tools and produce structured assessments.]
   ]
+  #cv-entry(title: [NIYO.AI Custom-Fit Nail 3D Modeling Platform], date: "Jan 2026 ~ Present")[
+    #cv-line[Engineered existing vision and geometry prototypes into a full 3D annotation and modeling platform, covering frontend, backend, database, task workflows, and the end-to-end vision-to-3D pipeline.]
+    #cv-line[Built the synthetic-data and training pipeline, supporting millions of multi-view samples as well as model training, evaluation, and production inference.]
+    #cv-line[Extended the parametric geometry model and rewrote its shared core in Rust with Python/WASM bindings, cutting computation from hundreds of milliseconds to \~10 ms for real-time 3D interaction.]
+  ]
   #cv-entry(title: [WiTH - AI Health Companion], date: "Jun 2026")[
     #cv-line[Built an AI health Agent integrating user profiles, health records, and 20+ Tool Calling capabilities for personalized health interactions.]
     #cv-line[Implemented semantic memory and proactive health reminders, turning conversations into actionable tasks; won Third Prize at the Shenzhen Hackathon.]
@@ -66,11 +71,6 @@
     #cv-line[Won award for finalist in National College Students' Innovation and Entrepreneurship Training program.]
     #cv-line[About 30,000 visits within three months.]
   ]
-  #cv-entry(title: [Simple Compiler], date: "Sep 2023 ~ Jan 2024")[
-    #cv-line[Developed a compiler that translates C language files into Intermediate Representation (IR) and MIPS32.]
-    #cv-line[Supported essential features such as I/O operations, control flow and function calls.]
-  ]
-
   #cv-section[Research]
   #cv-entry(title: [Numerical Error Detection in Floating-Point Computing], date: "Sep 2024 ~ Feb 2026")[
     #cv-line[PI-detector: A condition-number-guided perturbation approach can replace costly high-precision oracles, finding 173/174 significant-error cases at about 0.13% of oracle cost (up to 73.46× faster).]
