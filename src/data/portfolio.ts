@@ -265,6 +265,19 @@ export const publications: Publication[] = [
 
 export const projects: Project[] = [
   {
+    id: "openstar",
+    slug: "openstar",
+    period: "Jul. 2026 - Present",
+    year: "2026",
+    title: "OpenStar",
+    category: "Software Engineering",
+    description:
+      "Built Chat / Explore / Watch Agent workflows for discovering, understanding, and continuously tracking open-source projects. Designed Agent research and Watch pipelines that autonomously investigate repository data such as README / Release / Activity through tool use and generate structured assessments.",
+    image: { src: `${projectImageBase}/openstar.png`, alt: "OpenStar landing page", width: 1440, height: 900 },
+    techStack: ["TypeScript", "Expo", "React Native", "AI Agent", "Octokit", "PostgreSQL", "Prisma"],
+    links: [{ label: "Demo", href: "https://openstar.dev" }],
+  },
+  {
     id: "wth-today",
     slug: "wth-today",
     period: "Jun. 2026",
@@ -272,7 +285,7 @@ export const projects: Project[] = [
     title: "WiTH",
     category: "Software Engineering",
     description:
-      "Built an AI health companion for the 2026 Shenzhen Hackathon, combining health records, AI chat, and personalized reminders; the project won Third Prize.",
+      "Built an AI health Agent integrating user profiles, health records, and 20+ Tool Calling capabilities for personalized health interactions. Implemented semantic memory and proactive health reminders, turning conversations into actionable tasks; won Third Prize at the Shenzhen Hackathon.",
     image: { src: `${projectImageBase}/wth-today.png`, alt: "WiTH project cover", width: 1440, height: 900 },
     techStack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "AI Chat", "ASR"],
     links: [
@@ -750,13 +763,27 @@ const zhPublications: Publication[] = [
 
 const zhProjects: Project[] = [
   {
+    id: "openstar",
+    slug: "openstar",
+    period: "2026年7月 - 至今",
+    year: "2026",
+    title: "OpenStar",
+    category: "软件工程",
+    description:
+      "面向开源项目发现、理解与持续追踪，构建 Chat / Explore / Watch 等 Agent 工作流。设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具调查 README / Release / Activity 等仓库信息，并生成结构化判断。",
+    image: { src: `${projectImageBase}/openstar.png`, alt: "OpenStar 官网首屏", width: 1440, height: 900 },
+    techStack: ["TypeScript", "Expo", "React Native", "AI Agent", "Octokit", "PostgreSQL", "Prisma"],
+    links: [{ label: "Demo", href: "https://openstar.dev" }],
+  },
+  {
     id: "wth-today",
     slug: "wth-today",
     period: "2026年6月",
     year: "2026",
     title: "WiTH AI 健康伙伴",
     category: "软件工程",
-    description: "参加 2026 深圳黑客松比赛的 AI 健康管理项目，结合健康记录、AI 对话与个性化提醒任务，获得三等奖。",
+    description:
+      "构建 AI 健康 Agent，整合用户画像、健康记录与 20+ Tool Calling 能力，实现个性化健康交互。实现语义记忆与主动健康提醒，将对话转化为可执行任务；获深圳黑客松三等奖。",
     image: { src: `${projectImageBase}/wth-today.png`, alt: "WiTH AI 健康伙伴项目封面", width: 1440, height: 900 },
     techStack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "AI Chat", "ASR"],
     links: [

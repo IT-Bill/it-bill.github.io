@@ -50,9 +50,13 @@
   ]
 
   #zh-section[项目]
+  #zh-entry[OpenStar][2026.7 ~ 至今][
+    #zh-line[面向开源项目发现、理解与持续追踪，构建 Chat / Explore / Watch 等 Agent 工作流。]
+    #zh-line[设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具调查 README / Release / Activity 等仓库信息，并生成结构化判断。]
+  ]
   #zh-entry[WiTH AI 健康伙伴][2026.6][
-    #zh-line[参加 2026 深圳黑客松比赛的 AI 健康管理项目，整合健康记录、AI 对话与个性化提醒任务。]
-    #zh-line[设计从日常健康记录到陪伴式交互的产品流程，帮助团队获得三等奖。]
+    #zh-line[构建 AI 健康 Agent，整合用户画像、健康记录与 20+ Tool Calling 能力，实现个性化健康交互。]
+    #zh-line[实现语义记忆与主动健康提醒，将对话转化为可执行任务；获深圳黑客松三等奖。]
   ]
   #zh-entry[AI 短剧工作室][2025.9 ~ 2026.1][
     #zh-line[搭建端到端流程，能够将小说或剧本直接转化为生产级的分镜工作流平台。]

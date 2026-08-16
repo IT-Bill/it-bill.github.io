@@ -42,9 +42,13 @@
   ]
 
   #cv-section[Selected Projects]
+  #cv-entry(title: [OpenStar], date: "Jul 2026 ~ Present")[
+    #cv-line[Built Chat / Explore / Watch Agent workflows for open-source project discovery, understanding, and continuous tracking.]
+    #cv-line[Designed Agent research and Watch pipelines to investigate README / Release / Activity via tools and produce structured assessments.]
+  ]
   #cv-entry(title: [WiTH - AI Health Companion], date: "Jun 2026")[
-    #cv-line[Built an AI health companion for the 2026 Shenzhen Hackathon, combining health records, AI chat, and personalized reminders.]
-    #cv-line[Designed the product workflow from daily health tracking to companion-style interaction, helping the team win Third Prize.]
+    #cv-line[Built an AI health Agent integrating user profiles, health records, and 20+ Tool Calling capabilities for personalized health interactions.]
+    #cv-line[Implemented semantic memory and proactive health reminders, turning conversations into actionable tasks; won Third Prize at the Shenzhen Hackathon.]
   ]
   #cv-entry(title: [AI Micro-Drama Studio], date: "Sep 2025 ~ Jan 2026")[
     #cv-line[Built an end-to-end pipeline that transforms novels or scripts into production-ready storyboards.]
