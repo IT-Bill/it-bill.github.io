@@ -62,7 +62,6 @@
   header-right: [],
   name: [],
   contact: [],
-  address: [],
 ) = {
   set document(author: "Zhanwei Zhang", title: "Zhanwei Zhang CV")
   set page(
@@ -84,7 +83,6 @@
     #v(10pt)
     #block(width: 100%, below: 14pt)[#text(size: 14pt, weight: "bold")[#name]]
     #block(width: 100%, below: 7.6pt)[#text(size: 10pt)[#contact]]
-    #block(width: 100%)[#text(size: 10pt)[#address]]
   ]
 
   v(12pt)

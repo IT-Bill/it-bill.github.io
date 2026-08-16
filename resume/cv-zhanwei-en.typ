@@ -10,7 +10,6 @@
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
   ],
-  address: [No.1 Du Xue Rd, Nansha District, Guangzhou, Guangdong],
 )[
   #cv-section[Education]
   #cv-entry(title: [M.Phil. in Data Science and Analytics, Hong Kong University of Science and Technology (Guangzhou)], date: "Sep 2025 ~ Present")[

@@ -20,7 +20,6 @@
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
   ],
-  address: [广东省广州市南沙区笃学路 1 号],
 )[
   #zh-section[教育经历]
   #zh-entry[香港科技大学（广州）| 信息枢纽 | 数据科学与分析学域 | 硕士研究生][2025.9 ~ 至今][
