@@ -15,7 +15,7 @@
   body-size: 8pt,
   body-leading: 0.92em,
   header-left: [个人简历： 张展玮],
-  header-right: [上次更新: 2026.8.15],
+  header-right: [上次更新: 2026.8.17],
   name: [张展玮（Zhanwei Zhang）],
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
@@ -34,8 +34,9 @@
 
   #zh-section[实习经历]
   #zh-entry[高通，深圳 | Agent 平台开发实习生][2026.5 ~ 至今][
-    #zh-line[参与 AI Agent 相关内部平台基础框架开发，支撑智能体应用与工作流集成。]
-    #zh-line[开发用于整合工具、工作流和应用层能力的平台组件。]
+    #zh-line[作为内部 AI Agent 平台主要开发者，负责核心功能与架构演进，支撑 Agent / Workflow / Tool 的统一接入。]
+    #zh-line[设计 Engine + Plugin 插件架构，基于 Python Entry Points 与 Module Federation 实现前后端插件动态加载。]
+    #zh-line[基于 DeepAgents 构建 Agent Runtime，统一集成 Tool / MCP / Skills / Subagent，支持 AG-UI 双向交互与 HITL 中断恢复。]
   ]
   #zh-entry[领寻，深圳 | 大语言模型实习生][2024.8 ~ 2025.8][
     #zh-line[集成多种类型的检索增强生成 (RAG) 和 GraphRAG 系统。]

@@ -129,11 +129,11 @@ export const experiences: Experience[] = [
     institution: "Qualcomm, Shenzhen",
     type: "work",
     description: [
-      "Built internal platform infrastructure for AI agent development and workflow integration.",
-      "Developed foundational framework components for orchestrating agent tools, workflows, and application-layer capabilities.",
-      "Integrated team workflows into a unified platform to improve reuse, execution, and collaboration across agent-based applications.",
+      "Core developer of an internal AI Agent platform, evolving its architecture and enabling unified Agent / Workflow / Tool integration.",
+      "Designed Engine + Plugin architecture with dynamic backend/frontend loading via Python Entry Points and Module Federation.",
+      "Built Agent Runtime on DeepAgents, unifying Tool / MCP / Skills / Subagent integration and supporting AG-UI and HITL.",
     ],
-    tags: ["AI Agent", "Agent Platform", "Workflow Integration", "Platform Infrastructure", "LLM Applications"],
+    tags: ["Agent Runtime", "LangGraph", "MCP", "Module Federation", "HITL"],
   },
   {
     id: "hkustgz-mphil",
@@ -618,11 +618,11 @@ const zhExperiences: Experience[] = [
     institution: "高通，深圳",
     type: "工作",
     description: [
-      "参与 AI Agent 相关内部平台基础框架开发，支撑智能体应用与工作流集成。",
-      "开发用于整合工具、工作流和应用层能力的平台组件。",
-      "将团队工作流接入统一平台，提升 Agent 应用开发中的复用、执行和协作效率。",
+      "作为内部 AI Agent 平台主要开发者，负责核心功能与架构演进，支撑 Agent / Workflow / Tool 的统一接入。",
+      "设计 Engine + Plugin 插件架构，基于 Python Entry Points 与 Module Federation 实现前后端插件动态加载。",
+      "基于 DeepAgents 构建 Agent Runtime，统一集成 Tool / MCP / Skills / Subagent，支持 AG-UI 双向交互与 HITL 中断恢复。",
     ],
-    tags: ["AI Agent", "智能体平台", "工作流集成", "平台基础设施", "LLM 应用"],
+    tags: ["Agent Runtime", "LangGraph", "MCP", "Module Federation", "HITL"],
   },
   {
     id: "hkustgz-mphil",

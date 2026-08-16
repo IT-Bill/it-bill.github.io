@@ -5,7 +5,7 @@
   body-size: 9pt,
   body-leading: 0.88em,
   header-left: [Curriculum Vitae for Zhanwei Zhang],
-  header-right: [Last Update: Aug 15, 2026],
+  header-right: [Last Update: Aug 17, 2026],
   name: [Zhanwei Zhang (张展玮)],
   contact: [
     (+86) 13380806800 | #cv-link("mailto:zzhang364@connect.hkust-gz.edu.cn", "zzhang364@connect.hkust-gz.edu.cn") | #cv-link("https://it-bill.github.io/", "https://it-bill.github.io/")
@@ -26,8 +26,9 @@
 
   #cv-section[Internships]
   #cv-entry(title: [Agent Platform Intern in Qualcomm, Shenzhen], date: "May 2026 ~ Present")[
-    #cv-line[Built internal platform infrastructure for AI agent development and workflow integration.]
-    #cv-line[Developed foundational framework components for orchestrating agent tools, workflows, and application-layer capabilities.]
+    #cv-line[Core developer of an internal AI Agent platform, evolving its architecture and enabling unified Agent / Workflow / Tool integration.]
+    #cv-line[Designed Engine + Plugin architecture with dynamic backend/frontend loading via Python Entry Points and Module Federation.]
+    #cv-line[Built Agent Runtime on DeepAgents, unifying Tool / MCP / Skills / Subagent integration and supporting AG-UI and HITL.]
   ]
   #cv-entry(title: [Large Language Model Intern in Lingsome, Shenzhen], date: "Aug 2024 ~ Aug 2025")[
     #cv-line[Integrated multi-type Retrieval Augmented Generation (RAG) and GraphRAG systems.]
