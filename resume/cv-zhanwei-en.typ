@@ -24,7 +24,7 @@
   ]
 
   #cv-section[Internships]
-  #cv-entry(title: [Agent Platform Intern in Qualcomm, Shenzhen], date: "May 2026 ~ Present")[
+  #cv-entry(title: [Agent Intern in Qualcomm, Shenzhen], date: "May 2026 ~ Present")[
     #cv-line[Core developer of an internal AI Agent platform, evolving its architecture and enabling unified Agent / Workflow / Tool integration.]
     #cv-line[Designed Engine + Plugin architecture with dynamic backend/frontend loading via Python Entry Points and Module Federation.]
     #cv-line[Built Agent Runtime on DeepAgents, unifying Tool / MCP / Skills / Subagent integration and supporting AG-UI and HITL.]
@@ -57,10 +57,6 @@
   #cv-entry(title: [AI Micro-Drama Studio], date: "Sep 2025 ~ Jan 2026")[
     #cv-line[Built an end-to-end pipeline that transforms novels or scripts into production-ready storyboards.]
     #cv-line[Unified creation, generation, editing, and export in one interface to streamline publish-ready video production.]
-  ]
-  #cv-entry(title: [Customizable AI Companion Doll (OpenHarmony TSC Project)], date: "Sep 2025 ~ Jan 2026")[
-    #cv-line[Developed an AIoT system integrating cloud-based LLMs to provide personalized companionship through customizable personalities and multimodal interaction.]
-    #cv-line[Built the cross-platform frontend, including a mobile App and Mini-program.]
   ]
   #cv-entry(title: [Othello Game through Java and Python Programming with Strong AI], date: "Oct ~ Dec 2021 & Mar 2023")[
     #cv-line[Developed visually appealing interface and implemented Monte Carlo & Alpha Beta Pruning algorithm.]

@@ -32,7 +32,7 @@
   ]
 
   #zh-section[实习经历]
-  #zh-entry[高通，深圳 | Agent 平台开发实习生][2026.5 ~ 至今][
+  #zh-entry[高通，深圳 | Agent 开发实习生][2026.5 ~ 至今][
     #zh-line[作为内部 AI Agent 平台主要开发者，负责核心功能与架构演进，支撑 Agent / Workflow / Tool 的统一接入。]
     #zh-line[设计 Engine + Plugin 插件架构，基于 Python Entry Points 与 Module Federation 实现前后端插件动态加载。]
     #zh-line[基于 DeepAgents 构建 Agent Runtime，统一集成 Tool / MCP / Skills / Subagent，支持 AG-UI 双向交互与 HITL 中断恢复。]
@@ -65,10 +65,6 @@
   #zh-entry[AI 短剧工作室][2025.9 ~ 2026.1][
     #zh-line[搭建端到端流程，能够将小说或剧本直接转化为生产级的分镜工作流平台。]
     #zh-line[在集成界面中整合创作、生成、编辑和导出功能，简化了达到发布标准的AI短剧制作流程。]
-  ]
-  #zh-entry[可定制 AI 陪伴玩偶 (OpenHarmony TSC 项目)][2025.9 ~ 2026.1][
-    #zh-line[开发集成云端 LLM 的 AIoT 系统，通过可定制的性格设定和多模态交互提供个性化陪伴体验。]
-    #zh-line[构建跨平台前端，涵盖移动端 App 和小程序。]
   ]
   #zh-entry[基于 Java 和 Python 的黑白棋 (Othello) 强人工智能][2021.10 ~ 2021.12 & 2023.3][
     #zh-line[开发了视觉美观的游戏界面，并实现了蒙特卡洛 (Monte Carlo) 及 Alpha-Beta 剪枝算法。]
