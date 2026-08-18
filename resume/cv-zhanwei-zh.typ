@@ -37,10 +37,10 @@
     #zh-line[设计 Engine + Plugin 插件架构，基于 Python Entry Points 与 Module Federation 实现前后端插件动态加载。]
     #zh-line[基于 DeepAgents 构建 Agent Runtime，统一集成 Tool / MCP / Skills / Subagent，支持 AG-UI 双向交互与 HITL 中断恢复。]
   ]
-  #zh-entry[领寻，深圳 | 大语言模型实习生][2024.8 ~ 2025.8][
-    #zh-line[集成多种类型的检索增强生成 (RAG) 和 GraphRAG 系统。]
-    #zh-line[优化 GraphRAG 代码，提升实体 (Entity) 与关系 (Relationship) 的提取质量，构建特定领域的知识图谱。]
-    #zh-line[开发并改进数据处理流程 (Pipelines)，显著提高了实体和关系的抽取效果。]
+  #zh-entry[领寻，深圳 | LLM 实习生][2024.8 ~ 2025.8][
+    #zh-line[设计多粒度 RAG 索引与联合检索方案，提升领域数据检索效果。]
+    #zh-line[研究并适配 Microsoft GraphRAG，将其应用于公司领域数据，构建领域知识图谱。]
+    #zh-line[探索 RAG 自动评测方案，搭建问题生成与 Ground Truth 标注原型。]
   ]
   #zh-entry[武汉大学 | 访问研究员][2024.5 ~ 2024.8][
     #zh-line[教授：陈金富教授（武汉大学）；Weiyi Shang教授（滑铁卢大学）]
@@ -51,12 +51,12 @@
   #zh-section[项目]
   #zh-entry[OpenStar][2026.7 ~ 至今][
     #zh-line[面向开源项目发现、理解与持续追踪，构建 Chat / Explore / Watch 等 Agent 工作流。]
-    #zh-line[设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具调查 README / Release / Activity 等仓库信息，并生成结构化判断。]
+    #zh-line[设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具调查 Release / Activity 等仓库信息，并生成结构化判断。]
   ]
   #zh-entry[NIYO.AI 定制甲片 3D 标注与建模平台][2026.1 ~ 至今][
-    #zh-line[主导将团队已有视觉、几何原型工程化为完整 3D 标注与建模平台，完成前后端、数据库与任务流建设，打通姿态估计、分割、几何预测到 3D 建模的完整链路。]
-    #zh-line[负责合成数据与模型训练链路，搭建大规模多视角数据生成流程，支撑百万级训练样本生成及模型训练、评估与推理接入。]
-    #zh-line[补全参数化几何模型并以 Rust 重构共享内核，统一 Python / WASM 实现，将计算从数百毫秒降至 10ms 级，支撑实时 3D 交互。]
+    #zh-line[主导将视觉、几何原型工程化为 3D 标注与建模平台，完成全栈与任务流建设，打通视觉处理到 3D 建模链路。]
+    #zh-line[负责合成数据与模型训练链路，搭建大规模多视角数据生成流程，支撑百万级样本及模型训练、评估与推理。]
+    #zh-line[以 Rust 重构共享几何内核并统一 Python / WASM 实现，将计算从数百毫秒降至 10ms 级，支撑实时 3D 交互。]
   ]
   #zh-entry[WiTH AI 健康伙伴][2026.6][
     #zh-line[构建 AI 健康 Agent，整合用户画像、健康记录与 20+ Tool Calling 能力，实现个性化健康交互。]

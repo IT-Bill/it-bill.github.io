@@ -29,10 +29,10 @@
     #cv-line[Designed Engine + Plugin architecture with dynamic backend/frontend loading via Python Entry Points and Module Federation.]
     #cv-line[Built Agent Runtime on DeepAgents, unifying Tool / MCP / Skills / Subagent integration and supporting AG-UI and HITL.]
   ]
-  #cv-entry(title: [Large Language Model Intern in Lingsome, Shenzhen], date: "Aug 2024 ~ Aug 2025")[
-    #cv-line[Integrated multi-type Retrieval Augmented Generation (RAG) and GraphRAG systems.]
-    #cv-line[Optimized GraphRAG code to extract better entities & relationships and construct domain-specific knowledge graphs.]
-    #cv-line[Developed and refined pipelines to extract improved entities and relationships.]
+  #cv-entry(title: [LLM Intern in Lingsome, Shenzhen], date: "Aug 2024 ~ Aug 2025")[
+    #cv-line[Designed multi-granularity RAG indexing and joint retrieval strategies to improve domain-data retrieval.]
+    #cv-line[Researched and adapted Microsoft GraphRAG to company-specific domain data, constructing domain knowledge graphs.]
+    #cv-line[Explored automated RAG evaluation, building prototypes for question generation and Ground Truth annotation.]
   ]
   #cv-entry(title: [Visiting Researcher in Wuhan University, Wuhan], date: "May ~ Aug 2024")[
     #cv-line[Advisor: Prof. Jinfu Chen (WHU); Prof. Weiyi Shang (UWaterloo)]
@@ -43,13 +43,13 @@
   #cv-section[Selected Projects]
   #cv-entry(title: [OpenStar], date: "Jul 2026 ~ Present")[
     #cv-line[Built Chat / Explore / Watch Agent workflows for open-source project discovery, understanding, and continuous tracking.]
-    #cv-line[Designed Agent research and Watch pipelines to investigate README / Release / Activity via tools and produce structured assessments.]
+    #cv-line[Designed Agent research and Watch pipelines to investigate Release / Activity via tools and produce structured assessments.]
   ]
-  #cv-entry(title: [NIYO.AI Custom-Fit Nail 3D Modeling Platform], date: "Jan 2026 ~ Present")[
-    #cv-line[Engineered existing vision and geometry prototypes into a full 3D annotation and modeling platform, covering frontend, backend, database, task workflows, and the end-to-end vision-to-3D pipeline.]
-    #cv-line[Built the synthetic-data and training pipeline, supporting millions of multi-view samples as well as model training, evaluation, and production inference.]
-    #cv-line[Extended the parametric geometry model and rewrote its shared core in Rust with Python/WASM bindings, cutting computation from hundreds of milliseconds to \~10 ms for real-time 3D interaction.]
-  ]
+#cv-entry(title: [NIYO.AI Custom-Fit Nail 3D Modeling Platform], date: "Jan 2026 ~ Present")[
+  #cv-line[Turned vision and geometry prototypes into a production 3D annotation/modeling platform, covering full-stack development and the vision-to-3D workflow.]
+  #cv-line[Built synthetic-data and training pipelines for millions of multi-view samples, model training/evaluation, and production inference.]
+  #cv-line[Rewrote the shared geometry core in Rust with Python/WASM bindings, cutting compute from hundreds of ms to \~10 ms for real-time 3D interaction.]
+]
   #cv-entry(title: [WiTH - AI Health Companion], date: "Jun 2026")[
     #cv-line[Built an AI health Agent integrating user profiles, health records, and 20+ Tool Calling capabilities for personalized health interactions.]
     #cv-line[Implemented semantic memory and proactive health reminders, turning conversations into actionable tasks; won Third Prize at the Shenzhen Hackathon.]
