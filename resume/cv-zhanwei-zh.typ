@@ -22,76 +22,71 @@
   ],
 )[
   #zh-section[教育经历]
-  #zh-entry[香港科技大学（广州）| 信息枢纽 | 数据科学与分析学域 | 硕士研究生][2025.9 ~ 至今][
+  #zh-entry[香港科技大学（广州）| 信息枢纽 | 数据科学与分析学域 | 硕士研究生][2025.9 \~ 至今][
     #zh-line[导师：丁子硕教授]
   ]
-  #zh-entry[南方科技大学 | 计算机科学与技术 | 图灵班 | 本科][2021.9 ~ 2025.6][
+  #zh-entry[南方科技大学 | 计算机科学与技术 | 图灵班 | 本科][2021.9 \~ 2025.6][
     #zh-line[导师：刘烨庞教授]
     #zh-line[GPA: 3.79 / 4.0 | 加权平均分: 90.92 | 排名: 36 / 195]
-    #zh-line[核心课程: 数理逻辑 (A+), Java程序设计 (A+), 数据结构与算法 (A), 机器学习 (A), 数据库系统 (A-), 编译原理 (B+)]
+    #zh-line[核心课程：数据结构与算法 (A), 机器学习 (A), 数据库系统 (A-), 编译原理 (B+)]
   ]
 
   #zh-section[实习经历]
-  #zh-entry[高通，深圳 | Agent 开发实习生][2026.5 ~ 至今][
-    #zh-line[作为内部 AI Agent 平台主要开发者，负责核心功能与架构演进，支撑 Agent / Workflow / Tool 的统一接入。]
-    #zh-line[设计 Engine + Plugin 插件架构，基于 Python Entry Points 与 Module Federation 实现前后端插件动态加载。]
-    #zh-line[基于 DeepAgents 构建 Agent Runtime，统一集成 Tool / MCP / Skills / Subagent，支持 AG-UI 双向交互与 HITL 中断恢复。]
+  #zh-entry[高通，深圳 | AI Agent 平台实习生][2026.5 \~ 至今][
+    #zh-line[主导内部 AI Agent 平台架构演进，支持 Agent / Workflow / Tool 的统一接入。]
+    #zh-line[设计 Engine + Plugin 架构，基于 Python Entry Points 与 Module Federation 实现前后端动态加载。]
+    #zh-line[基于 DeepAgents 构建 Agent Runtime，统一 Tool / MCP / Skills / Subagent 集成，并支持 AG-UI 与 HITL。]
   ]
-  #zh-entry[领寻，深圳 | LLM 实习生][2024.8 ~ 2025.8][
-    #zh-line[设计多粒度 RAG 索引与联合检索方案，提升领域数据检索效果。]
-    #zh-line[研究并适配 Microsoft GraphRAG，将其应用于公司领域数据，构建领域知识图谱。]
-    #zh-line[探索 RAG 自动评测方案，搭建问题生成与 Ground Truth 标注原型。]
+  #zh-entry[领寻，深圳 | LLM 实习生][2024.8 \~ 2025.8][
+    #zh-line[设计多粒度 RAG 索引与联合检索策略，提升领域数据的检索质量。]
+    #zh-line[研究并适配 Microsoft GraphRAG 至公司领域数据，构建领域知识图谱。]
+    #zh-line[探索 RAG 自动评测，通过问题生成与 Ground Truth 标注搭建验证原型。]
   ]
-  #zh-entry[武汉大学 | 访问研究员][2024.5 ~ 2024.8][
-    #zh-line[教授：陈金富教授（武汉大学）；Weiyi Shang教授（滑铁卢大学）]
-    #zh-line[专注于软件日志记录 (Logging) 与故障规避 (Failure Workarounds) 研究。]
-    #zh-line[开发自动化分析流程，用于提取、过滤和采样包含 try-catch 代码块的代码提交。]
+  #zh-entry[武汉大学，武汉 | 访问研究员][2024.5 \~ 2024.8][
+    #zh-line[导师：陈金富教授（武汉大学）；Weiyi Shang 教授（滑铁卢大学）]
+    #zh-line[研究软件 Logging 与 Failure Workarounds，并搭建自动化流程挖掘和采样相关代码提交。]
   ]
 
   #zh-section[项目]
-  #zh-entry[OpenStar][2026.7 ~ 至今][
-    #zh-line[面向开源项目发现、理解与持续追踪，构建 Chat / Explore / Watch 等 Agent 工作流。]
-    #zh-line[设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具调查 Release / Activity 等仓库信息，并生成结构化判断。]
+  #zh-entry[OpenStar][2026.7 \~ 至今][
+    #zh-line[构建 Chat / Explore / Watch Agent 工作流，用于开源项目发现、理解与持续追踪。]
+    #zh-line[设计 Agent 调研与 Watch 链路，由 Agent 自主调用工具检查 Release 与仓库 Activity，并生成结构化评估。]
   ]
-  #zh-entry[NIYO.AI 定制甲片 3D 标注与建模平台][2026.1 ~ 至今][
-    #zh-line[主导将视觉、几何原型工程化为 3D 标注与建模平台，完成全栈与任务流建设，打通视觉处理到 3D 建模链路。]
-    #zh-line[负责合成数据与模型训练链路，搭建大规模多视角数据生成流程，支撑百万级样本及模型训练、评估与推理。]
-    #zh-line[以 Rust 重构共享几何内核并统一 Python / WASM 实现，将计算从数百毫秒降至 10ms 级，支撑实时 3D 交互。]
+  #zh-entry[NIYO.AI 定制甲片 3D 标注与建模平台][2026.1 \~ 至今][
+    #zh-line[主导将视觉、几何原型工程化为 3D 标注与建模平台，完成全栈开发与任务流建设，打通视觉处理到 3D 建模链路。]
+    #zh-line[负责合成数据与模型训练链路，搭建大规模多视角数据生成流程，支撑百万级样本及模型训练、评估与生产推理。]
+    #zh-line[以 Rust 重构共享几何内核并提供 Python / WASM 绑定，将计算从数百毫秒降至约 10ms，支撑实时 3D 交互。]
   ]
   #zh-entry[WiTH AI 健康伙伴][2026.6][
-    #zh-line[构建 AI 健康 Agent，整合用户画像、健康记录与 20+ Tool Calling 能力，实现个性化健康交互。]
+    #zh-line[构建 AI 健康 Agent，整合用户画像、健康记录与 20+ Tool Calling 能力，实现个性化交互。]
     #zh-line[实现语义记忆与主动健康提醒，将对话转化为可执行任务；获深圳黑客松三等奖。]
   ]
-  #zh-entry[AI 短剧工作室][2025.9 ~ 2026.1][
-    #zh-line[搭建端到端流程，能够将小说或剧本直接转化为生产级的分镜工作流平台。]
-    #zh-line[在集成界面中整合创作、生成、编辑和导出功能，简化了达到发布标准的AI短剧制作流程。]
+  #zh-entry[AI 短剧工作室][2025.9 \~ 2026.1][
+    #zh-line[搭建端到端流程，将小说/剧本转化为分镜，并在统一工作流中整合生成、编辑与导出。]
   ]
-  #zh-entry[基于 Java 和 Python 的黑白棋 (Othello) 强人工智能][2021.10 ~ 2021.12 & 2023.3][
-    #zh-line[开发了视觉美观的游戏界面，并实现了蒙特卡洛 (Monte Carlo) 及 Alpha-Beta 剪枝算法。]
-    #zh-line[排名：3/29 | 胜率：81%（图灵班）]
+  #zh-entry[基于 Java 和 Python 的黑白棋 (Othello) 强人工智能][2023.3][
+    #zh-line[实现 Monte Carlo 与 Alpha-Beta 搜索；排名 3/29，胜率 81%。]
   ]
-  #zh-entry[食堂人流监测系统][2023.12 ~ 2024.1][
-    #zh-line[通过监控数据计算排队长度，并展示队列长度变化的实时图表。]
-    #zh-line[项目在 3 个月内获得约 30,000 次访问。]
-  ]
-  #zh-section[科研经历]
-  #zh-entry[浮点计算中的数值错误检测][2024.9 ~ 2026.2][
-    #zh-line[PI-detector：提出一种条件数 (Condition-number) 引导的扰动方法以替代昂贵的高精度 Oracle。以仅约 0.13% 的 Oracle 开销发现了 173 个显著错误案例（速度提升高达 73.46 倍）。]
-    #zh-line[MGDE：将错误检测转化为 Newton-Raphson 引导的收敛输入搜索。在 47 个函数中检测出 80 个 Bug（相比之下 ATOMU 为 70/46，FPCC 为 53/42），速度分别提升了 41.71 倍和 10.17 倍。]
-  ]
-  #zh-entry[R1 类推理流程复现与评估][2025.5 ~ 2025.6][
-    #zh-line[复现 DeepSeek-R1 训练流程，实现了 GRPO 和冷启动监督微调 (Cold-start SFT)，显著增强了 Qwen2.5 系列（0.5B 至 7B）的多步推理能力。]
-  ]
-  #zh-entry[基于 LLM 的 JSON 解析器模糊测试与行为分析][2023.9 ~ 2024.1][
-    #zh-line[利用 Llama2-7B/13B 等开源大模型生成测试用例。]
-    #zh-line[对 13 个 JSON 解析器进行了测试，覆盖超过 100 种用例类型，发现了超过 26 种行为差异 (Behavioral Diversities)。]
+  #zh-entry[食堂人流监测系统][2023.12 \~ 2024.1][
+    #zh-line[基于监控数据估算排队长度并实时展示变化。]
+    #zh-line[获国家级大学生创新创业训练计划优胜奖。]
+    #zh-line[上线 3 个月约 30,000 次访问。]
   ]
 
-  #zh-section[发表论文]
-  #zh-line[Tan, Y., #strong[Zhang, Z.], Ding, Z., Chen, J., & Shang, W. (2026). #emph[ICE: Reducing search space for error-inducing input detection.] #emph[IEEE Transactions on Software Engineering], 1-14. #cv-link("https://doi.org/10.1109/TSE.2026.3703362", "doi:10.1109/TSE.2026.3703362")]
-  #zh-line[Tan, Y., #strong[Zhang, Z.], Zhang, H., Zheng, L., Ding, Z., Chen, J., & Shang, W. (2026). #emph[Mathematically-guided detection of floating-point errors.] #emph[ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026)]. #cv-link("https://www.researchgate.net/publication/396459778_A_Mathematics-Guided_Approach_to_Floating-Point_Error_Detection", "ResearchGate")（已接收）]
-  #zh-line[Tan, Y., #strong[Zhang, Z.], Chen, J., Ding, Z., Xuan, J., & Shang, W. (2025). #emph[Computing floating-point errors by injecting perturbations.] arXiv. #cv-link("https://arxiv.org/abs/2507.08467", "https://arxiv.org/abs/2507.08467")]
-  #zh-line[Han, Y., Shen, H., He, X., Mai, Z., Zhang, R., Zheng, Z., Liu, Y., Zhang, X., Li, G., #strong[Zhang, Z.], Liang, Z., Chen, Y., Xie, Y., Li, M., Shen, G., Wang, C., Ye, J., Zhu, L., Fu, T.-M., & Yang, X. (2025). A comprehensive analysis of interflight variability in carbon dioxide emissions from global aviation. #emph[Environmental Science & Technology], 59(12), 6179-6191. doi:10.1021/acs.est.5c02371]
+  #zh-section[科研经历]
+  #zh-entry[浮点计算中的数值错误检测][2024.9 \~ 2026.2][
+    #zh-line[开发扰动与 Newton 引导的错误检测方法，以约 0.13% 的 Oracle 开销发现 173/174 个显著错误案例，并在 47 个函数中检测出 80 个 Bug。]
+  ]
+  #zh-entry[R1-style 推理流程复现与评估][2025.5 \~ 2025.6][
+    #zh-line[在 Qwen2.5（0.5B–7B）上实现 Cold-start SFT 与 GRPO，复现并评估 R1-style 推理训练流程。]
+  ]
+  #zh-entry[基于 LLM 的 JSON Parser Fuzzing][2023.9 \~ 2024.1][
+    #zh-line[使用 Llama 2 7B/13B 对 13 个 JSON Parser 进行 Fuzzing，覆盖 100+ 用例类型，发现 26+ 行为差异。]
+  ]
+
+  #zh-section[代表性论文]
+  #zh-line[Y. Tan, #strong[Z. Zhang], et al. #emph[“ICE: Reducing Search Space for Error-Inducing Input Detection.”] IEEE Transactions on Software Engineering, 2026.]
+  #zh-line[Y. Tan, #strong[Z. Zhang], et al. #emph[“Mathematically-Guided Detection of Floating-Point Errors.”] ISSTA 2026.]
 
   #zh-section[专利]
   #zh-entry[一种点餐方法、系统、终端及介质][2023.5][
@@ -100,17 +95,17 @@
   ]
 
   #zh-section[技能]
-  #zh-line[#strong[语言：] 英语(流利; IELTS: 6.5), 普通话(母语), 粤语(母语)]
-  #zh-line[#strong[编程语言：] Java, Python, C/C++, SQL, JavaScript/TypeScript]
-  #zh-line[#strong[框架：] Spring Boot, Vue, React, Langchain]
-  #zh-line[#strong[开发工具：] IntelliJ IDEA, PyCharm, Visual Studio Code, Anaconda, Git, CMake]
+  #zh-line[#strong[编程语言：] Python, Rust, C/C++, TypeScript/JavaScript, Java, SQL]
+  #zh-line[#strong[框架与技术：] PyTorch, React / Next.js, PostgreSQL, Docker, Git]
+  #zh-line[#strong[AI 开发工具：] Codex, Claude Code]
+  #zh-line[#strong[语言能力：] 普通话（母语）, 粤语（母语）, 英语（IELTS 6.5）]
 
   #zh-section[荣誉奖项]
   #cv-honor(title: [2026 深圳黑客松 | 三等奖], date: "2026.6")
-  #cv-honor(title: [OpenHarmony 竞赛训练营 | 特别创新奖 (唯一获奖团队) & 二等奖], date: "2025.9")
+  #cv-honor(title: [OpenHarmony 竞赛训练营 | 特别创新奖（唯一获奖团队）& 二等奖], date: "2025.9")
   #cv-honor(title: [香港科技大学（广州）| 研究生奖学金 (PGS)], date: "2025.9")
   #cv-honor(title: [南方科技大学 | 优秀学生], date: "2024.1")
-  #cv-honor(title: [全国大学生数学建模竞赛 | 三等奖], date: "2023.9")
-  #cv-honor(title: [国家级大学生创新创业训练计划 | 优胜奖], date: "2023.6")
   #cv-honor(title: [美国大学生数学建模竞赛 (MCM) | H 奖 (Honorable Mention)], date: "2023.5")
+  #cv-honor(title: [国家级大学生创新创业训练计划 | 优胜奖], date: "2023.6")
+  #cv-honor(title: [全国大学生数学建模竞赛 | 三等奖], date: "2023.9")
 ]
