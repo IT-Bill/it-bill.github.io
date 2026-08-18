@@ -95,9 +95,9 @@
   ]
 
   #zh-section[技能]
-  #zh-line[#strong[编程语言：] Python, Rust, C/C++, TypeScript/JavaScript, Java, SQL]
-  #zh-line[#strong[框架与技术：] PyTorch, React / Next.js, PostgreSQL, Docker, Git]
-  #zh-line[#strong[AI 开发工具：] Codex, Claude Code]
+  #zh-line[#strong[编程语言：] Python, TypeScript/JavaScript, Rust, C/C++, Java, SQL]
+  #zh-line[#strong[技术栈：] React / Next.js, PyTorch, PostgreSQL, Docker, Git]
+  #zh-line[#strong[AI 开发：] Codex, Claude Code, OpenAI / Claude Agent SDK, Pi Agent, LangChain]
   #zh-line[#strong[语言能力：] 普通话（母语）, 粤语（母语）, 英语（IELTS 6.5）]
 
   #zh-section[荣誉奖项]

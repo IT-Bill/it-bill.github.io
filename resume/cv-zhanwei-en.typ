@@ -86,9 +86,9 @@
   ]
 
   #cv-section[Skills]
-  #cv-skill[Programming Languages][Python, Rust, C/C++, TypeScript/JavaScript, Java, SQL]
-  #cv-skill[Frameworks & Technologies][PyTorch, React / Next.js, PostgreSQL, Docker, Git]
-  #cv-skill[AI Developer Tools][Codex, Claude Code]
+  #cv-skill[Programming Languages][Python, TypeScript/JavaScript, Rust, C/C++, Java]
+  #cv-skill[Technology Stack][React / Next.js, PyTorch, PostgreSQL, Docker, Git]
+  #cv-skill[AI Development][Codex, Claude Code, OpenAI / Claude Agent SDK, Pi Agent, LangChain]
   #cv-skill[Languages][Mandarin (Native), Cantonese (Native), English (IELTS 6.5)]
 
   #cv-section[Honors & Scholarships]
